@@ -1,0 +1,39 @@
+<project default="deployRestart" basedir=".">
+	<target name="init">
+		<property name="openerp.root" value="D:/OpenErpSever/DEV-5550-5560-5559" />
+        <property name="openerp.web" value="D:/OpenERP AllInOne/Web/python25/Lib/site-packages/openerp_web-5.0.15-py2.5.egg/openerp" />
+        <property name="openerp.web.root" value="C:/Program Files (x86)/OpenERP AllInOne/Web" />		
+	</target>
+	<target name="deployweb" depends="init">
+	        <copy todir="${openerp.web}" includeemptydirs="true">
+	            <fileset dir="${basedir}\Web" >
+	            </fileset>
+	        </copy>
+	</target>
+	<target name="clean" depends="init">
+		<delete dir="${openerp.root}/openerp-server-5.0.15/bin/addons/eMobility" file="**/*" />
+	</target>
+	<target name="deploy" depends="init">
+		<copy todir="${openerp.root}/openerp-server-5.0.15/bin/addons/eMobility" includeemptydirs="true">
+			<fileset dir=".">
+			</fileset>
+		</copy>
+	</target>
+	<target name="stop" depends="init">
+		<exec executable="cmd" dir="${openerp.root}" append="true">
+			<arg value="/c" />
+			<arg value="stop.bat" />
+		</exec>
+	</target>
+	<target name="start" depends="init">
+		<exec executable="cmd" dir="${openerp.root}/service" append="true">
+			<arg value="/c" />
+			<arg value="start.bat" />
+		</exec>
+	</target>
+	<target name="deployRestart" depends="init, stop, deploy, start">
+	</target>
+	<target name="cleanDeployRestart" depends="init, stop, clean, deploy, start">
+	</target>
+</project>
+

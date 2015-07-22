@@ -1,0 +1,19 @@
+Below are the coding standards, Please follow all of them:
+
+Button: 				btn_
+Button with Wizards:	btn_wizard_
+report: 				report_
+Validation: 			validation_
+Utility: 				utility_
+onchange:				onChange_
+
+Objects:				cmc.
+
+All variables should have meaningful names. 
+
+	Keep pressing Ctrl+Shift+F and Ctrl+S for formatting and saving respectively.
+
+	Please Update and Commit your code after finishing each small module or 
+	working module (after testing at your own side).
+	
+	Documents are available at docs folder

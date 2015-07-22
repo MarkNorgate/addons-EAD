@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+ 
+		<record id="view_users_form_simple_modif" model="ir.ui.view">
+			<field name="name">res.users.form.modif.inherit</field>
+			<field name="model">res.users</field>
+			<field name="inherit_id" ref="base.view_users_form_simple_modif" />
+			<field name="arch" type="xml">
+				<field name="signature" position="after">
+				<field name="email" />
+					<newline />
+                    <field colspan="4" name="attachment_id" />
+				</field>
+			</field>
+		</record> 
+
+		<record id="view_users_form" model="ir.ui.view">
+			<field name="name">res.users.form_email</field>
+			<field name="model">res.users</field>
+			<field name="inherit_id" ref="base.view_users_form" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="signature" position="after">
+					<field name="email" />
+					<newline />
+                    <field colspan="4" name="attachment_id" />
+				</field>
+			</field>
+		</record>
+		 
+		<record id="view_users_tree_email" model="ir.ui.view">
+			<field name="name">res.users.tree_email</field>
+			<field name="model">res.users</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Users">
+					<field name="name" />
+					<field name="login" />
+					<field name='email' />
+				</tree>
+			</field>
+		</record>
+ 
+		<record id="action_res_users_email" model="ir.actions.act_window">
+			<field name="name">Users</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">res.users</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="view_users_tree_email" />
+		</record>
+
+
+
+	</data>
+</openerp>

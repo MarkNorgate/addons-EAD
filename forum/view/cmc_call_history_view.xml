@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<wizard id="wizard_call_history_close" menu="False" model="cmc.call.history"
+			name="wizard_call_history_close" string="Close Call" />
+		<!-- CMC CLIENT CALL HISTORY -->
+		<record id="view_cmc_call_history_form" model="ir.ui.view">
+			<field name="name">cmc.call.history.form</field>
+			<field name="model">cmc.call.history</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Call Record ">
+					<notebook colspan="4">
+						<page string="Call Details">
+							<!--<group colspan="4" col="8">
+								<group attrs="{'invisible':[('enquiry_type','=', 'general')]}">
+									<group colspan="2" col="2"
+										attrs="{'invisible':[('call_person_type','=', 'agent')]}">
+										<button name="%(wizard_call_assessment)d" string="Create Assessment As Client"
+											type="action" context="{'from':'call history'}" />
+									</group>
+									<group colspan="2" col="2"
+										attrs="{'invisible':[('call_person_type','=', 'client')]}">
+										<button name="%(wizard_call_assessment_agent)d" string="Create Assessment As Agent"
+											type="action" context="{'from':'call history'}" />
+									</group>
+								</group>
+								<group colspan="2" col="2">
+									<button name="%(wizard_create_action)d" string="Create Action"
+										type="action" context="{'from':'call history'}" />
+									<group />
+								</group>
+								<group colspan="2" col="2">
+									<button name="%(wizard_create_equipment)d" string="Create Equipment Supply"
+										target="new" type="action" context="{'from':'call history'}" />
+								</group>
+							</group>
+							--><group colspan="2" col="2">
+								<field name="call_date_time" select="2" readonly="0" />
+								<field name="state" select="2" invisible="1" />
+								<field name="user_id" select="2"
+									attrs="{'readonly':[('state','!=', 'none')]}" widget="selection" />
+								<field name="call_type" select="2"
+									attrs="{'readonly':[('state','!=','none')]}" />
+								<field name="call_channel" select="2"
+									attrs="{'readonly':[('state','!=','none')]}" />
+							</group>
+							<group colspan="2" col="2">
+								<field name="client_id" select="2"
+									attrs="{'readonly':[('state','!=','none')]}" />
+								<field name="agent_id" select="2"
+									attrs="{'readonly':[('state','!=','none')]}" />
+								<field name="from" select="2"
+									attrs="{'invisible':[('state','=','none')], 'readonly':[('state','!=','none')]}" />
+								<field name="to" select="2"
+									attrs="{'invisible':[('state','=','none')], 'readonly':[('state','!=','none')]}" />
+								<field name="reference" select="2"
+									attrs="{'invisible':[('state','=','none')], 'readonly':[('state','!=','none')]}" />
+							</group>
+							<label string="" />
+							<group string="Call Details" colspan="4" col="3">
+								<field string="Call Target - Client or Agent (mandatory)"
+									colspan="3" name="call_person_type" select="1"
+									attrs="{'readonly':[('state','!=','none')]}" />
+								<field colspan="3" name="call_summary" select="1" />
+								<field colspan="3" name="call_details" select="1" />
+								<field colspan="3" name="call_reason"
+									attrs="{'readonly':[('state','!=','none')]}" />
+								<group attrs="{'invisible':[('state','!=', 'none')]}"
+									colspan="3" col="3">
+									<field name="datas" select="1" filename="datas_fname"
+										attrs="{'readonly':[('state','!=','none')]}" />
+									<field nolabel="1" name="datas_fname" select="1"
+										attrs="{'readonly':[('state','!=','none')]}" />
+									<newline />
+
+									<field colspan="3" name="dummy" invisible="1" />
+								</group>
+							</group>
+							<label string="" />
+							<!-- <group string="Comments" colspan="4" -->
+							<!-- attrs="{'invisible':[('state','in',['none', 'closed'])]}"> -->
+							<!-- <label colspan="4" -->
+							<!-- string="Please enter your comments here to be added to the comments 
+								records. The comments are mandatory for you to save this call record." /> -->
+							<!-- <field colspan="4" name="comments" nolabel="1" -->
+							<!-- attrs="{'invisible':[('state','=', 'none')], 'readonly':[('state', 
+								'=', 'closed')]}" /> -->
+							<!-- </group> -->
+							<label string="" />
+							<group string="Call Control" colspan="4" col="3"
+								attrs="{'invisible':[('state','in',['none', 'closed'])]}">
+								<group colspan="1" col="1">
+									<label
+										string="This call can be allocated to an individual or a group of users."
+										align="0.0" />
+								</group>
+								<group colspan="2" col="2">
+									<group colspan="1" col="1">
+										<label string="Please select other User to Allocate to:"
+											align="0.0" />
+										<field name="allocated_user_id" widget="selection"
+											nolabel="1" on_change="onchange_allocated_user_id(allocated_user_id)" />
+										<group colspan="1" col="1"
+											attrs="{'invisible':[('dummy','!=','allocated_user_id_changed')]}">
+											<label
+												string="You must provide comments for the user allocation change before saving this call record."
+												align="0.0" />
+										</group>
+									</group>
+									<group colspan="1" col="1">
+										<label string="Please select a User Group to Allocate to:"
+											align="0.0" />
+										<field name="allocated_user_group_id" widget="selection"
+											nolabel="1"
+											on_change="onchange_allocated_user_group_id(allocated_user_group_id)" />
+										<group colspan="1" col="1"
+											attrs="{'invisible':[('dummy','!=','allocated_user_group_id_changed')]}">
+											<label
+												string="You must provide comments for the group allocation change before saving this call record."
+												align="0.0" />
+										</group>
+									</group>
+									<group colspan="2" col="1"
+										attrs="{'invisible':[('dummy','!=','allocated_open')]}" color="red">
+										<label
+											string="This Call will now be available to all users. Please provide comments before saving this record"
+											align="0.0" />
+									</group>
+								</group>
+								<group colspan="3" col="4">
+									<group />
+									<group />
+									<group colspan="2">
+										<button string="Call Completed and Closed" name='%(wizard_call_history_close)d'
+											type="action"
+											confirm="Please be warned that if you proceed, this call will be marked as completed.\n\nNo further updates can be made to this call record in future." />
+									</group>
+								</group>
+
+							</group>
+							<field colspan="4" name="comment_ids" nolabel="1" readonly="1">
+								<tree string="User Comments" limit="30" min_rows="1">
+									<field name="date_time" />
+									<field name="user_id" />
+									<field name="comments" />
+								</tree>
+							</field>
+
+						</page>
+						<page string="User Actions" attrs="{'invisible':[('state','=', 'none')]}">
+							<field name="activity_ids" readonly="1" colspan="4"
+								nolabel="1">
+								<tree string="User Actions" limit="30" min_rows="10">
+									<field name="date" />
+									<field name="user_id" />
+									<field name="activity" />
+									<field name="call_id" />
+									<field name="assessment_id" />
+									<field name="enquiry_id" />
+								</tree>
+							</field>
+						</page>
+						<page string="Attachments" attrs="{'invisible':[('state','=', 'none')]}">
+							<field name="attachment_ids" colspan="4" nolabel="1"
+								attrs="{'invisible':[('state','=', 'none')], 'readonly':[('state', '=', 'closed')]}">
+								<tree string="Attachments Related to this Call" limit="30"
+									min_rows="10">
+									<field name="date" />
+									<field name="user_id" />
+									<field name="name" />
+									<field name="description" />
+									<field name="datas_fname" />
+								</tree>
+							</field>
+						</page>
+						<!-- <page string="Actions and Requests" attrs="{'invisible':[('state','=', 
+							'none')]}"> <field name="enquiry_ids" colspan="4" nolabel="1" attrs="{'invisible':[('state','=', 
+							'none')], 'readonly':[('state', '=', 'closed')]}"> </field> </page> -->
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_cmc_call_history_tree" model="ir.ui.view">
+			<field name="name">cmc.call.history.tree</field>
+			<field name="model">cmc.call.history</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Call History" limit="30" min_rows="10"
+					colors="red:state=='closed';green:state=='allocated'">
+					<field colspan="3" name="call_date_time" />
+					<field colspan="3" name="call_channel" />
+					<field colspan="3" name="call_type" />
+					<field colspan="3" name="client_id" string="As Client" />
+					<field colspan="3" name="agent_id" string="As Agent" />
+					<field colspan="3" name="user_id" string="Created By" />
+					<field colspan="3" name="call_person_type" string="Calling As" />
+					<field colspan="3" name="call_summary" />
+					<field colspan="3" name="allocated_user_id" string="User Allocated" />
+					<field colspan="3" name="allocated_user_group_id" string="Group Allocated" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_cmc_my_call_tree" model="ir.ui.view">
+			<field name="name">cmc.call.history.tree</field>
+			<field name="model">cmc.call.history</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Call History" limit="30" min_rows="10"
+					colors="red:(state=='closed');green:(state=='allocated')">
+					<field colspan="3" name="call_date_time" />
+					<field colspan="3" name="call_channel" />
+					<field colspan="3" name="call_type" />
+					<field colspan="3" name="client_id" string="As Client" />
+					<field colspan="3" name="agent_id" string="As Agent" />
+					<field colspan="3" name="user_id" string="Created By" />
+					<field colspan="3" name="call_summary" />
+					<field colspan="3" name="allocated_user_id" string="User Allocated" />
+					<field colspan="3" name="allocated_user_group_id" string="Group Allocated" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_cmc_my_call_calendar" model="ir.ui.view">
+			<field name="name">cmc.call.history.calendar</field>
+			<field name="model">cmc.call.history</field>
+			<field name="type">calendar</field>
+			<field name="arch" type="xml">
+				<calendar string="Call History" day_length="8" color="state"
+					date_start="call_date_time">
+					<field colspan="3" name="call_summary" />
+					<field colspan="3" name="call_type" />
+					<field colspan="3" name="call_channel" />
+					<field colspan="3" name="client_id" string="As Client" />
+					<field colspan="3" name="agent_id" string="As Agent" />
+					<field colspan="3" name="user_id" string="Created By" />
+					<field colspan="3" name="state" string="Status" />
+				</calendar>
+			</field>
+		</record>
+
+
+
+
+
+	</data>
+</openerp>
+
+      

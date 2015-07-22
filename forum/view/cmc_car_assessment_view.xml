@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_cmc_car_form" model="ir.ui.view">
+			<field name="name">cmc.car.assessment.form</field>
+			<field name="model">cmc.car.assessment</field>
+			
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="CMC Car Asssessment ">
+				
+					<group colspan="3" string="CURRENT EQUIPMENT USED AND PROBLEMS IDENTIFIED">
+						<field colspan="3" name="current_equipemt_problem" />
+					</group>
+
+					<field colspan="3" name="weight" />
+					<field colspan="3" name="height" />
+					<group colspan="3" string="POSTURAL OBSERVATIONS">
+						<field colspan="3" name="spine" />
+						<field colspan="3" name="spine_deformity_present"
+							invisible="not context.get('spine','deformity_present')" />
+						<field colspan="3" name="hips" />
+						<field colspan="3" name="head" />
+						<field colspan="3" name="physical_observation" />
+					</group>
+					<group colspan="3" string="BEHAVIOURAL OBSERVATIONS:">
+						<field colspan="3" name="behaviour_observation" />
+					</group>
+					<group colspan="3" string="POSITIONING AND VEHICLE DETAILS">
+						<field colspan="3" name="facing_seat" />
+						<field colspan="3" name="child_seat" />
+						<field colspan="3" name="driver_side" />
+						<field colspan="3" name="no_adults" />
+                        <field colspan="3" name="no_vehicle" />
+					</group>
+					<group colspan="3" string="Car Details">
+					   <field colspan="2" name="car_owner" />
+                        <field colspan="1" name="private" />
+                        <field colspan="1" name="motability" />
+					</group>
+
+				</form>
+			</field>
+		</record>
+
+
+
+		<record id="view_cmc_car_tree" model="ir.ui.view">
+			<field name="name">cmc.car.assessment.tree</field>
+			<field name="model">cmc.car.assessment</field>
+			<field name="priority" eval="2" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Car Asssessment" limit="1" min_rows="1">
+					<field colspan="3" name="assessment_id" />
+					<field colspan="3" name="version" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_car_assessment" model="ir.actions.act_window">
+			<field name="name">CMC Car Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.car.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_car_form" />
+		</record>
+
+	</data>
+</openerp>
+        

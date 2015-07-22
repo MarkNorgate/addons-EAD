@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_cmc_equipment_supply_process_form" model="ir.ui.view">
+			<field name="name">cmc.equipement.supply.process.form</field>
+			<field name="model">cmc.equipement.supply.process</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Equipment Entry">
+					<newline />
+
+					<group colspan="4" string="Equipment Tracking">
+						<group colspan="2" col="2">
+							<field name="state" invisible="0" select="1" colspan="1" />
+							<newline />
+						</group>
+						<newline />
+						<group colspan="2" col="2">
+							<field name="equipment_supply_id" readonly="1" />
+							<field name="create_date_equipment" readonly="0" string="Date" />
+						</group>
+						<group colspan="2" col="2">
+							<field name="client_id" readonly="0" />
+						</group>
+					</group>
+					<newline />
+					<newline />
+					<group colspan="4" string="Details">
+						<field colspan="4" name="equipment_details" align="0.0" />
+					</group>
+					<group colspan="4">
+						<notebook>
+							<page string="Appointments">
+								<group colspan="4" col="7">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(booked_client_visit_appointment)d"
+										string="Book Appointment" type="action"
+										context="{'app':'Client','person_id':client_id}" />
+								</group>
+								<group colspan="4">
+									<field name="appointment_ids" nolabel="1" align="0.0"
+										readonly="1">
+										<tree string="Appointments" limit="30" min_rows="1"
+											colors="green:apmnt_status=='Active';grey:apmnt_status=='Active Clash';darkred:apmnt_status=='Cancelled';red:apmnt_status=='Cancellation - Within 48 Hours';orange:apmnt_status=='Confirmed';blue:apmnt_status == 'Completed'">
+											<field colspan="3" name="apmnt_start_date_time" string="Start" />
+											<field colspan="3" name="apmnt_end_date_time" string="End" />
+											<field colspan="3" name="owner" />
+											<field colspan="3" name="location" />
+											<!-- <field colspan="3" name="state" invisible="0" string="Status" 
+												/> -->
+											<field colspan="3" name="apmnt_status" string="Status" />
+											<button states="active,active_clash,confirmed" string="Cancel"
+												name="%(cancel_appointment)d" type="action" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Equipment in Stock">
+								<field colspan="4" align="0.0" nolabel="1"
+									name="equipment_parent_id" domain="[('state', '=', 'in_stock')]">
+									<tree string="Equipments">
+										<field name="make"></field>
+										<field name="model"></field>
+										<field name="price"></field>
+										<field name="state"></field>
+										<button name="btn_booked" string="Book" states="in_stock"
+											type="object" context="{'user_id':client_id}" />
+										<button name="%(wizard_book_workshop_adaptations_task)d"
+											string="Book Job" states="in_stock,booked" type="action"
+											context="{'equipment_supply':'Equipment Supply'}" />
+									</tree>
+								</field>
+							</page>
+							<page string="Equipment Ordered">
+								<group colspan="4" col="6">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(wizard_order_new_equipment)d" string="Order New Equipment"
+										type="action" context="{'client_id':client_id}" />
+								</group>
+								<field colspan="4" align="0.0" nolabel="1" name="equipment_ordered"
+									readonly="1">
+									<tree string="Equipments">
+										<field name="order_no" />
+										<field name="make" />
+										<field name="model" />
+										<field name="price" />
+										<field name="date_ordered" />
+										<field name="state" />
+										<button name="%(wizard_recieved_equipment)d" states="Ordered"
+											string="Recieved" type="action"></button>
+										<button name="btn_cancel" string="Cancel" states="Ordered"
+											type="object" context="{'cancel_equipment':'cancel'}"></button>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+					</group>
+					<newline />
+					<group string="Equipment Allocation Control" colspan="4" col="3"
+						attrs="{'invisible':[('state','in',['pending_equipment_indentification','pending_equipment_ordered','pending_equipment_receipt_from_supplier','pending_equipment_delivery','pending_closure'])]}">
+						<group colspan="1" col="1">
+							<label
+								string="This equipment record can be transferred to an individual or a group of users. You can allocate to specific user or group of users"
+								align="0.0" />
+						</group>
+						<group colspan="2" col="2">
+							<group colspan="1" col="1">
+								<label string="Please select other User to Allocate to:"
+									align="0.0" />
+								<field name="allocated_user_id" widget="selection"
+									nolabel="1" />
+								<group colspan="1" col="1">
+									<label
+										string="You must provide additional details for the user allocation change before saving this action record."
+										align="0.0" />
+
+								</group>
+							</group>
+							<group colspan="1" col="1">
+								<label string="Please select a User Group to Allocate to:"
+									align="0.0" />
+								<field name="allocated_user_group_id" widget="selection"
+									nolabel="1" />
+								<group colspan="1" col="1">
+									<label
+										string="You must provide additional details for the group allocation change before saving this action record."
+										align="0.0" />
+								</group>
+							</group>
+							<group colspan="2" col="1">
+								<label string="This action will now be available to all users."
+									align="0.0" />
+							</group>
+						</group>
+					</group>
+					<group colspan="4" col="6">
+						<button name="" string="Print Delivery Note" type="object"
+							readonly="1" />
+						<button name="%(wizard_equipment_supply_handover_note)d"
+							string="Print Handover Documents" type="action" readonly="1" />
+						<button name="btn_equipment_supplied" string="Equipment Supplied"
+							type="object" />
+						<group />
+						<group />
+						<!-- <button name="%(booked_client_visit_appointment)d" string="Book 
+							Delivery Appointment" -->
+						<!-- type="action" context="{'app':'Delivery','person_id':client_id}" 
+							/> -->
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="view_cmc_equipment_supply_process_tree" model="ir.ui.view">
+			<field name="name">cmc.equipement.supply.process.tree</field>
+			<field name="model">cmc.equipement.supply.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipment List" limit="30" min_rows="10">
+					<field name="equipment_supply_id" />
+					<field name="create_date_equipment" />
+					<field name="client_id" />
+					<field name="equipment_parent_id" />
+					<field name="equipment_details" />
+					<field name="allocated_user_id" />
+					<field name="allocated_user_group_id" />
+					<field name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="menu_cmc_equipment_supply_process" model="ir.actions.act_window">
+			<field name="name">New Enquiry</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipement.supply.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_supply_process_tree" />
+			<field name="domain"
+				eval="[('state','=','pending_equipment_indentification')]"></field>
+		</record>
+
+		<record id="menu_cmc_equipment_supply_process_pending_equipment_ordered"
+			model="ir.actions.act_window">
+			<field name="name">Pending Equipment Ordered</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipement.supply.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_supply_process_tree" />
+			<field name="domain" eval="[('state','=','pending_equipment_ordered')]"></field>
+		</record>
+		<record id="menu_cmc_equipment_supply_equipment_receipt_from_supplier"
+			model="ir.actions.act_window">
+			<field name="name">Pending Equipment Receipt</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipement.supply.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_supply_process_tree" />
+			<field name="domain"
+				eval="[('state','=','pending_equipment_receipt_from_supplier')]"></field>
+		</record>
+		<record id="menu_cmc_equipment_supply_process_pending_equipment_delivery"
+			model="ir.actions.act_window">
+			<field name="name">Pending Equipment Delivery</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipement.supply.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_supply_process_tree" />
+			<field name="domain" eval="[('state','=','pending_equipment_delivery')]"></field>
+		</record>
+
+		<record id="menu_cmc_equipment_supply_process_pending_closure"
+			model="ir.actions.act_window">
+			<field name="name">Pending Equipment Closure</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipement.supply.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_supply_process_tree" />
+			<field name="domain" eval="[('state','=','pending_closure')]"></field>
+		</record>
+
+		<record id="menu_cmc_equipment_supply_process_all_process"
+			model="ir.actions.act_window">
+			<field name="name">All Equipment Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipement.supply.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_supply_process_tree" />
+		</record>
+	</data>
+</openerp>
+   

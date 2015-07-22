@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- LOG NEW CALL -->
+		<record id="view_cmc_person_form" model="ir.ui.view">
+			<field name="name">cmc.person.form</field>
+			<field name="model">cmc.person</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Person Information">
+					<field name="filter_user_id" string="Logged IN User ID" eval="context.get('userid')" invisible="1" />
+					<group colspan="4" col="6" attrs="{'invisible':[('state','=','none')]}">
+						<button name="%(wizard_merge_client_record)d" string="Merge Person Record"
+							type="action" />
+						<group />
+						<group />
+						<group />
+						<group />
+					</group>
+					<group colspan="2" attrs="{'invisible':[('state','!=','none')]}">
+						<group colspan="2" col="2"
+							attrs="{'invisible':[('is_organisation','=',True)]}">
+							<label colspan="2"
+								string="             Title , First Name , Last Name  are  mandatory"
+								align="0.0"></label>
+						</group>
+						<group colspan="2" col="2"
+							attrs="{'invisible':[('is_organisation','=',False)]}">
+							<label colspan="2"
+								string="        Organisation name  is  mandatory       " align="0.0"></label>
+						</group>
+					</group>
+					<group colspan="4">
+						<group colspan="2" col="2">
+							<field name="is_dvla" invisible="1" />
+							<field name="is_organisation" select="1" />
+							<field name="organisation_name" select="1"
+								attrs="{'invisible':[('is_organisation','!=',True)]}" string="Organisation Name" />
+							<field name="title" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" string="Title" />
+							<field name="title_other" select="2"
+								attrs="{'invisible':[('title','!=','other')]}" />
+							<field name="first_name" select="1" string="First Name"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+
+							<field name="last_name" select="1" string="Last Name"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="suffix" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="display_name" select="2" />
+                            <field name="cmc_account_reference" attrs="{'invisible':[('is_organisation','=',False)]}" />
+							<field name="eligible" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+								
+							<field name="alert" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+						</group>
+						<group colspan="2" col="2">
+							<field name="person_id" select="1" />
+							<field name="gender" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="birth_date" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="nhs_number" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="driver_number" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="ethnicity" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="file_reference_number" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							
+
+							<field name="allergies" select="2"
+								attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field name="state" invisible="1" string="Status" />
+							<field name="is_client" colspan="1" invisible="1" />
+							<field name="is_agent" colspan="1" invisible="1" />
+						</group>
+						<group colspan="4"
+							attrs="{'invisible':[('is_organisation','=',True)]}">
+							<field name="client_not_wish" align="0.0" attrs="{'invisible':[('is_organisation','=',True)]}" />
+							<field colspan="1" name="is_deceased" select="2"
+								attrs="{'invisible':[('state','=','none')]}" align="0.0" />
+						</group>
+						<group></group>
+						<group></group>
+						<group></group>
+					</group>
+					<group string="" colspan="4" col="4"
+						attrs="{'invisible':[('state','=','none')]}">
+						<newline />
+						<group string="Client Actions" colspan="1"
+							attrs="{'invisible':[('is_dvla','=',True)]}">
+							<button name="%(wizard_call_inbound_client_history)d"
+								string="New Inbound Client Call" type="action" />
+							<button name="%(wizard_call_outbound_client_history)d"
+								string="New Outbound Client Call" type="action" />
+						</group>
+						<group string="Agent Actions" colspan="1">
+							<button name="%(wizard_call_inbound_agent_history)d"
+								string="New Inbound Agent Call" type="action" />
+							<button name="%(wizard_call_outbound_agent_history)d"
+								string="New Outbound  Agent Call" type="action" />
+						</group>
+					</group>
+					<label string="" colspan="4" />
+					<notebook colspan="4">
+						<page string="Personal Details">
+
+							<group colspan="4" col="3">
+								<group col="2">
+									<separator string="Current Address" colspan="2" />
+									<field name="address_type" />
+									<field name="address_line_1" select="1" />
+									<field name="address_line_2" select="1" />
+									<field name="city" select="1" />
+									<field name="county" select="1" />
+									<field name="postcode" select="1" />
+									<label string="Click to find address" colspan="1"/>
+									<button string="Find Postcode" name="btn_find_postcode" type="object"/>
+
+								</group>
+								<group col="2">
+									<separator string="Current Telephone" colspan="2" />
+									<field name="telephone_type" />
+									<field name="telephone" string="Telephone" select="1" />
+									<field name="extension" string="Extension" />
+									<field name="telephone_description" string="Description" />
+
+								</group>
+								<group col="2">
+									<separator string="Current Email Address" colspan="2" />
+									<field name="email_type" />
+									<field name="email_address" select="1" widget="email" />
+									<!-- <field name="email_description" select="1" /> -->
+
+								</group>
+								<group colspan="2" col="2">
+									<separator string="GP Details" colspan="2" />
+									<newline />
+									<group col="1">
+										<group colspan="1" col="1">
+										<field colspan="1" name="gp_doctor_name" />
+										<field colspan="1" name="gp_surgery_name" />
+										<field colspan="1" name="gp_address_line_1" />
+										<field colspan="1" name="gp_address_line_2" />
+										<field colspan="1" name="gp_city" />
+										<field colspan="1" name="gp_county" />
+										<field colspan="1" name="gp_postcode" />
+										</group>
+										<newline />
+										<group colspan="1" col="3">
+										<label string="Click to find address" colspan="2"/>
+									<button string="Find Postcode" name="btn_find_gp_postcode" type="object" />
+										
+										</group>
+										<group colspan="1" col="1">
+										<field colspan="1" name="gp_telephone" />
+										</group>
+									</group>
+									<group col="1">
+										<field name="gp_consent_contact" align="0.0" />
+										<field name="gp_consent_assessment" align="0.0"/>
+									</group>
+								</group>
+								<group col="2">
+                                        <separator string="Next Of Kin Details" colspan="2"/>
+                                        <field name="kin_contact_name" />
+                                            <field name="kin_telephone" />
+                                            <field name="kin_relationship" />
+                                 </group>
+								<label string="" colspan="4" />
+								<!-- <label -->
+								<!-- string="If you change the address, telephone or email, the previous 
+									values will be added to Past records. Please make sure that you only modify 
+									them if the contact details have really changed." -->
+								<!-- colspan="4" /> -->
+								<label string="" colspan="4" />
+
+								<group string="" colspan="4">
+									<field colspan="4" name="address_ids" widget="one2many"
+										nolabel="1" readonly="0">
+										<tree editable="bottom" string="Other Addresses" limit="10"
+											min_rows="1">
+
+											<field name="address_line_1" />
+											<field name="address_line_2" />
+											<field name="city" string="City" />
+											<field name="postcode" string="PostCode" />
+											<field name="county" string="County" />
+											<field name="address_type" />
+										</tree>
+									</field>
+									<field name="email_address_ids" widget="one2many"
+										nolabel="1" colspan="2" readonly="0">
+										<tree editable="bottom" string="Other Email Ids" limit="10"
+											min_rows="1">
+
+											<field name="email_address" string="Email" />
+											<field name="email_description" string="Description" />
+											<field name="email_type" string="Type" />
+										</tree>
+									</field>
+									<field name="telephone_ids" widget="one2many" nolabel="1"
+										colspan="2" readonly="0">
+										<tree editable="bottom" string="Other Telephone Numbers"
+											limit="10" min_rows="1">
+
+											<field name="telephone" string="Telephone" />
+											<field name="extension" string="Extension" />
+											<field name="description" string="Description" />
+											<field name="telephone_type" string="Type" />
+										</tree>
+									</field>
+								</group>
+							</group>
+
+						</page>
+						<page string="Attachments" attrs="{'invisible':[('state','=','none')]}">
+                            <field name="attachment_id" readonly="0" nolabel="1"
+								colspan="4">
+                                <tree string="Attachments">
+                                    <field name="name" />
+                                    <field name="datas_fname" />
+                                    
+                                </tree>
+                                 <form string="Create New Attachment">
+                                    <field colspan="4" name="name" string="Document Name" select="1" />
+                                    <field colspan="4" name="import_url" string="Url" readonly="1" widget="url"/>
+                                    <field colspan="4" name="datas_fname" select="1" />
+                                    <field name="datas" filename="datas_fname" />
+                                    
+                                </form>
+                            </field>
+                        </page>
+						<page string="Contact History" attrs="{'invisible':[('state','in',['none'])]}">
+							<field name="call_history_ids" nolabel="1" readonly="1"
+								colspan="4">
+								<tree string="Contact History" limit="30" min_rows="10"
+									colors="red:(state=='closed');green:(state=='allocated')">
+									<field colspan="3" name="call_date_time" />
+									<field colspan="3" name="from" string="Caller's Name" />
+									<field colspan="3" name="call_person_type" string="Calling As" />
+									<field colspan="3" name="calling_about" string="Calling About" />
+									<field colspan="3" name="call_reason" />
+									<field colspan="3" name="call_channel" />
+									<field colspan="3" name="allocated_user_id" string="User Allocated" />
+									<field colspan="3" name="allocated_user_group_id" string="Group Allocated" />
+									<field colspan="3" name="call_summary" />
+									<field colspan="3" name="call_type" />
+								</tree>
+							</field>
+							<newline></newline>
+						</page>
+						<page string="Actions" attrs="{'invisible':[('state','in',['none'])]}">
+							<group colspan="4" col="6">
+								<group />
+								<group />
+								<group />
+								<group />
+								<group />
+								<button name="%(wizard_create_action)d" string="Create Action"
+									type="action" />
+							</group>
+							<field name="enquiry_ids" nolabel="1" readonly="0" colspan="4">
+								<tree string="Action List" limit="30" min_rows="10"
+									colors="darkred:(state=='Cancelled');red:(state=='closed');green:(state=='pending');orange:(state=='awaiting')">
+									<field name="enquiry_date" />
+									<field name="person_id" />
+									<field name="enquiry_type" />
+									<field name="allocated_user_id" />
+									<field name="allocated_user_group_id" />
+									<field name="user_id" />
+									<field name="due_date" />
+									<field name="state" string="Status" />
+								</tree>
+							</field>
+							<newline></newline>
+						</page>
+						<page string="User Actions" attrs="{'invisible':[('state','=','none')]}">
+							<field name="activity_ids" readonly="1" colspan="4"
+								nolabel="1">
+								<tree string="User Actions" limit="30" min_rows="10">
+									<field name="date" />
+									<field name="user_id" />
+									<field name="activity" />
+									<field name="call_id" />
+									<field name="assessment_id" />
+									<field name="enquiry_id" string="Action" />
+								</tree>
+							</field>
+						</page>
+						<page string="Person's Agents"
+							attrs="{'invisible':[('is_agent','=',False), ('state', '=', 'none')]} ">
+							<field name="agent_ids">
+								<tree string="Details" limit="30" min_rows="10">
+									<field name="display_name" />
+									<field name="first_name" string="First Name" />
+									<field name="last_name" string="Last Name" />
+									<field name="birth_date" />
+									<field name="address_line_1" />
+									<field name="postcode" />
+								</tree>
+							</field>
+						</page>
+
+						<page string="Agent's Clients"
+							attrs="{'invisible':[('is_client','=',False), ('state', '=', 'none')]}">
+							<field name="client_ids">
+								<tree string="Details" limit="30" min_rows="10">
+									<field name="display_name" />
+									<field name="first_name" string="First Name" />
+									<field name="last_name" string="Last Name" />
+									<field name="birth_date" />
+									<field name="address_line_1" />
+									<field name="postcode" />
+								</tree>
+							</field>
+						</page>
+						<page string="Ax as Agent" attrs="{'invisible':[('state','=','none')]}">
+							<group colspan="4" col="6" attrs="{'invisible':[('filter_user_id','in',['34','35','37','38','39','103','104','101'])]}">
+								<group />
+								<group />
+								<group />
+								<group />
+								<button name="%(wizard_call_assessment_agent)d" string="Create Assessment As Agent"
+									type="action" />
+							</group>
+							<newline />
+							<field name="assessment_agent_id" readonly="0" nolabel="1"
+								colspan="4">
+								<tree string="EAD Assessment" limit="40" min_rows="10">
+									<field colspan="3" name="ref_id" />
+									<field colspan="3" name="client_person_id" />
+									<field colspan="3" name="agent_person_id" />
+									<field colspan="3" name="driving_assessment_type" />
+									<field colspan="3" name="paying" />
+									<field colspan="3" name="state" />
+								</tree>
+							</field>
+						</page>
+						<page string="Ax as Client" attrs="{'invisible':[('state','=','none')]}">
+							<group colspan="4" col="6" attrs="{'invisible':[('filter_user_id','in',['34','35','37','38','39','103','104','101'])]}">
+
+								<group />
+								<group />
+								<group />
+								<group />
+								<group colspan="1" col="1"
+									attrs="{'invisible':[('is_dvla','=',True)]}">
+									<button name="%(wizard_call_assessment)d" string="Create Assessment As Client"
+										type="action" />
+								</group>
+								
+							</group>
+							<newline />
+							<field name="assessment_client_id" readonly="0" nolabel="1"
+								colspan="4">
+								<tree string="EAD Assessment" limit="40" min_rows="10">
+									<field colspan="3" name="ref_id" />
+									<field colspan="3" name="client_person_id" />
+									<field colspan="3" name="agent_person_id" />
+									<field colspan="3" name="driving_assessment_type" />
+									<field colspan="3" name="paying" />
+									<field colspan="3" name="state" />
+								</tree>
+							</field>
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_cmc_person_tree" model="ir.ui.view">
+			<field name="name">cmc.person.tree</field>
+			<field name="model">cmc.person</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Person List" limit="10" min_rows="1">
+					<field name="display_name" />
+					<field name="person_id" string="Ref No" />
+					<field name="first_name" string="First Name" />
+					<field name="last_name" string="Last Name" />
+					<field name="organisation_name" string="Organisation" />
+					<field name="birth_date" />
+					<field name="address_line_1" />
+					<field name="postcode" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_person" model="ir.actions.act_window">
+			<field name="name">Find A Person or Organisation</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.person</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="context">{'userid':uid}</field>
+			<field name="view_id" ref="view_cmc_person_tree" />
+		</record>
+
+		<!-- END OF CALL HANDLING-LOG NEW CALL -->
+
+
+
+	</data>
+</openerp>
+        

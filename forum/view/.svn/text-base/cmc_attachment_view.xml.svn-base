@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	   <record id="view_cmc_attachment_form" model="ir.ui.view">
+	    <field name="name">cmc.attachment.form</field>
+	    <field name="model">cmc.attachment</field>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	        <form string="Attachment">
+                <group string="Attachment is Related to" colspan="4" col="2">
+                    <field name="person_id" select="2" readonly="1" />
+                    <field name="call_id" select="2" readonly="1" />
+                    <field name="user_id" select="2" readonly="1" />
+                    <field name="communication_id" select="2" readonly="1" />
+                    <field name="enquiry_id" select="2" readonly="1" />
+                    <field name="assessment_id" select="2" readonly="1" />
+                </group>
+                <group colspan="4" col="2">
+                    <field colspan="4" name="name" string="Name (mandatory)" />
+                    <field colspan="4" name="description" string="Description" />
+                    <field colspan="4" name="datas_fname" string="File Name" readonly="1"/>
+                    <field colspan="4" name="datas" filename="datas_fname"
+                        string="File" />
+                </group>
+	        </form>
+	    </field>
+	</record>
+	
+     <record id="view_cmc_attachment_tree" model="ir.ui.view">
+        <field name="name">cmc.attachment.tree</field>
+        <field name="model">cmc.attachment</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Attachments">
+                <field name="date" />
+                <field name="user_id" />
+                <field name="name" />
+                <field name="datas_fname" />
+                <field name="person_id" select="2" readonly="1" />
+                <field name="call_id" select="2" readonly="1" />
+                <field name="communication_id" select="2" readonly="1" />
+                <field name="enquiry_id" select="2" readonly="1" />
+                <field name="assessment_id" select="2" readonly="1" />
+            </tree>
+        </field>
+    </record>
+    
+    </data>
+</openerp>

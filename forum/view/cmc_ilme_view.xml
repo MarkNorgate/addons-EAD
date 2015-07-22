@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+         <record id="view_ilme_confirm_details" model="ir.ui.view">
+			<field name="name">cmc.assessment.pending.booking.appointment.tree
+			</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Apointment Booking">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_ilme_confirm_details" model="ir.actions.act_window">
+			<field name="name">Pending Appointment Booking</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_ilme_confirm_details"></field>
+			<field name="domain"
+				eval="[('driving_assessment_type','in',['wheelchair_assessment']),('state','=','pending_client_reponse')]"></field>
+		</record>
+<!--PENDING APPOINTMENT BOOKING-->
+		<record id="view_ilme_pending_appointment_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.pending.booking.appointment.tree
+			</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Apointment Booking" limit="30" min_rows="10"
+                    colors="green:state=='pending_book_assessor'">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_ilme_pending_appointment_booking" model="ir.actions.act_window">
+			<field name="name">Pending Appointment Booking</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_ilme_pending_appointment_tree"></field>
+			<field name="domain"
+				eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','pending_book_assessor')]"></field>
+		</record>
+		
+<!--		PENDING ASSESSMENT WORK FORM -->
+		<record id="view_ilme_print_assessment_paper_work_form_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.paperwork.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Print Assessment Paper Work" limit="30"
+					min_rows="10" colors="green:state=='print_assessment_paperwork'">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_ilme_print_assessment_paper_work" model="ir.actions.act_window">
+			<field name="name">Print Assessment Paper Work</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_ilme_print_assessment_paper_work_form_tree" />
+			<field name="domain" eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','print_assessment_paperwork')]"></field>
+		</record>
+<!--		END OF PRINT ASSESSMENT PAPER WORK SEND APPOINTMENT LETTER-->
+
+
+
+<!--    SEND APPOINTMENT LETTER-->
+		<record id="view_ilme_send_appointment_letter_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.appointment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Send Appointment Letter" limit="30" min_rows="10"
+					colors="green:state=='pending_send_appointment_letter'">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_ilme_send_appointment_letter" model="ir.actions.act_window">
+			<field name="name">Send Appointment Letter</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			
+			<field name="domain" eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','pending_send_appointment_letter')]"></field>
+			<field name="view_id" ref="view_ilme_send_appointment_letter_tree" />
+		</record>
+		<!--END OF SEND APPOINTMENT LETTER -->
+		
+		<record id="view_ilme_pending_appointment_confirmation_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.appointment.confirmation.tree
+            </field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Pending Apointment Confirmation" limit="30" min_rows="10"
+                    colors="green:state=='pending_appointment_confirmation'">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+                    <field colspan="3" name="state" string="Status" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_ilme_pending_appointment_confirmation"
+            model="ir.actions.act_window">
+            <field name="name">Pending Appointment Confirmation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_ilme_pending_appointment_confirmation_tree" />
+            <field name="domain"
+                eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','pending_appointment_confirmation')]"></field>
+        </record>
+
+        <!-- END OF PENDING APPOINTMENT CONFIRMATION -->
+
+        <!--PAPER ASSESSMENT PAPER WORK -->
+        <record id="view_ilme_pending_assessment_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.pending.assessment.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Print Assessment Report" limit="30" min_rows="10"
+                    colors="green:state=='pending_assessment'">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+                    <field colspan="3" name="state" string="Status" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_ilme_pending_assessment" model="ir.actions.act_window">
+            <field name="name">Pending Assessment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_ilme_pending_assessment_tree" />
+            <field name="domain"
+                eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','pending_assessment')]"></field>
+        </record>
+
+        <!-- END OF PENDING ASSESMENT PACK -->
+
+        <!-- PENDING REPORT COMPLETEION -->
+        <record id="view_ilme_pending_report_completion_tree" model="ir.ui.view">
+            <field name="name">cmc.pending.report.completion.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="All ILME Assessment Records" limit="30" min_rows="10"
+                    colors="green:state=='pending_report_completion'">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+                    <field colspan="3" name="state" string="Status" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_ilme_pending_report_completion" model="ir.actions.act_window">
+            <field name="name">All ILME Assessment Records</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_ilme_pending_report_completion_tree" />
+            <field name="domain"
+                eval="[('driving_assessment_type','not in',['full_driving_assessment','drive_from_wheelchair_assessment','driving_legal_assessment','driving_adaptation_assessment','mo_map_adapdation_assessment','review_assessment','hoist_demo','momap_access'])]"></field>
+        </record>
+
+        <!-- END OF REPORT COMPLETEION -->
+
+
+        <!-- PENDING DRAFT REPORT -->
+        <record id="view_ilme_pending_draft_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.draft.approval.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Pending Draft Form" limit="30" min_rows="10"
+                    colors="green:state=='pending_draft_report'">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+                    <field colspan="3" name="state" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_ilme_pending_draft_approval" model="ir.actions.act_window">
+            <field name="name">Pending Draft Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_ilme_pending_draft_tree" />
+            <field name="domain"
+                eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','pending_draft_report')]"></field>
+        </record>
+
+        <!-- END OF PENDING DRAFT REPORT -->
+
+        <!--PENDING PRINT AND SEND REPORT -->
+        <record id="view_ilme_print_assessment_report_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Print Assessment Report" limit="30" min_rows="10"
+                    colors="green:state=='pending_print_send_report'">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+                    <field colspan="3" name="state" string="Status" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_ilme_report_printing" model="ir.actions.act_window">
+            <field name="name">Print Assessment Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_ilme_print_assessment_report_tree" />
+            <field name="domain"
+                eval="[('driving_assessment_type','in',['car_seat_harness_assessment','passenger_assessment','wheelchair_assessment']),('state','=','pending_print_send_report')]"></field>
+        </record>
+        <!--END OF PENDING PRINT AND SEND REPORT -->
+		
+		
+		
+		
+		
+
+	</data>
+</openerp>

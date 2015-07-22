@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       <record id="view_cmc_communication_form" model="ir.ui.view">
+            <field name="name">cmc.communication.form</field>
+            <field name="model">cmc.communication</field>
+            <field name="priority" eval="2" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Communication Entry">
+                    <group string="Envelope" colspan="4">
+	                    <field name="date" select="1" string="Communication Date"/>
+	                    <field name="user_id" select="1" string="User"/>
+	                    <field name="from"/>
+	                    <field name="to" />
+                    </group>
+                    <group string="Related with" colspan="4">
+                        <field name="person_id" select="2" />
+                        <field name="call_id"  />
+                        <field name="assessment_id"/>
+                        <field name="enquiry_id"  />
+                    </group>
+                    <field colspan="4" name="type" string="Channel" select="1"  />
+                    <field colspan="4" name="subject" select="1"  />
+                    <field colspan="4" name="message" select="1"  />
+                    <field colspan="4" name="attachments" nolabel="1" string="Attachments">
+                        
+                    </field>
+                </form>
+            </field>
+        </record>
+     <record id="view_cmc_communication_tree" model="ir.ui.view">
+            <field name="name">cmc.communication.tree</field>
+            <field name="model">cmc.communication</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Communication Log" limit="30" min_rows="10">
+                    <field name="date" />
+                    <field name="type" />
+                    <field name="from" string="From"/>
+                    <field name="to"  string="To"/>
+                    <field name="subject" />
+                    <field name="message" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_cmc_communication" model="ir.actions.act_window">
+            <field name="name">CMC Communication</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.communication</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_cmc_communication_tree" />
+        </record>
+       
+  </data>
+  </openerp>
+   

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_cmc_wheelchair_form" model="ir.ui.view">
+			<field name="name">cmc.wheelchair.assessment.form</field>
+			<field name="model">cmc.wheelchair.assessment</field>
+
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="CMC Drive From Wheel Chair Assessment ">
+					<field colspan="3" name="medical_history" />
+					<field colspan="3" name="social_situation" />
+					<field colspan="3" name="mobility" />
+					<field colspan="3" name="transfer_technique" />
+					<field colspan="3" name="driving_experience" />
+					<field colspan="3" name="physical_range" />
+					<field colspan="3" name="summary" />
+					<field colspan="3" name="vision" />
+					<field colspan="3" name="in_car_assessment" />
+					<field colspan="3" name="primary" />
+					<field colspan="3" name="secondary" />
+					<field colspan="3" name="seating_security" />
+					<field colspan="3" name="ingress_egress" />
+					<field colspan="3" name="recommendation" />
+					<field colspan="3" name="future_action" />
+
+				</form>
+			</field>
+		</record>
+
+
+
+		<record id="view_cmc_wheelchair_tree" model="ir.ui.view">
+			<field name="name">cmc.wheelchair.assessment.tree</field>
+			<field name="model">cmc.wheelchair.assessment</field>
+			<field name="priority" eval="2" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Drive From Wheelchair Asssessment" limit="10"
+					min_rows="1">
+					<field colspan="3" name="assessment_id" />
+					<field colspan="3" name="version" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_wheelchair_assessment" model="ir.actions.act_window">
+			<field name="name">CMC Drive From Wheel Chair Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.wheelchair.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_wheelchair_form" />
+		</record>
+
+	</data>
+</openerp>
+        

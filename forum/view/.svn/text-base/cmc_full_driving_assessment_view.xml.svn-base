@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_cmc_full_driving_form" model="ir.ui.view">
+			<field name="name">cmc.full.driving.assessment.form</field>
+			<field name="model">cmc.full.driving.assessment</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field> 
+			<field name="arch" type="xml">
+				<form string="CMC Full Driving Asssessment ">
+				    <group colspan="2" string="Details" >
+				        <field name="assessment_id" colspan="2" readonly="1"/>
+				        <field name="version" colspan="2" readonly="1"/>
+				        <field name="state" colspan="2" readonly="1" invisible="1" />
+				    </group>
+ 					<group colspan="3" string="Current Vehicle">
+						<field colspan="3" name="current_method_vehicle_operation" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="current_method_notes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group colspan="3" string="Vision">
+						<field colspan="3" name="client_read_number_plate" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="corrective_lense" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="measure_dlva_satisfaction" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="minimum_requirement" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="minimum_requirement_by"
+							invisible="not context.get('minimum_requirement',False)" />
+						<field colspan="3" name="double_vision" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="colour_blindness" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="vision_notes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+
+					</group>
+					 <group colspan="3" string="Medical Details">
+						<field colspan="3" name="diagnosis_date" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="condition_affect_client" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="additional_factor" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<separator string="Direct Medical Questions" colspan="2" />
+						<field colspan="3" name="disease_nervous_system" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="heart_disease" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="stroke" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="headache" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="involuntary_movement" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="fits" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="pain" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="dizziness" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="muscle_disease" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="hypertension" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="diabetes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="ischaemic_attacks" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="spasm" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="fatigue" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group colspan="3" string="Social Situation">
+
+						<field colspan="3" name="family_detail" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="environment" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="study" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="equipment_transport" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group string="Mobility" colspan="3">
+						<field colspan="2" name="mobility_indoor" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="mobility_outdoor" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group string="Transfer Technique" colspan="3">
+						<field colspan="2" name="method_within_home" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="current_method_transfer" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group string="WheelChair Details" colspan="3">
+						<field colspan="3" name="drive_seated" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="travel_passenger" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="1" name="wheelchair_make" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="1" name="wheelchair_model" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<field colspan="2" name="crash_status" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group string="Physical Range of Movement and Strength"
+						colspan="4">
+						<field colspan="2" name="head_neck" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="trunk" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<separator
+							string="Check range of strength, movement and dexterity of the upper limbs to operate driving controls"
+							colspan="1" />
+						<newline />
+						<field colspan="2" name="shoulders" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="elbows" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="arms" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="wrists" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="hands" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<group />
+						<group />
+						<group />
+						<field colspan="2" name="strength" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="physical_notes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<group />
+						<group />
+						<group />
+						<field colspan="2" name="hips" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="knees" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="ankles" />
+						<field colspan="2" name="l_strength" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<field colspan="3" name="l_notes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<separator string="Sensation" colspan="4" />
+						<field colspan="3" name="sensation" attrs="{'readonly':[('state','=','non_edit')]}"/>
+
+					</group>
+					<group string="Comments and Location of Difficulties"
+						colspan="3">
+						<field colspan="2" name="control_movement" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="co_ordination" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="muscle_fatigue" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="general_fatigue" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="muscle_tone" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="proprioception" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<group string="" colspan="3">
+							<field colspan="1" name="dificulties_height" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="dificulties_weight" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="dificulties_hand_dominanace" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						</group>
+						<field colspan="1" name="dificulties_notes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+
+					<group string="Cognitive Screening" colspan="3">
+						<field colspan="3" name="cognitive_screening" attrs="{'readonly':[('state','=','non_edit')]}"/>
+					</group>
+					<group string="In Ear Car Control" colspan="3">
+						<field colspan="3" name="car_control_vehicle" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="car_control_vehicle_control" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="3" name="current_damage" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="vehicle_access" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="2" name="risks_identified" attrs="{'readonly':[('state','=','non_edit')]}"/>
+
+						<group colspan="4" string="">
+							<separator string="Vehicles" colspan="2" />
+							<newline />
+							<label string="Vehicle 
+						Control" colspan="1" />
+							<label string="Method Of Control" colspan="1" />
+							<label string="Recommendation" colspan="1" />
+							<newline />
+							<label string="Steering" colspan="1" />
+							<field colspan="1" name="steering_control" string=""/>
+							<field colspan="1" name="steering_recommendation" string=""/>
+							<newline />
+							<label string="Accelerator" colspan="1" />
+							<field colspan="1" name="accelerator_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="accelerator_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Brake" colspan="1" />
+							<field colspan="1" name="brake_control" string ="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="brake_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Gear 
+							 Selector" colspan="1" />
+							<field colspan="1" name="gear_control" string="" />
+							<field colspan="1" name="gear_recommendation" string="" />
+							<newline />
+							<label string="Hand 
+							 Brake Lever" colspan="1" />
+							<field colspan="1" name="hand_brake_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="hand_brake_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Ignition  Door locks" colspan="1" />
+							<field colspan="1" name="ignition_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="ignition_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<separator string="Secondary Switches" colspan="2" />
+							<newline/>
+							<label string="Secondary switches controls" colspan="1" />
+							<label string="Method Of Control" colspan="1" />
+							<label string="Recommendation" colspan="1" />
+							<newline />
+							<label string="Indicators" colspan="1" />
+							<field colspan="1" name="indicator_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="indicator_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Lights" colspan="1" />
+							<field colspan="1" name="lights_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="lights_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Windscreen Wipers" colspan="1" />
+							<field colspan="1" name="windscreen_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="windscreen_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Horn" colspan="1" />
+							<field colspan="1" name="horn_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="horn_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Mirrors" colspan="1" />
+							<field colspan="1" name="mirrors_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="mirrors_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Seating and seat 
+							 adjustment"
+								colspan="1" />
+							<field colspan="1" name="seat_arrangement_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="seat_arrangement_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Wheelchair stowage" colspan="1" />
+							<field colspan="1" name="wheelchair_stowage_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="wheelchair_stowage_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<label string="Wheelchair tie-down" colspan="1" />
+							<field colspan="1" name="wheelchair_tie_down_control" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="1" name="wheelchair_tie_down_recommendation" string="" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<group />
+							<group />
+							<group />
+							<field colspan="3" name="lessons" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="3" name="onroad_drive_notes" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						</group>
+					</group>
+
+					<group string="In-Car Perceptual and Cognitive Working Document"
+						colspan="3">
+						<field colspan="1" name="in_car_weather" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="1" name="in_car_traffic" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<field colspan="1" name="in_car_vehicle" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						<newline />
+						<group colspan="4" string="">
+							<field colspan="2"  name="in_car_control" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="2"  name="power_steering" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						</group>
+						<separator string="Pen Drives Check" colspan="3" />
+						<group colspan="4" string="">
+							<field colspan="2" name="eyesight" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="2" name="access" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<newline />
+							<field colspan="2" name="pen_drive_seating" attrs="{'readonly':[('state','=','non_edit')]}"/>
+							<field colspan="2" name="pen_drive_mirror" attrs="{'readonly':[('state','=','non_edit')]}"/>
+						</group>
+					</group>
+					
+					
+				</form>
+			</field>
+		</record>
+
+
+
+		<record id="view_cmc_full_driving_tree" model="ir.ui.view">
+			<field name="name">cmc.full.driving.assessment.tree</field>
+			<field name="model">cmc.full.driving.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Full Driving Asssessment" limit="1" min_rows="1">
+					<field colspan="3" name="assessment_id" />
+					<field colspan="3" name="version" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_full_driving_assessment" model="ir.actions.act_window">
+			<field name="name">CMC Full Driving Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.full.driving.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_full_driving_form" />
+		</record>
+
+	</data>
+</openerp>
+        

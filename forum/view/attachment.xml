@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- define a form view for momap referral attachment objects -->
+        <record id="view_momap_referral_attachments_form" model="ir.ui.view">
+            <field name="name">assessment.attachments.form</field>
+            <field name="model">assessment.attachments</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Manage Documents">
+                    <field colspan="4" name="name" string="Document Name" select="1" />
+                    <field colspan="4" name="datas_fname" select="1" />
+                    <field name="datas" filename="datas_fname" />
+                    <field name="import_url" widget="url" />
+                </form>
+            </field>
+        </record>
+        <!-- define a view for listing of the momap referral attachment objects -->
+        <record id="view_momap_referral_attachments_tree" model="ir.ui.view">
+            <field name="name">assessment.attachments.tree</field>
+            <field name="model">assessment.attachments</field>
+            <field name="type">tree</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+                <tree string="Momap Referral Documents">
+                    <field name="name" />
+                    <field name="datas_fname" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- add actions that will invoke the views above -->
+        <!-- wire the menu items to actions -->
+        <record id="action_momap_referral_attachment_form" model="ir.actions.act_window">
+            <field name="name">Assessment Documents</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">assessment.attachments</field>
+            <field name="view_type">form</field>
+        </record>
+    </data>
+</openerp>

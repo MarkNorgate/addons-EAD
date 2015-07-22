@@ -1,0 +1,126 @@
+<openerp>
+    <data noupdate="1">
+        <record id="cmc_person_sequence" model="ir.sequence.type">
+            <field name="name">CMC Person</field>
+            <field name="code">cmc.person</field>
+        </record>
+        <record id="cmc_person_sequence" model="ir.sequence">
+            <field name="name">CMC Person</field>
+            <field name="code">cmc.person</field>
+            <field eval="10" name="padding"/>
+            <field name="prefix">EAD</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        <record id="cmc_history_sequence" model="ir.sequence.type">
+            <field name="name">CMC History</field>
+            <field name="code">cmc.call.history</field>
+        </record>
+        <record id="cmc_history_sequence" model="ir.sequence">
+            <field name="name">CMC History</field>
+            <field name="code">cmc.call.history</field>
+            <field eval="10" name="padding"/>
+            <field name="prefix">CALL</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        
+        <record id="cmc_enquiry_sequence" model="ir.sequence.type">
+            <field name="name">CMC Action</field>
+            <field name="code">cmc.enquiry</field>
+        </record>
+        <record id="cmc_enquiry_sequence" model="ir.sequence">
+            <field name="name">CMC Action</field>
+            <field name="code">cmc.enquiry</field>
+            <field eval="10" name="padding"/>
+            <field name="prefix">ENQ</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        <record id="cmc_assessment_sequence" model="ir.sequence.type">
+            <field name="name">CMC Assessment</field>
+            <field name="code">cmc.assessment</field>
+        </record>
+        <record id="cmc_assessment_sequence" model="ir.sequence">
+            <field name="name">CMC Assessment</field>
+            <field name="code">cmc.assessment</field>
+            <field eval="10" name="padding"/>
+            <field name="prefix">A</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        <record id="cmc_equipment_sequence" model="ir.sequence.type">
+            <field name="name">CMC Equipment</field>
+            <field name="code">cmc.equipement.supply.process</field>
+        </record>
+        <record id="cmc_equipment_sequence" model="ir.sequence">
+            <field name="name">CMC Equipment</field>
+            <field name="code">cmc.equipement.supply.process</field>
+            <field eval="10" name="padding"/>
+            <field name="prefix">EQUIP</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        <record id="cmc_workshop_sequence" model="ir.sequence.type">
+            <field name="name">CMC Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+        </record>
+        <record id="cmc_workshop_sequence" model="ir.sequence">
+            <field name="name">CMC Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+            <field eval="0" name="padding"/>
+            <field eval="90000" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        <record id="cmc_workshop_adaptation_sequence" model="ir.sequence.type">
+            <field name="name">CMC Adaptation Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+        </record>
+        <record id="cmc_workshop_adaptation_sequence" model="ir.sequence">
+            <field name="name">CMC Adaptation Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+            <field eval="0" name="padding"/>
+            <field eval="70000" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        
+        
+        <record id="cmc_wo_workshop_sequence" model="ir.sequence.type">
+            <field name="name">CMC WO Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+        </record>
+        <record id="cmc_wo_workshop_sequence" model="ir.sequence">
+            <field name="name">CMC WO Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+            <field name="prefix">WS</field>
+            <field eval="10" name="padding"/>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        <record id="cmc_wo_workshop_adaptation_sequence" model="ir.sequence.type">
+            <field name="name">CMC WO Adaptation Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+        </record>
+        <record id="cmc_wo_workshop_adaptation_sequence" model="ir.sequence">
+            <field name="name">CMC WO Adaptation Workshop</field>
+            <field name="code">cmc.workshop.process</field>
+            <field name="prefix">AD</field>
+            <field eval="0" name="padding"/>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+        
+        
+        <record id="cmc_order_equipment_sequence" model="ir.sequence.type">
+            <field name="name">CMC Equipment Master</field>
+            <field name="code">cmc.ordered.equipment.master</field>
+        </record>
+        <record id="cmc_order_equipment_sequence" model="ir.sequence">
+            <field name="name">CMC Equipment Master</field>
+            <field name="code">cmc.ordered.equipment.master</field>
+            <field eval="0" name="padding"/>
+            <field eval="20000" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+    </data>
+</openerp>

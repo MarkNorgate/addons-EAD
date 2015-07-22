@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	<!-- 		Assessment Statistics Report -->
+		<report auto="False" header="False" id="assessment_statistics_report" 
+			model="cmc.assessment" name="assessment.statistics.report"
+			rml="forum/MSc Reports/Assessment Statistics Report.odt" string="Assessment Statistics Report"
+			menu="False" />
+		<record model="ir.actions.report.xml" id="assessment_statistics_report">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+        <!-- 		Contacts Statistics Report -->
+		<report auto="False" header="False" id="contacts_statistics_report" 
+			model="cmc.assessment" name="contacts.statistics.report"
+			rml="forum/MSc Reports/Contacts Statistics Report.odt" string="Contacts Statistics Report"
+			menu="False" />
+		<record model="ir.actions.report.xml" id="contacts_statistics_report">
+            <field name="report_type">oo-doc</field>
+        </record>
+		<!-- PENDING ASSESSMENT PACK -->
+		<report auto="False" header="False" id="report_cmc_assessment"
+			model="cmc.enquiry" name="pending.assessment"
+			rml="eMobility/MSc Reports/Assessment_Client_Form.odt" string="Assessment Report"
+			menu="False" />
+		<record model="ir.actions.report.xml" id="report_cmc_assessment">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+		<!-- PENDING ASSESSMENT PACK CLIENT ASSESSMENT-->
+		<report auto="False" header="False" id="report_cmc_assessment_client"
+			model="cmc.assessment" name="pending.assessment.client"
+			rml="eMobility/MSc Reports/Assessment_Client_Form.odt" string="Assessment Client Form"
+			menu="False" />
+		<record model="ir.actions.report.xml" id="report_cmc_assessment_client">
+            <field name="report_type">oo-doc</field>
+        </record>
+			
+		<!-- PENDING ASSESSMENT PACK AGENT ASSESSMENT-->
+        <report auto="False" header="False" id="report_cmc_assessment_agent"
+            model="cmc.assessment" name="pending.assessment.agent"
+            rml="eMobility/MSc Reports/Assessment_Agent_Form.odt" string="Assessment Agent Form"
+            menu="False" />
+       <record model="ir.actions.report.xml" id="report_cmc_assessment_agent">
+            <field name="report_type">oo-doc</field>
+        </record>
+			
+		<!-- INFO PACK LETTER -->
+		<report auto="False" header="False" id="info_pack_letter"
+			model="cmc.assessment" name="info.pack.letter" rml="eMobility/MSc Reports/info_pack_letter.odt"
+			string="Info Pack Letter" menu="False" />
+		<record model="ir.actions.report.xml" id="info_pack_letter">
+            <field name="report_type">oo-doc</field>
+        </record>
+		<!-- INFO PACK CHASE UP LETTER -->
+        <report auto="False" header="False" id="info_pack_letter_chaseup_letter"
+            model="cmc.assessment" name="info.pack.chaseup.letter" rml="eMobility/MSc Reports/infopack_chaseup_letter_client.odt"
+            string="Info Pack Chase Up Letter" menu="False" />
+        <record model="ir.actions.report.xml" id="info_pack_letter_chaseup_letter">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+        <report auto="False" header="False" id="info_pack_letter_chaseup_letter_agent"
+            model="cmc.assessment" name="info.pack.chaseup.letter" rml="eMobility/MSc Reports/infopack_chaseup_letter_client.odt"
+            string="Info Pack Chase Up Letter" menu="False" />
+        <record model="ir.actions.report.xml" id="info_pack_letter_chaseup_letter_agent">
+            <field name="report_type">oo-doc</field>
+        </record>
+		<!-- CMC MAIN BROCHURE -->
+		<report auto="False" header="False" id="cmc_main_brochure_report"
+			model="cmc.assessment" name="cmc.main.brochure" rml="eMobility/report/cmc_main_brochure.rml"
+			string="CMC Main Brochure" menu="False" />
+
+		<!-- ADMIN CHECKLIST -->
+		<report auto="False" header="False" id="admin_checklist" model="cmc.assessment"
+			name="admin.checklist" rml="eMobility/MSc Reports/admin_checklist.odt"
+			string="Admin CheckList" menu="False" />
+		<record model="ir.actions.report.xml" id="admin_checklist">
+            <field name="report_type">oo-doc</field>
+        </record>
+			
+		<!-- DRIVING AX REPORT -->
+		<report auto="False" header="False" id="driving_ax_report"
+			model="cmc.assessment" name="driving.ax" rml="eMobility/Report Template/full_driving_assessment.odt"
+			string="Driving Ax Report" menu="False" />
+        <record model="ir.actions.report.xml" id="driving_ax_report">
+            <field name="report_type">oo-doc</field>
+        </record>
+
+		<!-- DRVING LETTER -->
+		<report auto="False" header="False" id="driving_ax_letter_report"
+			model="cmc.assessment" name="driving.ax.letter" rml="forum/Msc Reports/Information request.odt"
+			string="Driving Ax Letter" menu="False" />
+		<record model="ir.actions.report.xml" id="driving_ax_letter_report">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+        
+		<!-- PRINT ASSESSMENT PACK -->
+		<report auto="False" header="False" id="print_assessment_paperwork_report"
+			model="cmc.assessment" name="print.assessment.paperwork"
+			rml="eMobility/Paperwork Template/full_driving_assessment.odt" string="Print Assessment Pack"
+			menu="False" />
+		<record model="ir.actions.report.xml" id="print_assessment_paperwork_report">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        ILME FORMS-->
+<!--        1) MOBIITY FORM-->  
+        <report auto="False" header="False" id="ilme_mobility_form"
+            model="cmc.assessment" name="ilme.mobility.form"
+            rml="eMobility/Paperwork Template/mobility_assessment_form.odt" string="ILME AX Form"
+            menu="False" />
+        <record model="ir.actions.report.xml" id="ilme_mobility_form">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        2) Enviromental Form-->
+        <report auto="False" header="False" id="ilme_enviromental_form"
+            model="cmc.assessment" name="ilme.enviromental.form"
+            rml="eMobility/Paperwork Template/enviromental_assessment_form.odt" string="Enviromental AX Form"
+            menu="False" />
+        <record model="ir.actions.report.xml" id="ilme_enviromental_form">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        3) Combined Enviromental and Mobility Forms-->
+        <report auto="False" header="False" id="ilme_mobility_enviromental_form"
+            model="cmc.assessment" name="ilme.mobility.enviromental.form"
+            rml="eMobility/Paperwork Template/enviromenrmobility_assessment_form.odt" string="Combined Mobility and Enviromental AX Form"
+            menu="False" />
+        <record model="ir.actions.report.xml" id="ilme_mobility_enviromental_form">
+            <field name="report_type">oo-doc</field>
+        </record>
+            
+ 
+         <!-- INVOICE -->
+         
+         <report auto="False" header="False" id="dvla_invoice" model="cmc.assessment" name="dvla.invoice"
+        rml="eMobility/MSc Reports/dvla_invoice.odt" string="Dvla Invoice" menu="False" />
+        <record model="ir.actions.report.xml" id="dvla_invoice">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+        <report auto="False" header="False" id="agent_invoice" model="cmc.assessment" name="agent.invoice"
+        rml="eMobility/MSc Reports/agent_invoice.odt" string="Agent Invoice" menu="False" />
+        <record model="ir.actions.report.xml" id="agent_invoice">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+         <report auto="False" header="False" id="client_invoice" model="cmc.assessment" name="client.invoice"
+        rml="eMobility/MSc Reports/client_invoice.odt" string="Client Invoice" menu="False" />
+        <record model="ir.actions.report.xml" id="client_invoice">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        PAYMENT AND REFUND LETTERS-->
+        <report auto="False" header="False" id="payment_chase_client" model="cmc.assessment" name="payment.chaseup.letter"
+        rml="eMobility/MSc Reports/payment_chasup_letter.odt" string="Payment Chaseup Letter to Client" menu="False" />
+        <record model="ir.actions.report.xml" id="payment_chase_client">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+         <report auto="False" header="False" id="refund_client" model="cmc.assessment" name="payment.refund.letter"
+        rml="eMobility/MSc Reports/payment_refund_letter.odt" string="Refund Letter" menu="False" />
+        <record model="ir.actions.report.xml" id="refund_client">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        ASSESSMENT REPORT COVERING LETTER -->
+        
+        <report auto="False" header="False" id="assessnent_report_covering_letter_client" model="cmc.assessment" name="assessment.report.covering.letter.client"
+        rml="eMobility/MSc Reports/assessment_report_covering_letter_client.odt" string="Assessment Report Covering Letter To Client" menu="False" />
+        <record model="ir.actions.report.xml" id="assessnent_report_covering_letter_client">
+            <field name="report_type">oo-doc</field>
+        </record>
+        <report auto="False" header="False" id="assessnent_report_covering_letter_agent" model="cmc.assessment" name="assessment.report.covering.letter.agent"
+        rml="eMobility/MSc Reports/assessment_report_covering_letter_agent.odt" string="Assessment Report Covering Letter To Agent" menu="False" />
+        <record model="ir.actions.report.xml" id="assessnent_report_covering_letter_agent">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+        
+<!--        WORKSHOP FORMS-->
+		
+<!--		1) ENQUIRY FORM	-->
+		<report auto="False" header="False" id="workshop_adaptation_enquiry_form" model="cmc.workshop.process" name="workshop.enquiry.form"
+        rml="eMobility/Workshop Reports/Adaptation Enquiry Form.odt" string="Adaptation Enquiry Form" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_adaptation_enquiry_form">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        2) Adaptaion Quote-->
+		<report auto="False" header="False" id="workshop_adaptation_client_agent_paying" model="cmc.workshop.process" name="workshop.adaptation.client.agent.form"
+        rml="eMobility/Workshop Reports/workshop_adaptation_client_agent_paying.odt" string="Adaptation Enquiry Form" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_adaptation_client_agent_paying">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        3) Chase up letters to Client and Agent -->
+        <report auto="False" header="False" id="workshop_adaptation_chaseup_letter_client" model="cmc.workshop.process" name="workshop.chaseup.letter.client"
+        rml="eMobility/Workshop Reports/workshop_chaseup_letter_client.odt" string="Chase Up Letter" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_adaptation_chaseup_letter_client">
+            <field name="report_type">oo-doc</field>
+        </record>
+        <report auto="False" header="False" id="workshop_adaptation_chaseup_letter_agent" model="cmc.workshop.process" name="workshop.chaseup.letter.agent"
+        rml="eMobility/Workshop Reports/workshop_chaseup_letter_agent.odt" string="Chase Up Letter" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_adaptation_chaseup_letter_agent">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        4) Appointment Letters to client and agent-->
+		<report auto="False" header="False" id="workshop_adaptation_apmt_letter_client" model="cmc.workshop.process" name="workshop.apmt.letter"
+        rml="eMobility/Workshop Reports/workshop_apmt_letter.odt" string="Apointment Letter" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_adaptation_apmt_letter_client">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        6)Delivery Checlist-->
+        <report auto="False" header="False" id="workshop_adaptation_delivery_checklist" model="cmc.workshop.process" name="workshop.delivery.checklist"
+        rml="eMobility/Workshop Reports/workshop_adaptation_delivery_checklist.odt" string="Adaptation Delivery Checklist" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_adaptation_delivery_checklist">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        Jobsheet-->
+		<report auto="False" header="False" id="workshop_jobsheet" model="cmc.workshop.process" name="workshop.jobsheet"
+        rml="eMobility/Workshop Reports/workshop_adaptation_jobsheet.odt" string="Adaptation jobsheet" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_jobsheet">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        Repair Estimate Sheet-->
+		<report auto="False" header="False" id="workshop_repair_estimate" model="cmc.workshop.process" name="workshop.repair.estimate"
+        rml="eMobility/Workshop Reports/repair_estimate.odt" string="Workshop Repair Estimate" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_repair_estimate">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+        
+<!--        Workshop REports-->
+<!--        1) pct REFURB rEPORT-->
+        <report auto="False" header="False" id="workshop_pct_refurb" model="cmc.workshop.process" name="workshop.pct.refurb"
+        rml="eMobility/Workshop Reports/PCT Refurb Sheet.odt" string="PCT Refurb Sheet" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_pct_refurb">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--            2) PDI manual Sheet-->
+        <report auto="False" header="False" id="workshop_pdi_manual" model="cmc.workshop.process" name="workshop.pdi.manual"
+        rml="eMobility/Workshop Reports/PDI manual Sheet.odt" string="PDI manual Sheet" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_pdi_manual">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--         3) PDI Power Sheet-->  
+        <report auto="False" header="False" id="workshop_pdi_power" model="cmc.workshop.process" name="workshop.pdi.power"
+        rml="eMobility/Workshop Reports/PDI sheet power.odt" string="PDI sheet power" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_pdi_power">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--      4) Service and repair jobsheet-->
+        <report auto="False" header="False" id="workshop_service_repair_jobsheet" model="cmc.workshop.process" name="workshop.service.repair.jobsheet"
+        rml="eMobility/Workshop Reports/Serive and Repair JobSheet.odt" string="Serive and Repair JobSheet" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_service_repair_jobsheet">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--        5) Service and collection selivery sheet-->
+        <report auto="False" header="False" id="workshop_service_collection_delivery" model="cmc.workshop.process" name="workshop.service.collection.delivery"
+        rml="eMobility/Workshop Reports/Service and Repair Collection Delivery sheet.odt" string="Service and Repair Collection Delivery sheet" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_service_collection_delivery">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--            6) Serive repair loan requirement form-->
+        <report auto="False" header="False" id="workshop_service_repair_loan" model="cmc.workshop.process" name="workshop.service.repair.loan"
+        rml="eMobility/Workshop Reports/Service and Repair loan equipment form.odt" string="Service and Repair loan equipment form" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_service_repair_loan">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--            7) Service and repair order form-->
+        <report auto="False" header="False" id="workshop_service_repair_order" model="cmc.workshop.process" name="workshop.service.repair.order"
+        rml="eMobility/Workshop Reports/Service and Repair order form.odt" string="Service and Repair order form" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_service_repair_order">
+            <field name="report_type">oo-doc</field>
+        </record>
+        
+<!--            8) Service and repair quote estimate-->
+        <report auto="False" header="False" id="workshop_service_repair_quote" model="cmc.workshop.process" name="workshop.service.repair.quote"
+        rml="eMobility/Workshop Reports/Service and Repair quote or estimate.odt" string="Service and Repair quote or estimate" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_service_repair_quote">
+            <field name="report_type">oo-doc</field>
+        </record>
+<!--                9) Serive and repair return form-->
+        <report auto="False" header="False" id="workshop_service_repair_return" model="cmc.workshop.process" name="workshop.service.repair.return"
+        rml="eMobility/Workshop Reports/Service and Repair returns form.odt" string="Service and Repair returns form" menu="False" />
+        <record model="ir.actions.report.xml" id="workshop_service_repair_return">
+            <field name="report_type">oo-doc</field>
+        </record>
+            
+            
+<!--            HANDOVER NOTE-->
+        <report auto="False" header="False" id="equipment_supply_handover_note" model="cmc.equipement.supply.process" name="equipment.supply.handover.note"
+        rml="eMobility/MSc Reports/Handover Forms.odt" string="Handover Note" menu="False" />
+        <record model="ir.actions.report.xml" id="equipment_supply_handover_note">
+            <field name="report_type">oo-doc</field>
+        </record>
+             <!-- 		Appointment Statistics Report -->
+		<report auto="False" header="False" id="export_appointment_report" 
+			model="cmc.assessment" name="assessment.statistics.report.all"
+			rml="forum/MSc Reports/All Appointment Stats.ods" string="Appointments List"
+			menu="False" />
+		<record model="ir.actions.report.xml" id="export_appointment_report">
+            <field name="report_type">oo-xls</field>
+        </record>
+        
+	</data>
+</openerp>

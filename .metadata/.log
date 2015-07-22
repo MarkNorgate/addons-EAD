@@ -1,0 +1,30 @@
+!SESSION 2011-03-31 11:15:35.500 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\OpenErpSever\DEV-5550-5560-5559\openerp-server-5.0.15\bin\addons
+
+!ENTRY org.eclipse.jface 2 0 2011-03-31 11:15:39.484
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2011-03-31 11:15:39.484
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Class Browser,
+		Show Class Browser,
+		Category(org.python.pydev.ui.category.source,Pydev - Editor,Pydev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.php.debug.core 4 4 2011-03-31 11:15:40.546
+!MESSAGE The debug port 10000 is in use. Please select a different port for the debugger.

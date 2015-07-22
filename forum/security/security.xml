@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <record id="lang_en_GB" model="res.lang">
+            <field name="code">en_GB</field>
+            <field name="name">English (UK)</field>
+            <field name="translatable">True</field>
+            <field name="date_format">%d/%m/%Y</field>
+        </record>
+    </data>
+	<data noupdate="0">
+
+		<record model="res.groups" id="group_cmc_administrator">
+			<field name="name">Mobility Administrator</field>
+		</record>
+		<record model="res.groups" id="group_reception_user">
+			<field name="name">Mobility Reception User</field>
+		</record>
+		<record model="res.groups" id="group_adi_user">
+			<field name="name">Mobility ADI User</field>
+		</record>
+
+		<record model="res.groups" id="group_ilme_user">
+			<field name="name">Mobility ILME User</field>
+		</record>
+		<record model="res.groups" id="group_workshop_user">
+			<field name="name">Mobility Workshop User</field>
+		</record>
+		<record model="res.groups" id="group_adaptations_user">
+			<field name="name">Mobility Adaptations User</field>
+		</record>
+		<record model="res.groups" id="group_accounts_user">
+			<field name="name">Mobility Accounts User</field>
+		</record>
+
+		<!-- CMC ADMINISTRATOR -->
+		<!--<record model="ir.ui.menu" id="menu_cmc_administration">
+			<field eval="[(6,0,[ref('group_cmc_administrator')])]" name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_manage_users_templates">
+			<field eval="[(6,0,[ref('group_cmc_administrator')])]" name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_manage_emobility_information_documents">
+			<field eval="[(6,0,[ref('group_cmc_administrator')])]" name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_manage_email_templates">
+			<field eval="[(6,0,[ref('group_cmc_administrator')])]" name="groups_id" />
+		</record>
+        <record model="ir.ui.menu" id="menu_action_cmc_assessment_state_form">
+            <field eval="[(6,0,[ref('group_cmc_administrator')])]" name="groups_id" />
+        </record>
+
+
+		 RECEPTION USER 
+		<record model="ir.ui.menu" id="menu_reception">
+			<field
+				eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_cmc_reception_diary">
+			<field
+				eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+				name="groups_id" />
+		</record>
+				
+		<record model="ir.ui.menu" id="menu_wizard_cmc_reception_my_call_calendar">
+            <field
+                eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+                name="groups_id" />
+        </record>
+        <record model="ir.ui.menu" id="wizard_cmc_my_appointment_tree">
+            <field
+                eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+                name="groups_id" />
+        </record>
+        <record model="ir.ui.menu" id="wizard_cmc_user_equipment_appointment_tree">
+            <field
+                eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+                name="groups_id" />
+        </record>
+
+		<record model="ir.ui.menu" id="menu_cmc_person_form">
+			<field
+				eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_reception_call_handling">
+			<field
+				eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_reception_enquiry_handling">
+			<field
+				eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_reception_assessment">
+			<field
+				eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+				name="groups_id" />
+		</record>
+        <record model="ir.ui.menu" id="wizard_pending_send_information_pack">
+            <field
+                eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+                name="groups_id" />
+        </record>
+        <record model="ir.ui.menu" id="report_cmc_assessment">
+            <field
+                eval="[(6,0,[ref('group_cmc_administrator'), ref('group_reception_user')])]"
+                name="groups_id" />
+        </record>
+
+
+
+
+		 ADI GROUP 
+		<record model="ir.ui.menu" id="menu_adi">
+			<field
+				eval="[(6,0,[ref('group_adi_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_cmc_adi_diary">
+			<field
+				eval="[(6,0,[ref('group_adi_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_adi_call_handling">
+			<field
+				eval="[(6,0,[ref('group_adi_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_adi_enquiry_handling">
+			<field
+				eval="[(6,0,[ref('group_adi_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_adi_assessment">
+			<field
+				eval="[(6,0,[ref('group_adi_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+
+
+
+		 ILME GROUP 
+		<record model="ir.ui.menu" id="menu_ilme">
+			<field
+				eval="[(6,0,[ref('group_ilme_user'), 
+            ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_cmc_ilme_diary">
+			<field
+				eval="[(6,0,[ref('group_ilme_user'), 
+            ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_ilme_call_handling">
+			<field
+				eval="[(6,0,[ref('group_ilme_user'), 
+            ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_ilme_enquiry_handling">
+			<field
+				eval="[(6,0,[ref('group_ilme_user'), 
+            ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_ilme_assessment">
+			<field
+				eval="[(6,0,[ref('group_ilme_user'), 
+            ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+
+		 WORKSHOP GROUP 
+		<record model="ir.ui.menu" id="menu_workshop">
+			<field
+				eval="[(6,0,[ref('group_workshop_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_cmc_workshop_diary">
+			<field
+				eval="[(6,0,[ref('group_workshop_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_workshop_call_handling">
+			<field
+				eval="[(6,0,[ref('group_workshop_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_workshop_enquiry_handling">
+			<field
+				eval="[(6,0,[ref('group_workshop_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_workshop_assessment">
+			<field
+				eval="[(6,0,[ref('group_workshop_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		 ADAPTATION USER 
+		<record model="ir.ui.menu" id="menu_adaptations">
+			<field
+				eval="[(6,0,[ref('group_adaptations_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_cmc_adaptations_diary">
+			<field
+				eval="[(6,0,[ref('group_adaptations_user'), ref('group_cmc_administrator')])]"
+				name="groups_id" />
+		</record>
+		<record model="ir.ui.menu" id="menu_adaptations_call_handling">
+            <field
+                eval="[(6,0,[ref('group_adaptations_user'), ref('group_cmc_administrator')])]"
+                name="groups_id" />
+        </record>
+        <record model="ir.ui.menu" id="menu_adaptations_enquiry_handling">
+            <field
+                eval="[(6,0,[ref('group_adaptations_user'), ref('group_cmc_administrator')])]"
+                name="groups_id" />
+        </record>
+        <record model="ir.ui.menu" id="menu_adaptations_assessment">
+            <field
+                eval="[(6,0,[ref('group_adaptations_user'), ref('group_cmc_administrator')])]"
+                name="groups_id" />
+        </record>
+		
+		
+
+
+	--></data>
+</openerp>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- EQUIPEMENT VIEW -->
+        <record id="view_cmc_workshop_part_ordered_form" model="ir.ui.view">
+            <field name="name">cmc.workshop.part.ordered.form</field>
+            <field name="model">cmc.workshop.part.ordered</field>
+            <field name="priority" eval="2" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Workshop Part Ordered">
+                    <group colspan="2" col="2">
+                        <field colspan="1" name="date_order" select="1"/>
+                        <field colspan="1" name="part_no" select="1"/>
+                        <field colspan="1" name="quantity" />
+                        <field colspan="1" name="description" />
+                        <field colspan="1" name="price" />
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="view_cmc_workshop_part_ordered_tree" model="ir.ui.view">
+            <field name="name">Parts</field>
+            <field name="model">cmc.workshop.part.ordered</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Workshop Part Ordered">
+                    	<field name="date_order" />
+                        <field name="part_no" />
+                        <field name="quantity" />
+                        <field name="description" />
+                        <field name="price" />
+                        <field name="ordered_from" />
+                </tree>
+            </field>
+        </record>
+        <!-- define a action for the CMC Workshop Part Ordered -->
+        
+        <record id="action_cmc_workshop_part_ordered_form" model="ir.actions.act_window">
+            <field name="name">Workshop Part Management</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.workshop.part.ordered</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_cmc_workshop_part_ordered_tree" />
+        </record>
+
+    </data>
+</openerp>

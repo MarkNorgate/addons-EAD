@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_momap_appointments_form" model="ir.ui.view">
+			<field name="name">cmc.appointments.form</field>
+			<field name="model">cmc.appointments</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+
+				<form string="Appointment Booking -Edit">
+					<group colspan="4" string="Appointment Tracking"
+						attrs="{'invisible':[('state','in',['none'])]}">
+						<field name="assessment_id" colspan="1" align="1.0"
+							readonly="1" />
+						<newline />
+						<field name="equipment_supply_process_id" colspan="1" align="1.0" />
+						<newline />
+						<field name="workshop_id" colspan="1" align="1.0" />
+						<newline />
+						<field name="reminder_id" colspan="1" align="1.0" />
+					</group>
+					<group colspan="4">
+						<field name="clash" string="Clash" invisible="1" />
+						<field name="from_where" invisible="1" />
+						<field colspan="4" name="parent_id" string="Subject"
+							invisible="1" />
+						<field colspan="4" name="from_appointment" string="Subject"
+							invisible="1" />
+						<field colspan="4" name="apmnt_start_date_time" string="Start Date"
+							invisible="1" select="1" />
+						<field colspan="4" name="apmnt_end_date_time" string="End Date"
+							invisible="1" select="1" />
+					</group>
+					<group colspan="4" attrs="{'readonly':[('state','in',['active'])]}">
+						<group colspan="4">
+							<field colspan="4" name="title" string="Subject" align="0.0" />
+							<field colspan="4" name="event" string="Event (if not assessment)"
+								align="0.0" />
+						</group>
+
+						<group colspan="4" col="8">
+							<group />
+							<group />
+							<field colspan="1" name="apmnt_start_date" string="Start"
+								align="0.0"
+								on_change="onchange_date(apmnt_start_date,parent_id,owner_dup,from_appointment)"
+								attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+							<field colspan="1" name="start_time_hour" invisible="0"
+								string="Time" align="0.0" on_change="onchange_hour(start_time_hour)"
+								attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+							<field colspan="1" name="start_time_minutes" invisible="0"
+								nolabel="1" align="0.0" on_change="onchange_minutes(start_time_minutes)" />
+							<group />
+							<newline />
+							<group />
+							<group />
+							<field colspan="1" name="apmnt_date_end" string="Finish"
+								align="0.0" attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+							<field colspan="1" name="end_time_hour" invisible="0"
+								string="Time" attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+							<field colspan="1" name="end_time_minutes" invisible="0"
+								nolabel="1" />
+							<group />
+						</group>
+						<group colspan="4">
+							<field colspan="4" name="location" string="Location"
+								attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+							<field colspan="4" name="owner_dup"
+								string="Assessor/Technician"
+								on_change="onchange_assessor(owner_dup,title,parent_id,from_appointment)"
+								attrs="{'readonly':[('state','in',['cancelled','completed'])]}">
+							</field> 
+						</group>
+						<group colspan="4" col="4">
+							<group colspan="4">
+								<field colspan="1" name="save_clash" string="Save With Clash" />
+							</group>
+							<newline />
+							<group colspan="4">
+								<field colspan="4" name="user_ids" string="Attendees"
+									attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+								<field colspan="4" name="equipment_ids" string="Equipments">
+									<tree string="Equipment">
+										<field name="make" />
+										<field name="model" />
+										<field name="serial_no" string="Serial No" />
+									</tree>
+								</field>
+							</group>
+						</group>
+						<field colspan="4" name="state" invisible="1" />
+						<group colspan="4"
+							attrs="{'invisible':[('state','not in',['active_clash'])]}">
+							<label
+								string="This Appointment is Clashing With One of the Active Appointments"
+								colspan="4" />
+						</group>
+                        <group colspan="4" attrs="{'invisible':[('state','not in',['cancelled','cancelled_within_two_days'])]}">
+                            <field colspan="4" name="reason" readonly="1" string="Reason for Canc."/>
+                        </group>
+					</group>
+					<group attrs="{'invisible':[('type','in',['reminder'])]}">
+						<group
+							attrs="{'invisible':[('state','not in',['active','active_clash'])]}"
+							string="" colspan="4">
+							<!-- <button states="active,confirmed" string="Cancel" -->
+							<!-- name="btn_cancel_appointment" type="object" /> -->
+							<button states="active,active_clash" string="Confirmed"
+								name="btn_cofirm_appointment" type="object" context="{'confirmed':'Appointment'}" />
+						</group>
+						<group 
+							attrs="{'invisible':[('parent_id',=,False)]}"
+							string="" colspan="4">
+							 	<button states="active,active_clash,confirmed" string="Cancel" 
+							name="btn_cancel_appointment" type="object" confirm="This will cancel the appointment without any reason\n Do you want to continue"/> 
+						</group>
+					</group>
+					<group>
+						<button string="Complete" states="active,active_clash,confirmed"
+							name="btn_complete_appointment" type="object" />
+					</group>
+				</form>
+
+			</field>
+		</record>
+		<record id="view_momap_appointments_tree" model="ir.ui.view">
+			<field name="name">cmc.appointments.tree</field>
+			<field name="model">cmc.appointments</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Appointments" limit="30" min_rows="1"
+					colors="green:state=='active';grey:state=='active_clash';darkred:state=='cancelled';red:state=='cancelled_within_two_days';orange:state=='confirmed';blue:state == 'completed'">
+					<field colspan="3" name="apmnt_start_date_time" string="Start" />
+					<field colspan="3" name="apmnt_end_date_time" string="End" />
+					<field colspan="3" name="owner" />
+					<field colspan="3" name="location" />
+					<field colspan="3" name="state" invisible="0" string="Status" />
+					<!-- <field colspan="3" name="apmnt_status" string="Status" /> -->
+					<button states="active,active_clash,confirmed" string="Cancel"
+						name="%(cancel_appointment)d" type="action" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_momap_appointments_calendar" model="ir.ui.view">
+			<field name="name">cmc.appointments.calendar</field>
+			<field name="model">cmc.appointments</field>
+			<field name="type">calendar</field>
+			<field name="arch" type="xml">
+				<calendar color="owner" date_start="apmnt_start_date_time"
+					date_stop="apmnt_end_date_time" string="Appointments">
+					<field colspan="3" name="title" />
+					<field colspan="3" name="description" />
+					<field colspan="3" name="apmnt_status" string="Status" />
+				</calendar>
+			</field>
+		</record>
+		<!-- define a action for the CMC Assessment Appointment -->
+		<record id="action_momap_appointmants_form" model="ir.actions.act_window">
+			<field name="name"> Appointment Booking -Edit</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.appointments</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_momap_appointments_tree" />
+		</record>
+
+	</data>
+</openerp>
+

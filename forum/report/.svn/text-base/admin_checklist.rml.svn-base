@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="44.0" width="498" height="691"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,1" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,1" stop="2,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,1" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,1" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,1" stop="3,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,2" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,2" stop="2,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,2" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,2" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,2" stop="3,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,3" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,3" stop="2,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,3" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,3" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,3" stop="3,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,1" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,1" stop="2,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,1" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,1" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,1" stop="3,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,2" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,2" stop="2,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,2" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,2" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,2" stop="3,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,3" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,3" stop="2,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,3" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,3" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,3" stop="3,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table6">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="14.0" leading="17" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P3" fontName="Helvetica-Bold" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P4" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="6.0" leading="8" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="12.0" leading="15"/>
+    <paraStyle name="P10" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P11" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P12" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P13" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="Heading 3" fontName="Times-Bold" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P2"><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font>[[ data['form']['assessment_type'] ]]</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">[[ data['form']['display_name'] ]]</para>
+    <blockTable colWidths="249.0,249.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">
+            <font face="Helvetica-Bold">PRE-BOOKING INFO</font>
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            <font face="Helvetica-Bold">BOOKING DETAILS</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P3">Nearest Centre: </para>
+          <para style="P3">Diagnosis: [[ data['form']['diagnosis'] ]]</para>
+          <para style="P3">OT Req’d Y/N</para>
+          <para style="P1">
+            <font face="Helvetica-Bold">Not available (dates):</font>
+            <font face="Times-Roman">[[ data['form']['not_days'] ]]</font>
+          </para>
+        </td>
+        <td>
+          <para style="P1"><font face="Helvetica-Bold">AX DATE:</font> [[ data['form']['date'] ]]</para>
+          <para style="P1"><font face="Helvetica-Bold">TIME:</font> [[ data['form']['time'] ]]</para>
+          <para style="P1"><font face="Helvetica-Bold">LOCATION:</font> [[ data['form']['location'] ]]</para>
+          <para style="P1"><font face="Helvetica-Bold">ASSESSOR(S):</font> [[ data['form']['names'] ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="249.0,249.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P4">
+            <font face="Helvetica-Bold">POST-BOOKING INFO</font>
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            <font face="Helvetica-Bold">CANCELLED/RE-BOOKED</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="125.0,125.0,125.0,125.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+          <para style="P4">
+            <font face="Times-Roman">Entered on FeBS:</font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">Date</para>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P12">
+            <font face="Times-Roman">Entered on Febs</font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">Date</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P12">
+            <font face="Times-Roman">App’t letter sent:</font>
+          </para>
+        </td>
+        <td>
+          <para style="Standard">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P12">
+            <font face="Times-Roman">Re-book on Mon:</font>
+          </para>
+        </td>
+        <td>
+          <para style="Standard">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P11">
+            <font face="Times-Roman">App’t confirmed:</font>
+          </para>
+        </td>
+        <td>
+          <para style="Standard">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P13">
+            <font face="Times-Roman">App’t letter sent:</font>
+          </para>
+        </td>
+        <td>
+          <para style="Standard">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P11">
+            <font face="Times-Roman">Chase up letter sent:</font>
+          </para>
+        </td>
+        <td>
+          <para style="Standard">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P13">
+            <font face="Times-Roman">DVLA – change of date form sent:</font>
+          </para>
+        </td>
+        <td>
+          <para style="Standard">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="249.0,249.0" style="Table5">
+      <tr>
+        <td>
+          <para style="P9">Payment Rec’d:[[ data['form']['received'] ]]</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font face="Times-Roman" size="12.0">Invoice to:</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <para style="P10">POST-ASSESSMENT</para>
+    <blockTable colWidths="125.0,125.0,125.0,125.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Report typed by:</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Entered on FeBS:</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Checked by Assessor(s):</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Invoice req’d Y/N</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Alterations Y/N</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Inv sent/copy to acct’s:</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Alterations completed:</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font face="Helvetica">Date report posted:</font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="499.0" style="Table6">
+      <tr>
+        <td>
+          <para style="P7">NOTES</para>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

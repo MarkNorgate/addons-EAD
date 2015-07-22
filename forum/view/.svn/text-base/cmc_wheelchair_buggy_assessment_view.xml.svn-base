@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_cmc_wheelchair_buggy_form" model="ir.ui.view">
+			<field name="name">cmc.wheelchair.buggy.assessment.form</field>
+			<field name="model">cmc.wheelchair.buggy.assessment</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="CMC Wheelchair Buggy  Asssessment ">
+					<field colspan="3" name="lives_alone" />
+					<field colspan="3" name="lives_with" />
+					<field colspan="3" name="therapist_name" />
+					<field colspan="3" name="ot_pt" />
+
+					<group colspan="3" string="CURRENT EQUIPMENT">
+						<field colspan="3" name="make_model" />
+						<field colspan="3" name="source" />
+						<field colspan="3" name="time_owned" />
+						<field colspan="3" name="pressure_care_equipment" />
+					</group>
+
+					<group colspan="3" string="SOCIAL And RECREATION REQUIREMENTS">
+
+						<field colspan="3" name="relevant_details" />
+
+					</group>
+					<group colspan="3" string="TRANSPORTATION">
+						<field colspan="3" name="equipment_transport_vehicle" />
+						<field colspan="3" name="seat_transportation" />
+						<field colspan="3" name="type_vehicle" />
+					</group>
+					<group colspan="3" string="CLIENT PHYSICAL DETAIL">
+						<field colspan="3" name="physical_height" />
+						<field colspan="3" name="hips" />
+						<field colspan="3" name="upper_leg" />
+						<field colspan="3" name="lower_leg" />
+						<field colspan="3" name="hand_dominance" />
+						<field colspan="3" name="vision" />
+						<field colspan="3" name="hearing" />
+						<field colspan="3" name="weight" />
+						<field colspan="3" name="seat_shoulder" />
+						<field colspan="3" name="seat_head" />
+						<field colspan="3" name="seat_axilla" />
+						<field colspan="3" name="physical_restriction" />
+						<field colspan="3" name="transfer_method" />
+					</group>
+					<group colspan="3" string="HOME ENVIRONMENT">
+						<field colspan="3" name="assessment_home" />
+						<field colspan="3" name="assessment_home_date" />
+						<field colspan="3" name="present_home_assessment" />
+
+						<field colspan="3" name="suitable_access" />
+						<field colspan="3" name="any_factors" />
+						<field colspan="3" name="location_storage_charging" />
+						<field colspan="3" name="awareness_highway_code" />
+						<field colspan="3" name="concern" />
+						<field colspan="3" name="cognitive_assessmnet" />
+						<field colspan="3" name="recommendation_assessor" />
+					</group>
+
+
+				</form>
+			</field>
+		</record>
+
+
+
+		<record id="view_cmc_wheelchair_buggy_tree" model="ir.ui.view">
+			<field name="name">cmc.wheelchair.buggy.assessment.tree</field>
+			<field name="model">cmc.wheelchair.buggy.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Wheelchair Buggy  Asssessment" limit="1" min_rows="1">
+					<field colspan="3" name="assessment_id" />
+					<field colspan="3" name="version" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_wheelchair_buggy_assessment" model="ir.actions.act_window">
+			<field name="name">CMC Wheelchair Buggy Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.wheelchair.buggy.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_wheelchair_buggy_form" />
+		</record>
+
+	</data>
+</openerp>
+        

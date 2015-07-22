@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- EQUIPEMENT VIEW -->
+		<record id="view_cmc_equipment_form" model="ir.ui.view">
+			<field name="name">cmc.equipment.form</field>
+			<field name="model">cmc.equipment</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+
+				<form string="Equipment">
+				    <field colspan="1" string="" name="equipment_parent_id" invisible="1" />
+					<group colspan="4" string="">
+					    <field colspan="1" name="is_external" select="1" />
+						<field colspan="1" name="make" select="1" />
+						<field colspan="1" name="asset_type" on_change="onchange_asset(equipment_parent_id)"/>
+						<field colspan="1" name="model" select="1" />
+						<field colspan="1" name="other_asset" attrs="{'invisible':[('asset_type','not in',['Other'])]}" />
+						<newline />
+						<field colspan="1" name="owner" select="1" />
+						<field colspan="1" name="serial_no" select="1" />
+						<field colspan="1" name="onwer_asset_no" />
+						<field colspan="1" name="size" />
+						<newline />
+						<field colspan="1" name="existing_adaptations" />
+						<newline />
+						<field colspan="1" name="current_user_id" select="1" />
+						<field colspan="1" name="manufacture_date" />
+						<field colspan="1" name="year" />
+						<field colspan="1" name="type" />
+						<field colspan="1" name="multiplex" />
+					</group>
+					<group colspan="4">
+						<notebook>
+
+							<page string="Service History">
+								<group colspan="4">
+									<field name="equipment_supply" string="Equipment Supply Process"
+										nolabel="1" align="0.0" />
+								</group>
+							</page>
+							<page string="Service Reminders">
+								<group colspan="4" col="6">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(booked_client_visit_appointment)d"
+										string="Create Reminder" type="action" context="{'type':'Reminder'}" />
+
+								</group>
+
+								<group colspan="4">
+									<field name="appointment_reminder_ids" nolabel="1"
+										readonly="1">
+										<tree string="Service Reminders" limit="30" min_rows="1"
+											colors="green:state=='active';grey:state=='active_clash';darkred:state=='cancelled';orange:state=='confirmed';blue:state == 'completed'">
+											<field name="apmnt_start_date_time" string="Start Date" />
+											<field name="apmnt_end_date_time" string="End Date" />
+											<field name="event" />
+											<field name="location" />
+											<field name="state" />
+											<button states="active,active_clash,confirmed" string="Cancel"
+												name="%(cancel_appointment)d" type="action" />
+										</tree>
+									</field>
+								</group>
+							</page>
+							<page string="Attachments">
+								<group colspan="4">
+									<field name="attachments" nolabel="1" align="0.0" />
+								</group>
+							</page>
+							<page string="Owner History">
+								<group colspan="4">
+									<field colspan="4" name="cmc_onwer_history" widget="one2many"
+										nolabel="1" readonly="1">
+										<tree string="Owner History" limit="10" min_rows="1">
+											<field name="date_ownership" string="Date" />
+											<field name="person_id" string="Person" />
+										</tree>
+									</field>
+
+								</group>
+							</page>
+							<page string="User History">
+								<group colspan="4">
+									<field colspan="4" name="cmc_user_history" widget="one2many"
+										nolabel="1" readonly="1">
+										<tree string="User History" limit="10" min_rows="1">
+											<field name="date_ownership" string="Date" />
+											<field name="person_id" string="Person" />
+										</tree>
+									</field>
+
+								</group>
+							</page>
+							<page string="Appointments">
+								<group colspan="4">
+									<field name="appointment_ids" nolabel="1" align="0.0" />
+
+								</group>
+							</page>
+						</notebook>
+					</group>
+				</form>
+
+			</field>
+		</record>
+		<record id="view_cmc_equipment_tree" model="ir.ui.view">
+			<field name="name">cmc.equipment.tree</field>
+			<field name="model">cmc.equipment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipments">
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field name="manufacture_date" />
+					<field colspan="3" name="color" />
+					<field colspan="3" name="serial_no" string="Serial/Registration Number" />
+					<field colspan="3" name="owner" />
+                    <field colspan="3" name="current_user_id" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Equipment -->
+		<record id="action_cmc_equipment_form" model="ir.actions.act_window">
+			<field name="name">Equipments</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.equipment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_equipment_tree" />
+		</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+     <record id="view_cmc_adaptations_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="CMC Adaptations">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+                    <field colspan="3" name="state" string="Status" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_cmc_adaptations" model="ir.actions.act_window">
+           <field name="name">CMC Adaptations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_cmc_adaptations_tree" />
+          </record>
+    </data>
+</openerp>
+  

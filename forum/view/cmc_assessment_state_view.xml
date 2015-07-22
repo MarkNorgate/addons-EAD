@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- EQUIPEMENT VIEW -->
+        <record id="view_cmc_assessment_state_form" model="ir.ui.view">
+            <field name="name">cmc.assessment.state.form</field>
+            <field name="model">cmc.assessment.state</field>
+            <field name="priority" eval="2" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Assessment State">
+                    <group colspan="1"/><group colspan="1"/>
+                    <group colspan="2" col="2">
+                        <field colspan="1" name="name" string="State Name" select="1"/>
+                        <field colspan="1" name="type" string="Assessment Type" select="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="view_cmc_assessment_state_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.state.tree</field>
+            <field name="model">cmc.assessment.state</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="Assessment States">
+                    <field colspan="3" name="name" />
+                    <field colspan="3" name="type" />
+                </tree>
+            </field>
+        </record>
+        <!-- define a action for the CMC Equipment -->
+        <record id="action_cmc_assessment_state_form" model="ir.actions.act_window">
+            <field name="name">Assessment State Management</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment.state</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_cmc_assessment_state_tree" />
+        </record>
+
+    </data>
+</openerp>

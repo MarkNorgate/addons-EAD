@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="498" height="678"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P2" fontName="Helvetica-Bold" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="13.0" leading="16" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P5" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P6" fontName="Helvetica-Bold" fontSize="20.0" leading="25" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0" textColor="#0000ff"/>
+    <paraStyle name="P7" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="6.0" textColor="#000000"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P10" fontName="Times-Roman" fontSize="13.0" leading="16" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P11" fontName="Helvetica-Bold" fontSize="20.0" leading="25" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0" textColor="#0000ff"/>
+    <paraStyle name="P12" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="0.0" textColor="#0000ff"/>
+    <paraStyle name="P13" rightIndent="0.0" leftIndent="9.0" fontName="Times-Roman" backColor="#ffffff" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P14" rightIndent="0.0" leftIndent="9.0" fontName="Helvetica" fontSize="11.0" leading="14" backColor="#ffffff" spaceBefore="0.0" spaceAfter="6.0" textColor="#000000"/>
+    <paraStyle name="P15" rightIndent="0.0" leftIndent="9.0" fontName="Helvetica" fontSize="11.0" leading="14" backColor="#ffffff" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P16" fontName="Times-Roman" backColor="#ffffff" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="11.0" leading="14" backColor="#ffffff" spaceBefore="0.0" spaceAfter="6.0" textColor="#000000"/>
+    <paraStyle name="P18" fontName="Times-Bold" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P19" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P20" fontName="Helvetica-Bold" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P21" fontName="Helvetica" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="0.0" textColor="#000000"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Heading 3" fontName="Times-Bold" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 6" fontName="Times-Bold" fontSize="7.0" leading="9" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 4" fontName="Times-Bold" fontSize="12.0" leading="15" spaceBefore="12.0" spaceAfter="6.0"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P18">CONFIDENTIAL</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">[[ data['form']['title'] ]] [[ data['form']['display_name'] ]]</para>
+    <para style="P1">[[ data['form']['address1'] ]]</para>
+    <para style="P1">[[ data['form']['address2'] ]]</para>
+    <para style="P1">[[ date ]]</para>
+    <para style="P9">
+      <font face="Helvetica-Bold">Our ref</font>
+      <font face="Helvetica">: [[ data['form']['id'] ]] [[ data['form']['client_id'] ]]</font>
+    </para>
+    <para style="P2">[[ data['form']['title_last_name'] ]]</para>
+    <para style="P3">[[ data['form']['information_before'] ]]</para>
+    <para style="P2">[[ data['form']['type'] ]]</para>
+    <para style="P1">[[ data['form']['information'] ]]</para>
+    <para style="P2">DATE:[[ data['form']['date_start'] ]]</para>
+    <para style="P2">TIME:[[ data['form']['date_time'] ]]</para>
+    <para style="P2">LOCATION:[[ data['form']['location'] ]]</para>
+    <para style="P3">[[ data['form']['message'] ]]</para>
+    <para style="P1">If you have any queries, please let me know.</para>
+    <para style="P1">Yours sincerely</para>
+    <para style="Heading 3">Gwen Breen</para>
+    <para style="P10">Gwen Breen</para>
+    <para style="P4">Senior Administrator</para>
+    <para style="P4">Enc: Information sheet, Location map</para>
+    <pageBreak/>
+    <para style="P11">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Your Driving Assessment with </para>
+    <para style="P5">
+      <font face="Helvetica-Bold" size="20.0">Cornwall</font>
+      <font face="Times-Roman"/>
+      <font face="Helvetica-Bold" size="20.0">Mobility Centre</font>
+    </para>
+    <para style="P12"> </para>
+    <para style="P7">What is a Driving Assessment? </para>
+    <para style="P8">First and foremost, a driving assessment is not a driving test There will be no formal examination or theory questions on the day of your visit.</para>
+    <para style="P7">A driving assessment is a means of assessing your ability to control your vehicle safely and in comfort. It is also to determine if adaptations need to be fitted to your vehicle to ensure this.</para>
+    <para style="P7">Who will be there?</para>
+    <para style="P8">Your assessment will be carried out by a Driving Advisor. He or she will have specialist knowledge and skills in disability awareness, medical conditions and adapted vehicle controls. </para>
+    <para style="P7">If a cognitive assessment is required (for example if you have a neurological condition), a Senior Occupational Therapist (OT) will also be present.</para>
+    <para style="P7">You are welcome to bring friends and relatives with you to the assessment, both for support and for providing further information to the assessors.</para>
+    <para style="P7">What will happen? </para>
+    <para style="P8">Your assessment will last about 1½ to 2½ hours. In this time the following will take place:</para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">Interview </font>
+      <font face="Helvetica" size="11.0">- The Driving Advisor will ask you about your medical condition, licensing details and any mobility problems you have.</font>
+    </para>
+    <para style="P14">You will be asked to produce your driving licence or, if the DVLA currently have your licence, any correspondance you have from the DVLA to prove your driving entitlement.</para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">Physical Assessment</font>
+      <font face="Times-Roman"> – </font>
+      <font face="Helvetica" size="11.0">The Driving Advisor will ask you to perform a series of simple physical exercises.This is to assess your co-ordination, range of movement, strength and dexterity for driving purposes. </font>
+    </para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">Vision</font>
+      <font face="Times-Roman"/>
+      <font face="Helvetica" size="11.0">- A check will be carried out to establish whether you can read a standard vehicle number plate from the legally required distance.</font>
+    </para>
+    <para style="P15">Please ensure if you need glasses or contact lenses for driving that you have them available for this vision check and for the later drive. </para>
+    <para style="P13"><font face="Helvetica-Bold" size="13.0">Cognitive Assessment</font> – <font face="Helvetica" size="11.0">If you have (or have had) a neurological condition, such as a stroke, a cognitive assessment may be carried out by the Occupational Therapist. </font></para>
+    <para style="P15">This part of the assessment will involve a series of simple tabletop exercises that test m<font face="Times-Roman">emory, attention, concentration, speech and language, voluntary motor movement, decision-making and visual perception. </font></para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">Assessment Rig</font>
+      <font face="Times-Roman"> – </font>
+      <font face="Helvetica" size="11.0">We have both a Static Assessment Rig at our Truro Centre and a Mobile Assessment Rig for our other locations. These resemble the interior of a vehicle, with a steering wheel and pedals linked to a computer.</font>
+    </para>
+    <para style="P14">If we need to test your limb strengths or your reaction and decision times, a Rig may be used.  The Rigs can also assess your ability to use certain vehicle adaptations. </para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">Vehicle Preparation</font>
+      <font face="Times-Roman"> – </font>
+      <font face="Helvetica" size="11.0">Before the drive, the Driving Advisor will select an assessment vehicle, which will usually be fitted with dual controls. You may be able to use your own vehicle if the Driving Advisor is happy to assess you in it.</font>
+    </para>
+    <para style="P14">The Driving Advisor will check that you are able to reach and correctly use all of the controls in the car. They will also ensure that you are seated comfortably, can fasten the seatbelt and can adjust the driver's seat and mirrors. </para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">Initial Drive</font>
+      <font face="Times-Roman"> – </font>
+      <font face="Helvetica" size="11.0">To allow you to get used to the vehicle, the Driving Advisor will ask you to drive around the quiet car parking areas of the assessment location. </font>
+    </para>
+    <para style="P13">
+      <font face="Helvetica-Bold" size="13.0">On Road Drive</font>
+      <font face="Times-Roman"/>
+      <font face="Helvetica" size="11.0">- If the Driving Advisor feels it is appropriate, you will be asked to drive our pre-planned assessment route.The Occupational Therapist may also accompany you as an observer if a Cognitive Assessment is taking place.</font>
+    </para>
+    <para style="P13">
+      <font face="Times-Roman">
+        <font face="Helvetica" size="11.0">Throughout all parts of the driving assessment, you will be given clear instructions and guidance.  The Driving Advisor will not ask you to do anything which you do not feel comfortable with or which will affect the safety of yourself and other road users.</font>
+      </font>
+    </para>
+    <para style="P13">
+      <font color="#ffffff"> </font>
+    </para>
+    <para style="P7">What happens after the drive?</para>
+    <para style="P8">At the end of the assessment process, the Driving Advisor will summarise your performance. Some changes in your driving technique may be suggested, and you may be given advice on further driving tuition or recommended adaptations.</para>
+    <para style="P17">As part of this summary, the Driving Advisor will advise you on whether you need to notify the DVLA and also on where to go for adaptations fitting or driving tuition. </para>
+    <para style="P17">A written report will be sent out to you within 10 days of the date of the assessment.</para>
+    <para style="P7">Driver &amp; Vehicle Licensing Agency (DVLA) Assessments </para>
+    <para style="P8">If the DVLA have referred you for an assessment with us, the following exceptions will apply: </para>
+    <para style="P21" leftIndent="15" bulletIndent="0"><bullet size="11.0"><seq id="L1"/>.</bullet>The DVLA will cover the cost of the assessment. </para>
+    <para style="P21" leftIndent="15" bulletIndent="0"><bullet size="11.0"><seq id="L1"/>.</bullet>You will not receive a copy of the assessment report. </para>
+    <para style="P21" leftIndent="15" bulletIndent="0"><bullet size="11.0"><seq id="L1"/>.</bullet>The DVLA, based on our report, have the option of revoking your driving licence. </para>
+    <para style="P19" leftIndent="15" bulletIndent="0">
+      <bullet><seq id="L1"/>.</bullet>
+      <font face="Helvetica" size="11.0">Your licence may be revoked If you fail to attend a DVLA assessment.</font>
+    </para>
+    <para style="P16">
+      <font face="Times-Roman">For further information regarding the DVLA please visit their website </font>
+      <font face="Times-Roman" size="11.0">www.dvla.gov.uk</font>
+      <font face="Times-Roman">. </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Standard">
+      <font color="white"> </font>
+    </para>
+    <para>
+      <seqReset id="L1"/>
+    </para>
+  </story>
+</document>
+

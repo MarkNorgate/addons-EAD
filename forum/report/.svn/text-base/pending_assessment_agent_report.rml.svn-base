@@ -1,0 +1,2677 @@
+﻿<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="56.0" width="498" height="694"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,4" stop="0,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,4" stop="1,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,5" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,5" stop="0,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,5" stop="1,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,6" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,6" stop="0,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,6" stop="1,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,7" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,7" stop="0,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,7" stop="1,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,8" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,8" stop="0,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,8" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,8" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,8" stop="1,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,9" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,9" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,10" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,10" stop="0,10"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,10" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,10" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,10" stop="1,10"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,11" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,11" stop="0,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,11" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,11" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,11" stop="1,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,12" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,12" stop="0,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,12" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,12" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,12" stop="1,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,13" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,13" stop="0,13"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,13" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,13" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,13" stop="1,13"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,14" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,14" stop="0,14"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,14" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,14" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,14" stop="1,14"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,4" stop="0,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,4" stop="1,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,5" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,5" stop="0,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,5" stop="1,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,6" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,6" stop="0,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,6" stop="1,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,7" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,7" stop="0,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,7" stop="1,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,8" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,8" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,8" stop="0,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,9" stop="0,9"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,10" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,10" stop="0,10"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,10" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,10" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,10" stop="1,10"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,11" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,11" stop="0,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,11" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,11" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,11" stop="1,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,12" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,12" stop="0,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,12" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,12" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,12" stop="1,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,13" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,13" stop="0,13"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,13" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,13" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,13" stop="1,13"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,14" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,14" stop="0,14"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,14" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,14" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,14" stop="1,14"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,4" stop="0,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,4" stop="1,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,5" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,5" stop="0,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,5" stop="1,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,6" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,6" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,6" stop="0,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,7" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,7" stop="0,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,7" stop="1,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,8" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,8" stop="0,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,8" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,8" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,8" stop="1,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,9" stop="0,9"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,10" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,10" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,10" stop="0,10"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,11" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,11" stop="0,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,11" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,11" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,11" stop="1,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,12" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,12" stop="0,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,12" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,12" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,12" stop="1,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,13" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,13" stop="0,13"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,13" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,13" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,13" stop="1,13"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,14" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,14" stop="0,14"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,14" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,14" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,14" stop="1,14"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table7">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,1" stop="0,1"/>
+     
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,1" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,1" stop="2,1"/>
+	  <lineStyle kind="LINEBELOW" colorName="#808080" start="1,1" stop="2,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,2" stop="0,-1"/>
+      
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,3" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,3" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,3" stop="2,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,4" stop="0,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,4" stop="1,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,4" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,4" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,4" stop="2,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,5" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,5" stop="0,5"/>
+	  <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,5" stop="1,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,5" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,5" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,5" stop="2,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,6" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,6" stop="0,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,6" stop="1,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,6" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,6" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,6" stop="2,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,7" stop="0,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,7" stop="1,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,7" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,7" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,7" stop="2,7"/>
+	  <lineStyle kind="LINEBELOW" colorName="#808080" start="1,7" stop="2,7"/>
+
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,8" stop="0,8"/>
+	  
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,9" stop="0,9"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,9" stop="1,-1"/>
+      
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,9" stop="1,9"/>
+	  <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,10" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,10" stop="0,10"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,10" stop="1,-1"/>
+      
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,10" stop="1,10"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,11" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,11" stop="0,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,11" stop="1,-1"/>
+      
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,11" stop="1,11"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+	  <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,12" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,12" stop="1,12"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,12" stop="2,12"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,12" stop="1,12"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,13" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,13" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,14" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,14" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,15" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,15" stop="0,15"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,15" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,15" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,15" stop="1,15"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,16" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,16" stop="0,16"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,16" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,16" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,16" stop="1,16"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,17" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,17" stop="0,17"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,17" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,17" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,17" stop="1,17"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,18" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,18" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,18" stop="0,18"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,19" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,19" stop="0,19"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,19" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,19" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,19" stop="1,19"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,20" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,20" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,20" stop="0,20"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,21" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,21" stop="0,21"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,21" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,21" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,21" stop="1,21"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,22" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,22" stop="0,22"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,22" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,22" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,22" stop="1,22"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,23" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,23" stop="0,23"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,23" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,23" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,23" stop="1,23"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,24" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,24" stop="0,24"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,24" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,24" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,24" stop="1,24"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,25" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,25" stop="0,25"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,25" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,25" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,25" stop="1,25"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,26" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,26" stop="0,26"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,26" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,26" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,26" stop="1,26"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,27" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,27" stop="0,27"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,27" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,27" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,27" stop="1,27"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,28" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,28" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,28" stop="0,28"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,29" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,29" stop="0,29"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,29" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,29" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,29" stop="1,29"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,30" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,30" stop="0,30"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,30" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,30" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,30" stop="1,30"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,31" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,31" stop="0,31"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,31" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,31" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,31" stop="1,31"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,32" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,32" stop="0,32"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,32" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,32" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,32" stop="1,32"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,33" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,33" stop="0,33"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,33" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,33" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,33" stop="1,33"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,34" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,34" stop="0,34"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,34" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,34" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,34" stop="1,34"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,35" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,35" stop="0,35"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,35" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,35" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,35" stop="1,35"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,36" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,36" stop="0,36"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,36" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,36" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,36" stop="1,36"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,37" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,37" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,37" stop="0,37"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,38" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,38" stop="0,38"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,38" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,38" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,38" stop="1,38"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,39" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,39" stop="0,39"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,39" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,39" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,39" stop="1,39"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,40" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,40" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,40" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,41" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,41" stop="0,41"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,41" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,41" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,41" stop="1,41"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,42" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,42" stop="0,42"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,42" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,42" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,42" stop="1,42"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,43" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,43" stop="0,43"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,43" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,43" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,43" stop="1,43"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,44" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,44" stop="0,44"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,44" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,44" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,44" stop="1,44"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,45" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,45" stop="0,45"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,45" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,45" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,45" stop="1,45"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,46" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,46" stop="0,46"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,46" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,46" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,46" stop="1,46"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,47" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,47" stop="0,47"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,47" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,47" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,47" stop="1,47"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,48" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,48" stop="0,48"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,48" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,48" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,48" stop="1,48"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,49" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,49" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,50" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,50" stop="0,50"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,50" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,50" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,50" stop="1,50"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,51" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,51" stop="0,51"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,51" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,51" stop="1,51"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,51" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,51" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,51" stop="2,51"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,52" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,52" stop="0,52"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,52" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,52" stop="1,52"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,52" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,52" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,52" stop="2,52"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,53" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,53" stop="0,53"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,53" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,53" stop="1,53"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,53" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,53" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,53" stop="2,53"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,54" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,54" stop="0,54"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,54" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,54" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,54" stop="1,54"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,55" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,55" stop="0,55"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,55" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,55" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,55" stop="1,55"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,56" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,56" stop="0,56"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,56" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,56" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,56" stop="1,56"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,57" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,57" stop="0,57"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,57" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,57" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,57" stop="1,57"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,58" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,58" stop="0,58"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,58" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,58" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,58" stop="1,58"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,59" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,59" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,59" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+            <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,2" stop="0,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,3" stop="0,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,3" stop="1,3"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,4" stop="0,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,4" stop="1,4"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,5" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,5" stop="0,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,5" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,5" stop="1,5"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,6" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,6" stop="0,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,6" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,6" stop="1,6"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,7" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,7" stop="0,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,7" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,7" stop="1,7"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,8" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,8" stop="0,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,8" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,8" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,8" stop="1,8"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,9" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,9" stop="0,9"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,9" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,9" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,9" stop="1,9"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table8">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table9">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table10">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="4,0" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="4,0" stop="4,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="5,0" stop="5,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="5,0" stop="5,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="6,0" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="6,0" stop="6,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="6,-1" stop="6,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="7,0" stop="7,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="7,0" stop="7,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="7,-1" stop="7,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="8,0" stop="8,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="8,0" stop="8,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="8,-1" stop="8,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="9,0" stop="9,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="9,0" stop="9,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="9,-1" stop="9,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="10,0" stop="10,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="10,0" stop="10,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="10,-1" stop="10,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="11,0" stop="11,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="11,0" stop="11,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="11,-1" stop="11,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="12,0" stop="12,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="12,0" stop="12,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="12,-1" stop="12,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="13,0" stop="13,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="13,0" stop="13,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="13,-1" stop="13,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="14,0" stop="14,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="14,0" stop="14,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="14,-1" stop="14,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="15,0" stop="15,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="15,0" stop="15,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="15,-1" stop="15,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="16,0" stop="16,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="16,0" stop="16,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="16,-1" stop="16,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="17,0" stop="17,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="17,0" stop="17,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="17,-1" stop="17,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="18,0" stop="18,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="18,0" stop="18,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="18,0" stop="18,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="18,-1" stop="18,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table11">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table12">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table13">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="2,-1" stop="2,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table14">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table15">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#808080" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#808080" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#808080" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table16">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table17">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P2" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P3" fontName="Times-Roman" alignment="JUSTIFY" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P4" fontName="Times-Roman" alignment="JUSTIFY" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0" textColor="#003399"/>
+    <paraStyle name="P6" fontName="Times-Roman"/>
+    <paraStyle name="P7" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P8" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0" textColor="#003399"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="6.0" textColor="#003399"/>
+    <paraStyle name="P10" fontName="Times-Roman" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0" textColor="#003399"/>
+    <paraStyle name="P11" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P12" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P13" fontName="Times-Roman" alignment="JUSTIFY" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P14" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P15" fontName="Times-Roman" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P16" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P17" fontName="Times-Bold" fontSize="24.0" leading="29" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P18" fontName="Times-Bold" fontSize="12.0" leading="15" spaceBefore="12.0" spaceAfter="6.0" textColor="#003399"/>
+    <paraStyle name="P19" fontName="Times-Roman"/>
+    <paraStyle name="P20" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P21" fontName="Times-Roman" fontSize="11.0" leading="14"/>
+    <paraStyle name="P22" fontName="Times-Roman"/>
+    <paraStyle name="P23" fontName="Times-Roman" fontSize="10.0" leading="13" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P24" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P25" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P26" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P27" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P28" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P29" fontName="Times-Bold" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P30" fontName="Times-Bold" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P31" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P32" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P33" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P34" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="P35" rightIndent="0.0" leftIndent="0.0" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="6.0" spaceAfter="6.0" textColor="#003399"/>
+    <paraStyle name="P36" rightIndent="0.0" leftIndent="0.0" fontName="Times-Roman" fontSize="12.0" leading="22" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P37" rightIndent="0.0" leftIndent="0.0" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="2.0" spaceAfter="0.0"/>
+    <paraStyle name="P38" rightIndent="6.0" leftIndent="22.0" fontName="Times-Bold" fontSize="12.0" leading="15" spaceBefore="2.0" spaceAfter="0.0" textColor="#003399"/>
+    <paraStyle name="P39" rightIndent="6.0" leftIndent="0.0" fontName="Times-Roman" fontSize="10.0" leading="15" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P40" rightIndent="6.0" leftIndent="22.0" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="2.0" spaceAfter="0.0"/>
+    <paraStyle name="P41" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0" textColor="#003399"/>
+	<paraStyle name="P42" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="18.0" spaceAfter="12.0"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Heading 1" fontName="Times-Bold" fontSize="24.0" leading="29" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="Heading 3" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 2" rightIndent="6.0" leftIndent="22.0" fontName="Times-Bold" fontSize="18.0" leading="22" spaceBefore="2.0" spaceAfter="0.0"/>
+    <paraStyle name="Heading 4" fontName="Times-Bold" fontSize="12.0" leading="15" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 5" fontName="Helvetica-Bold" fontSize="85%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 6" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 7" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 8" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 9" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading 10" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Table" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P17">CONFIDENTIAL ASSESSMENT APPLICATION</para>
+    <para style="P18">1. GENERAL INFORMATION (Please Print)</para>
+    <blockTable colWidths="216.0,284.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">Title: Mr Mrs Miss Ms Dr</font>
+            <font face="Times-Roman">Other</font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['title'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Surname:</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['last_name'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">First Name(s):</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['first_name'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Address:</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['address_line1'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['address_line2'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Postcode:[[ data['form']['postcode'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Telephone No:</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['telephone'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Email address:</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['email'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Date of birth:</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['date_of_birth'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Ethnic Group:</para>
+        </td>
+        <td>
+          <para style="P24">[[ data['form']['ethnicity'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">GP Name:</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">GP Address:</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Postcode:</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">GP Tel No:</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+	<para style="P5">
+      <font color="white"> </font>
+    </para>
+	<para style="P5">
+      <font color="white"> </font>
+    </para>
+	<para style="P5">
+      <font color="white"> </font>
+    </para>
+	<para style="P1">
+      <font color="white"> </font>
+    </para>
+	
+	
+    <blockTable colWidths="478.0,71.0" style="Table2">
+      
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font face="Helvetica" size="12.0">2.SPECIALIST ASSESSMENTS FOR EMPLOYERS, SOLICITORS OR INSURANCE COMPANIES: </font>
+            <font face="Helvetica" size="12.0">Assessments which require a more complex assessment and a more detailed report are charged accordingly. Please contact us for full details and costs</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="300.0,200.0" style="Table5">
+      <tr>
+        <td>
+          <para style="P24">What do you want to achieve from this assessment?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Has someone other than you suggested you have this assessment?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Are they paying for this assessment?</para>
+        </td>
+        <td>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">If yes, please enter their name and address</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Name:</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Address:</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Postcode:</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P27">3. WHERE WOULD YOU LIKE TO HAVE YOUR ASSESSMENT? (please tick)</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">· Cornwall</font>
+            <font face="Times-Roman">Mobility Centre, Truro</font>
+          </para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">· Mount</font>
+            <font face="Times-Roman">Gould</font>
+            <font face="Times-Roman">Hospital, Plymouth</font>
+          </para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">· Holsworthy</font>
+            <font face="Times-Roman">Hospital, Holsworthy, Devon</font>
+          </para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">· Exeter</font>
+            <font face="Times-Roman">Mobility Centre, Exeter</font>
+          </para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P27">· Echo Centre, Liskeard</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P38">
+      <font color="white"> </font>
+    </para>
+	<para style="P38">
+      <font color="white"> </font>
+    </para>
+	<para style="P38">
+      <font color="white"> </font>
+    </para>
+	<para style="P38">
+      <font color="white"> </font>
+    </para>
+	<para style="P38">
+      <font color="white"> </font>
+    </para>
+	<para style="P38">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="300.0,200.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P40">
+            <font face="Times-Roman">4.</font>
+            
+            <font face="Times-Roman">ABOUT YOU: YOUR DIAGNOSIS (please print)</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P33">What is your diagnosis/disability?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P34">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P33">How does your diagnosis/disability affect your daily life?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P34">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P34">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">4. ABOUT YOU: YOUR DIAGNOSIS (continued) For Hoist Assessments please go to Section 5</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Please list any medication you take</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">When and where did you last have your eyesight tested?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P27">Please note: It is a legal requirement for all drivers to be able to read, in good daylight, (with the aid of glasses or contact lenses if worn), a vehicle number plate from a distance of 20 metres (new style number plates) or 20.5 metres (old style).We will not be able to complete your assessment if you are unable to comply with this requirement.</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Are you right or left hand dominant?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">What is your height?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">What is you weight?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Do you receive Higher Rate Mobility Component or War Pensioners’ Mobility Supplement?</para>
+        </td>
+        <td>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+    </blockTable>
+	<para style="P24">
+            <font color="white"> </font>
+          </para>
+		  <para style="P24">
+            <font color="white"> </font>
+          </para>
+    <blockTable colWidths="216.0,198.0,86.0" style="Table7">
+      <tr>
+        <td>
+          <para style="P37">
+            <font face="Times-Roman">5.ABOUT YOU: MOBILITY Please tick the boxes that apply to you</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Do you use a wheelchair, scooter or any walking aids?</para>
+        </td>
+        <td>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">If <font face="Times-Roman">NO please go to SECTION 6</font></para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Mobility Aid Used</para>
+        </td>
+        <td>
+          <para style="P24">Make and Model</para>
+        </td>
+        <td>
+          <para style="P24">Walking Aids</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P27">Manual wheelchair: </para>
+          <para style="P16">Indoor Outdoor</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Crutches</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Power Chair:</para>
+          <para style="P16">Indoor Outdoor</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Rollator/wheeled walker</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Scooter:</para>
+          <para style="P16">Indoor Outdoor</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Walking stick</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">Zimmer frame</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">5.<font face="Times-Roman">ABOUT YOU: MOBILITY (Continued)</font></para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Do you drive from a wheelchair?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Can you walk or take a few steps?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Can you stand?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">How do you transfer into/out of your wheelchair?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Do you currently stow your wheelchair in your vehicle?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">If yes, what method do you us</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">If No does someone else do it for you?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">6. ABOUT YOU: DRIVING (If you are applying for a PASSENGER or HOIST ASSESSMENT, please go to SECTION 7)</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Do you have a driving licence?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+	  <tr>
+	  <para style="P20">
+            <font color="white"> </font>
+          </para>
+		  </tr>
+      
+	  <tr>
+	  <para style="P20">
+            <font color="white"> </font>
+          </para>
+		  </tr>
+      <tr>
+        <td>
+          <para style="P25">If YES, what type of licence do you have? (Please tick)</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Full</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Provisional</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Provisional Disability Assessment Licence</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Revoked</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Section 88 (your licence has expired but you have a valid application with the DVLA)</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Surrendered</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· Under Review</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">6. <font face="Times-Roman">ABOUT YOU: DRIVING (Continued)</font></para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">What is your Driver Number?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">What is your licence expiry date?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">Was your licence issued in the UK?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">If NO where was your licence issued?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Have the DVLA been informed of your medical condition?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">If yes, what date did you inform them?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Have you been advised to stop driving?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">If yes, was this by a doctor or the DVLA?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P30">What driving experience have you had? (Please tick)</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· I am currently driving</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· I am not currently driving but I have driven in the past</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· I have had driving lessons in the past</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· I am currently having driving lessons</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P28">· I have never driven</para>
+        </td>
+        <td>
+          <para style="P20">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">If you used to drive but stopped, what date did you stop?</para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">Have you had any accidents recently?</para>
+        </td>
+        <td>
+          <para style="P25">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="Heading 3">If yes, please give details</para>
+        </td>
+        <td>
+          <para style="Heading 3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P29">7. ABOUT YOU: VEHICLES</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Do you currently have a vehicle?</para>
+        </td>
+        <td>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">If yes, what is the </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">·</font>
+            <font face="Times-Roman"/>
+            <font face="Times-Roman">Make</font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">·</font>
+            <font face="Times-Roman"/>
+            <font face="Times-Roman">Model</font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font face="Times-Roman">·</font>
+            <font face="Times-Roman"/>
+            <font face="Times-Roman">Year of Manufacture</font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Does your vehicle have manual or automatic transmission?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Did you get this vehicle from Motability?</para>
+        </td>
+        <td>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">If yes, what is the Motability renewal date?</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">Does your vehicle have adaptations fitted?</para>
+        </td>
+        <td>
+          <para style="P24">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">If yes, please give details</para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P24">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="P24">
+      <font color="white"> </font>
+    </para>
+	<para style="P24">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="256.0,244.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P26">8. ABOUT YOU: OTHER INFORMATION</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">Are you available at short notice if we have a cancellation?</para>
+        </td>
+        <td>
+          <para style="P26">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">Dates/days you are not available</para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">Do have any special requirements (eg will you need accommodation in or near the assessment location?) </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">Will you be using your assessment report for legal purposes? </para>
+        </td>
+        <td>
+          <para style="P26">YES/NO</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">Anything else you wish to add which may be relevant to your assessment</para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P26">
+            <font face="Times-Roman">Please tell us how you heard about us</font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="500.0" style="Table8">
+      <tr>
+        <td>
+          <para style="Standard">PAYMENT</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="Standard">Please send your payment to us with this form (please see page 2 for charges).</para>
+          <para style="P19">
+            <font color="white"> </font>
+          </para>
+          <para style="P19">You can pay by Cheque, Debit or Credit card.</para>
+          <para style="P19">
+            <font color="white"> </font>
+          </para>
+          <para style="P6">
+            <font face="Times-Roman">Cheque:</font>
+            <font face="Times-Roman">Please make cheques payable to “Cornwall Mobility Centre Ltd”.</font>
+          </para>
+          <para style="P6">
+            <font color="white"> </font>
+          </para>
+          <para style="P6">
+            <font face="Times-Roman">Debit/Credit Card:</font>
+            <font face="Times-Roman">Please complete the boxes below.</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <para style="P2">Card Type: (please tick)</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font face="Times-Roman" size="14.0">Visa </font>
+      <font face="Times-Bold" size="14.0">[ ]</font>
+      <font face="Times-Roman" size="14.0">Visa Electron </font>
+      <font face="Times-Bold" size="14.0">[ ]</font>
+      <font face="Times-Roman" size="14.0">Mastercard </font>
+      <font face="Times-Bold" size="14.0">[ ]</font>
+      <font face="Times-Roman" size="14.0">Switch </font>
+      <font face="Times-Bold" size="14.0">[ ]</font>
+      <font face="Times-Roman" size="14.0">Solo </font>
+      <font face="Times-Bold" size="14.0">[ ]</font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="216.0,284.0" style="Table9">
+      <tr>
+        <td>
+          <para style="Standard">Name on card: (please print)</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font face="Times-Roman">Please enter your card number below</font>
+    </para>
+    <blockTable colWidths="23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0" style="Table10">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font face="Times-Roman">Please enter the start date on your card (mm/yy) below</font>
+    </para>
+    <blockTable colWidths="28.0,27.0,27.0,28.0" style="Table11">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font face="Times-Roman">Please enter the expiry date on your card (mm/yy) below</font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="28.0,27.0,27.0,28.0" style="Table12">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">Please enter the last 3 digits of the number printed over the signature strip on your card below</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="28.0,28.0,28.0" style="Table13">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">Please enter your issue number (Switch only) below</para>
+    <blockTable colWidths="28.0,28.0" style="Table14">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="216.0,284.0" style="Table15">
+      <tr>
+        <td>
+          <para style="Standard">Amount to be debited:</para>
+        </td>
+        <td>
+          <para style="Standard">£</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="216.0,284.0" style="Table16">
+      <tr>
+        <td>
+          <para style="Standard">SIGNATURE:</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="Standard">DATE:</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+	<para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P41">CONSENT AND DECLARATION</para>
+    <para style="P12">
+      <font face="Times-Roman"/>
+    </para>
+    <para style="P4">
+      <font face="Times-Roman">All information held by the Cornwall</font>
+      <font face="Times-Roman">Mobility Centre is treated as strictly confidential under the terms of the Data Protection Act.</font>
+    </para>
+    <para style="Text body">
+      <font face="Times-Roman">We may need to contact your GP, Consultant or other healthcare professional for medical details to help us carry out your assessment.</font>
+    </para>
+    <para style="P4">
+      <font face="Times-Roman">We may need to use information about you for statistical purposes.  Any information we use will be anonymised. </font>
+    </para>
+    <para style="Text body">
+      <font face="Times-Roman">With your consent, we may send a copy of your assessment report to your GP, the DVLA, Motability, your insurance company, solicitor, or other person or organisation referring you for the assessment. </font>
+    </para>
+    <para style="P3">If you consent to the above, please sign below.</para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="155.0,276.0" style="Table17">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="">NAME: (Please print)</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="">SIGNATURE:</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="">DATE:</para>
+        </td>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P5">Thank you for completing this application form. Please return it to </para>
+    <para style="P1">
+      <font face="Times-Roman" size="14.0">Cornwall</font>
+      <font face="Times-Roman"/>
+      <font face="Times-Roman" size="14.0">Mobility Centre</font>
+    </para>
+    <para style="P1">
+      <font face="Times-Roman" size="14.0">Tehidy House, Royal</font>
+      <font face="Times-Roman"/>
+      <font face="Times-Roman" size="14.0">Cornwall</font>
+      <font face="Times-Roman"/>
+      <font face="Times-Roman" size="14.0">Hospital</font>
+    </para>
+    <para style="P8">
+      <font face="Times-Roman" size="14.0">Truro, TR1 3LJ</font>
+    </para>
+    <para style="P8">
+      <font face="Times-Roman" size="14.0">If you have any problems completing the form or need any further information, please telephone us on</font>
+    </para>
+    <para style="P5">01872 254920</para>
+    <para style="P1">
+      <font face="Times-Roman" size="14.0">or email us at </font>
+      <font face="Times-Roman" size="14.0">mobility@rcht.cornwall.nhs.uk</font>
+    </para>
+    <para style="Standard">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

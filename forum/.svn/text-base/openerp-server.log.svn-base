@@ -1,0 +1,974 @@
+[2011-03-31 11:25:09,155][?] DEBUG:psycopg2:installed. Logging using Python logging module
+[2011-03-31 11:25:09,155][?] INFO:server:version - 5.0.15
+[2011-03-31 11:25:09,155][?] INFO:server:addons_path - D:\workspace\DEV Server\src\bin\addons
+[2011-03-31 11:25:09,155][?] INFO:server:database hostname - 127.0.0.1
+[2011-03-31 11:25:09,155][?] INFO:server:database port - 5432
+[2011-03-31 11:25:09,155][?] INFO:server:database user - openpg
+[2011-03-31 11:25:09,155][?] INFO:objects:initialising distributed objects services
+[2011-03-31 11:25:09,483][?] INFO:web-services:starting XML-RPC services, port 8559
+[2011-03-31 11:25:09,483][?] INFO:web-services:starting NET-RPC service, port 8560
+[2011-03-31 11:25:09,483][?] INFO:web-services:the server is running, waiting for connections...
+[2011-03-31 11:39:13,405][?] DEBUG:psycopg2:installed. Logging using Python logging module
+[2011-03-31 11:39:13,405][?] INFO:server:version - 5.0.15
+[2011-03-31 11:39:13,405][?] INFO:server:addons_path - D:\workspace\DEV Server\src\bin\addons
+[2011-03-31 11:39:13,405][?] INFO:server:database hostname - 127.0.0.1
+[2011-03-31 11:39:13,405][?] INFO:server:database port - 5432
+[2011-03-31 11:39:13,405][?] INFO:server:database user - openpg
+[2011-03-31 11:39:13,405][?] INFO:objects:initialising distributed objects services
+[2011-03-31 11:39:13,733][?] INFO:web-services:starting XML-RPC services, port 8559
+[2011-03-31 11:39:13,733][?] INFO:web-services:starting NET-RPC service, port 8560
+[2011-03-31 11:39:13,733][?] INFO:web-services:the server is running, waiting for connections...
+[2011-03-31 11:39:37,733][cmc_dev] INFO:init:module base: loading objects
+[2011-03-31 11:39:37,733][cmc_dev] INFO:init:module base: registering objects
+[2011-03-31 11:39:38,187][cmc_dev] DEBUG:init:Updating graph with 4 more modules
+[2011-03-31 11:39:38,187][cmc_dev] INFO:init:module base: loading objects
+[2011-03-31 11:39:38,265][cmc_dev] INFO:init:module eMobility: loading objects
+[2011-03-31 11:39:38,265][cmc_dev] INFO:init:module eMobility: registering objects
+[2011-03-31 11:39:38,342][cmc_dev] INFO:init:module Mobility: loading objects
+[2011-03-31 11:39:38,342][cmc_dev] INFO:init:module Mobility: registering objects
+[2011-03-31 11:39:38,437][cmc_dev] INFO:init:module pxgo_openoffice_reports: loading objects
+[2011-03-31 11:39:38,437][cmc_dev] INFO:init:module pxgo_openoffice_reports: registering objects
+[2011-03-31 11:39:38,780][cmc_dev] INFO:init:module base_setup: loading objects
+[2011-03-31 11:39:38,780][cmc_dev] INFO:init:module base_setup: registering objects
+[2011-03-31 11:39:38,780][cmc_dev] INFO:init:module eMobility: no quality certificate
+[2011-03-31 11:39:38,796][cmc_dev] INFO:init:module Mobility: no quality certificate
+[2011-03-31 11:39:38,796][cmc_dev] INFO:init:module pxgo_openoffice_reports: no quality certificate
+[2011-03-31 11:39:38,890][cmc_dev] INFO:web-service:successful login from 'admin' using database 'cmc_dev'
+[2011-03-31 12:40:13,375][cmc_dev] DEBUG:timers:Run ir_cron._poolJobs(*('cmc_dev',), **{})
+[2011-03-31 12:47:11,562][cmc_dev] INFO:web-service:successful login from 'admin' using database 'cmc_dev'
+[2011-03-31 13:05:10,437][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:05:10,453][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:05:10,453][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:05:10,483][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:05:10,937][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:05:11,265][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:05:11,296][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:05:11,390][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:05:11,405][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:13:05,717][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:13:05,717][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:13:05,733][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:13:05,750][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:13:06,140][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:13:06,421][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:13:06,453][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:13:06,546][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:14:28,421][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:14:28,421][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:14:28,421][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:14:28,437][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:14:28,828][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:14:29,108][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:14:29,125][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:14:29,125][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:14:29,125][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:14:29,140][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:14:29,233][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:17:12,000][cmc_dev] INFO:web-service:successful login from 'admin' using database 'cmc_dev'
+[2011-03-31 13:35:23,875][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:35:23,890][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:35:23,890][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:35:23,905][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:35:24,328][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:35:24,342][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:35:24,608][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:35:24,625][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:35:24,640][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:35:24,733][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:35:24,750][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:35:24,750][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:35:24,750][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:40:14,375][cmc_dev] DEBUG:timers:Run ir_cron._poolJobs(*('cmc_dev',), **{})
+[2011-03-31 13:49:43,233][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:49:43,233][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:49:43,233][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:49:43,250][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:49:43,625][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:49:43,625][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:49:43,625][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:49:43,625][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:49:43,625][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:49:43,640][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:49:43,905][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:49:43,921][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:49:43,937][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:49:43,953][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:49:43,953][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:49:43,953][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:49:43,953][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:49:43,953][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:49:43,953][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:49:44,030][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:49:44,046][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:53:50,342][cmc_dev] INFO:web-service:successful login from 'admin' using database 'cmc_dev'
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:'<<<WRITE MODE IN person OBJECT>>'
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[01]: context = {'__last_update': {'cmc.appointments,11': '2011-03-29 10:41:09.505',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[02]:                    'cmc.appointments,12': '2011-03-29 10:44:51.43',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[03]:                    'cmc.appointments,8': '2011-03-28 18:14:08.154',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[04]:                    'cmc.appointments,9': '2011-03-28 18:13:49.138',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[05]:                    'cmc.assessment,1': '2011-03-29 10:41:36.82',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[06]:                    'cmc.assessment.communication,1': '2011-03-28 18:14:00.151',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[07]:                    'cmc.assessment.communication,2': '2011-03-28 18:14:08.154'},
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[08]:  'client': 'web',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[09]:  'lang': u'en_GB',
+[2011-03-31 13:54:00,467][cmc_dev] DEBUG:write:[10]:  'tz': False}
+[2011-03-31 13:54:00,500][cmc_dev] DEBUG:write:"<<BEFORE GOING INTO WRITE MODE>>" = '<<BEFORE GOING INTO WRITE MODE>>'
+[2011-03-31 13:54:00,500][cmc_dev] DEBUG:write:vals = {'assessment_id': {}}
+[2011-03-31 13:54:00,546][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:54:00,546][cmc_dev] DEBUG:_details:appt_ids = [11]
+[2011-03-31 13:54:00,562][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:54:00,578][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:54:00,983][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:54:01,265][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:54:01,296][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:54:01,390][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:25,421][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:57:25,421][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:57:25,437][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:57:25,453][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:57:25,858][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:25,858][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:25,858][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:25,858][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:25,875][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:26,171][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:26,203][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:26,296][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:42,203][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:57:42,217][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:57:42,217][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:57:42,233][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:57:42,640][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:42,640][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:42,640][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:42,655][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:42,937][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:42,953][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:42,967][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:42,983][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:42,983][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:42,983][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:43,062][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:43,078][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:43,078][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:43,078][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:43,078][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:43,078][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:43,078][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:53,358][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:57:53,375][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:57:53,375][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:57:53,390][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:53,796][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:54,078][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:54,108][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:57:54,203][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:58:03,405][cmc_dev] DEBUG:_details:'==== DATA PRINT ASSESSMENT PACK ===='
+[2011-03-31 13:58:03,405][cmc_dev] DEBUG:_details:appt_ids = [13, 14]
+[2011-03-31 13:58:03,421][cmc_dev] DEBUG:_details:user_ids = [5]
+[2011-03-31 13:58:03,437][cmc_dev] DEBUG:_details:user_record = [browse_record(res.users, 5)]
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:58:03,890][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:58:04,171][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:58:04,187][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:58:04,187][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:58:04,187][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:58:04,187][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:58:04,187][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:58:04,203][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']
+[2011-03-31 13:58:04,280][cmc_dev] ERROR:report:[01]: 
+[2011-03-31 13:58:04,280][cmc_dev] ERROR:report:[02]: Environment Information : 
+[2011-03-31 13:58:04,280][cmc_dev] ERROR:report:[03]: System : Windows-XP-5.1.2600-SP2
+[2011-03-31 13:58:04,280][cmc_dev] ERROR:report:[04]: OS Name : nt
+[2011-03-31 13:58:04,280][cmc_dev] ERROR:report:[05]: Operating System Release : XP
+[2011-03-31 13:58:04,280][cmc_dev] ERROR:report:[06]: Operating System Version : 5.1.2600
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[07]: Operating System Architecture : 32bit
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[08]: Operating System Locale : en_US.cp1252
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[09]: Python Version : 2.7.0
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[10]: OpenERP-Server Version : 5.0.15
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[11]: Last revision No. & ID : 
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[12]: report :
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[13]: Traceback (most recent call last):
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[14]:   File "D:\workspace\DEV Server\src\bin\report\render\rml2pdf\utils.py", line 116, in _process_text
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[15]:     txt = eval(expr,self.localcontext)
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[16]:   File "D:\workspace\DEV Server\src\bin\tools\safe_eval.py", line 272, in safe_eval
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[17]:     return eval(test_expr(expr,_SAFE_OPCODES, mode=mode), globals_dict, locals_dict)
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[18]:   File "", line 1, in <module>
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[19]: KeyError: 'display_name'
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[20]: 
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[21]: 'display_name'
+[2011-03-31 13:58:04,296][cmc_dev] ERROR:report:[22]: expr: data['form']['display_name']

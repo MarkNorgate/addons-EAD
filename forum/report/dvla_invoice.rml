@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="498" height="678"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="RIGHT" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="P2" fontName="Times-Roman" alignment="LEFT" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="P3" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P4" fontName="Times-Roman" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P5" fontName="Times-Roman" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P6" fontName="Times-Roman" alignment="RIGHT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P8" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P3">DVLA</para>
+    <para style="P3">Ms P John</para>
+    <para style="P3">Payment Team 1</para>
+    <para style="P3">D1</para>
+    <para style="P3">Swansea</para>
+    <para style="P3">SA99 1ZZ</para>
+    <para style="Text body">
+      <font face="Helvetica-Bold">Fax No: 01792 782360</font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font face="Helvetica">Our ref: [[ data['form']['person_id'] ]]</font>
+    </para>
+    <para style="Text body">
+      <font face="Helvetica">Your ref: [[ data['form']['referrence'] ]]</font>
+    </para>
+    <para style="Text body">
+      <font face="Helvetica">Medical Advisor: [[ data['form']['advisor'] ]]</font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">[[ date ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">INVOICE NO: </para>
+    <para style="Text body">
+      <font face="Helvetica-Bold">DRIVER NAME: [[ data['form']['display_name'] ]]</font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font face="Helvetica-Bold">RE: [[ data['form']['type'] ]]</font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font face="Times-Roman">DATE: </font>
+      <font face="Helvetica">[[ data['form']['start_date'] ]]</font>
+    </para>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font face="Times-Roman">LOCATION:</font>
+      <font face="Times-Roman"/>
+      <font face="Helvetica">[[ data['form']['location'] ]]</font>
+    </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="396.0,74.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P1">Assessment:</para>
+        </td>
+        <td>
+          <para style="P1">£150.00</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">VAT:</para>
+        </td>
+        <td>
+          <para style="P1">£30.00</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">TOTAL:</para>
+        </td>
+        <td>
+          <para style="P1">£180.00</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">Terms and conditions: payment within 30 days of invoice date</para>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Please make cheques payable to Cornwall Mobility Centre Ltd</para>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">VAT Registration Number 526940729</para>
+  </story>
+</document>
+

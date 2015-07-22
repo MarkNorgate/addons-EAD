@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+
+        <record id="view_search_view_call_tree" model="ir.ui.view">
+            <field name="name">search.view.tree</field>
+            <field name="model">cmc.call.history</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Search And View Calls" colors="red:state=='closed';green:state=='allocated'">
+                    <field colspan="3" name="call_date_time" />
+                    <field colspan="3" name="person_id" string="Caller's Name" />
+                    <field colspan="3" name="user_id" string="Received by"/>
+                    <field colspan="3" name="call_channel" />
+                    <field colspan="3" name="call_person_type" />
+                    <field colspan="3" name="allocated_user_id" />
+                    <field colspan="3" name="allocated_user_group_id" string="Allocated to Group"/>
+                    <field colspan="3" name="call_summary" />
+                    <field colspan="3" name="call_type" />
+                 </tree>
+            </field>
+        </record>
+
+        <record id="action_search_view_call_form" model="ir.actions.act_window">
+            <field name="name">Search And View Calls</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.call.history</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_search_view_call_tree" />
+        </record>
+        
+ </data>
+ </openerp>          

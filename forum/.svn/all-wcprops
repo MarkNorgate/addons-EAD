@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/cornwallmobility/!svn/ver/891/development/ead/forum
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cornwallmobility/!svn/ver/1194/development/ead/forum/.project
+END
+Coding Standards.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/cornwallmobility/!svn/ver/889/development/ead/forum/Coding%20Standards.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cornwallmobility/!svn/ver/889/development/ead/forum/__init__.py
+END
+openerp-server.log
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/cornwallmobility/!svn/ver/889/development/ead/forum/openerp-server.log
+END
+.pydevproject
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/cornwallmobility/!svn/ver/1194/development/ead/forum/.pydevproject
+END
+__terp__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cornwallmobility/!svn/ver/889/development/ead/forum/__terp__.py
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cornwallmobility/!svn/ver/889/development/ead/forum/build.xml
+END

@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_cmc_assessment_form" model="ir.ui.view">
+			<field name="name">cmc.assessment.form</field>
+			<field name="model">cmc.assessment</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="CMC Assessment">
+					<!-- <page string="Action Details"> -->
+					<group colspan="4" string="Details">
+						<field colspan="1" invisible="1" name="uploaded_final_report" />
+						<field colspan="1" invisible="1" name="is_dvla" />
+						<field colspan="1" invisible="1" name="is_agent" />
+						<field colspan="1" invisible="1" name="is_client" />
+						<group colspan="4">
+							<field colspan="1" name="ref_id" select="1" readonly="1" />
+							<field colspan="1" name="state" string="State" invisible="0"
+								readonly="0" select="1" widget="selection" />
+							<newline />
+							<field colspan="1" name="driving_assessment_type" select="1"
+								readonly="1" />
+							<newline></newline>
+							<field colspan="1" name="agent_person_id" select="1"
+								attrs="{'readonly':[('referrer_type','!=','client_family')]}" />
+							<newline />
+							<field colspan="1" name="client_person_id" select="1"
+								readonly="1" />
+						</group>
+					</group>
+
+
+
+					<!-- </page> -->
+					<group colspan="4">
+						<notebook>
+
+							<page string="Assessment Details">
+								<group colspan="4">
+									<field colspan="4" name="referrer_type"
+										attrs="{'readonly':[('is_dvla','=',True)]}" />
+									<field colspan="4" name="paying" readonly="1" />
+									<field colspan="4" name="enquiry_details" readonly="1" />
+									<field colspan="4" name="cognitive_referral" attrs="{'invisible':[('driving_assessment_type','=','wheelchair_assessment')]}"/>
+								</group>
+							</page>
+							<page string="Additional Information">
+								<group colspan="4">
+									<notebook>
+
+										<page string="Form">
+											<group colspan="4">
+												<notebook>
+													<page string="Further Details">
+<!--														<field colspan="3" name="achieve" />-->
+<!--														<field colspan="3" name="suggested" />-->
+														<field colspan="3" name="boolean_paying" />
+															<field colspan="3" name="paying_name" attrs="{'invisible':[('boolean_paying','=',False)]}"/>
+<!--															<field colspan="3" name="paying_address" />-->
+<!--															<field colspan="3" name="paying_postcode" />-->
+														<field colspan="3" name="where" />
+													</page>
+													<page string="Diagnosis">
+														<field colspan="2" name="diagnosis" />
+														<field colspan="2" name="diagnosis_code" />
+														<field colspan="2" name="effect" />
+														<field colspan="2" name="medication" />
+														<field colspan="2" name="last_eyesight" />
+														<field colspan="2" name="dominant" />
+														<field colspan="2" name="height" />
+														<field colspan="2" name="weight" />
+														<field colspan="2" name="component" />
+													</page>
+													<page string="About You">
+														<group colspan="4">
+															<field colspan="1" name="aids" align="0.0" />
+															<newline />
+															<group colspan="4" attrs="{'invisible':[('aids','=',False)]}">
+																<field colspan="4" name="b_wheelchair" align="0.0" />
+																<field colspan="4" name="b_walk" align="0.0" />
+																<field colspan="4" name="b_stand" align="0.0" />
+																<field colspan="4" name="how_wheelchair" align="0.0" />
+																<field colspan="4" name="b_stow_wheelchair" align="0.0" />
+																<field colspan="4" name="stow_method"
+																	attrs="{'invisible':[('b_stow_wheelchair','=',True)]}"
+																	align="0.0" />
+																<field colspan="4" name="stow_person"
+																	attrs="{'invisible':[('b_stow_wheelchair','=',False)]}"
+																	align="0.0" />
+																<newline />
+															
+															<group colspan="4" string="Moblility Aids Used">
+																<group colspan="4">
+																	<label colspan="1" string="Manual Wheelchair"
+																		align="0.0"></label>
+																	<group colspan="1" col="1">
+																		<field colspan="1" name="manual_wheelchair_indoor"
+																			align="0.0" />
+																		<newline />
+																		<field colspan="1" name="manual_wheelchair_outdoor"
+																			align="0.0" />
+																		<newline />
+																		<field colspan="1" name="manual_wheelchair_make_model"
+																			align="0.0" />
+																	</group>
+																	<newline />
+																	<label colspan="1" string="Power Wheelchair"
+																		align="0.0"></label>
+																	<group colspan="1">
+																		<field colspan="1" name="power_wheelchair_indoor"
+																			align="0.0" />
+																		<newline />
+																		<field colspan="1" name="power_wheelchair_outdoor"
+																			align="0.0" />
+																		<newline />
+																		<field colspan="1" name="power_wheelchair_make_model"
+																			align="0.0" />
+																	</group>
+																	<newline />
+																	<label colspan="1" string="Scooter" align="0.0"></label>
+																	<group colspan="1">
+																		<field align="0.0" colspan="1" name="scooter_indoor" />
+																		<newline />
+																		<field align="0.0" colspan="1" name="scooter_outdoor" />
+																		<newline />
+																		<field colspan="1" name="scooter_make_model" />
+																		<newline />
+
+																		<field colspan="3" name="crutches" />
+																		<newline />
+																		<field colspan="3" name="wheeled_walker" />
+																		<newline />
+																		<field colspan="3" name="walking_stick" />
+																		<newline />
+																		<field colspan="3" name="zimmer_frame" />
+																	</group>
+																</group>
+															</group>
+															</group>
+														</group>
+													</page>
+													<page string="About Driving">
+														<field colspan="3" name="b_driving_licenese" />
+														<group colspan="3"
+															attrs="{'invisible':[('b_driving_licenese','=',False)]}">
+															<field colspan="3" name="type_lincense" />
+															<field colspan="3" name="driver_number" />
+															<field colspan="3" name="b_issue_uk" />
+														</group>
+														<field colspan="3" invisible="'b_issue_uk','=',False"
+															name="issue_where" />
+														<field colspan="3" name="b_dlva_informed" />
+														<field colspan="3" name="dlva_date"
+															attrs="{'invisible':[('b_dlva_informed','=',False)]}" />
+														<field colspan="3" name="advised_stop" />
+														<field colspan="3" name="advised_stop_doctor"
+															attrs="{'invisible':[('advised_stop','=',False)]}"/>
+														<field colspan="3" name="driving_experience" />
+														<field colspan="3" name="stop_date"
+															attrs="{'invisible':[('driving_experience','!=','currently_driving_past')]}" />
+														<field colspan="3" name="accidents_recently" />
+														<field colspan="3" name="details_accidents_recently"
+															attrs="{'invisible':[('accidents_recently','=',False)]}" />
+													</page>
+													<page string="About Vehicles">
+														<group colspan="4">
+															<group />
+															<group />
+															<field colspan="4" name="b_vehicle" />
+
+														</group>
+														<group colspan="4"
+															attrs="{'invisible':[('b_vehicle','=',False)]}">
+															<group colspan="4" col="4">
+																<field colspan="4" name="vehicle_make" />
+																<field colspan="4" name="vehicle_model" />
+																<field colspan="4" name="vehicle_year" />
+																<group></group>
+															</group>
+															<group colspan="4" col="4">
+																<field colspan="4" name="vehicle_tansmission" />
+																<field colspan="4" name="b_vehicle_motability" />
+																<field colspan="4" name="vehicle_motablity_date" attrs="{'invisible':[('b_vehicle_motability','=',False)]}"/>
+																<field colspan="4" name="vehicle_adaptations_fitted" />
+																<field colspan="4"
+																	name="vehicle_adaptations_fitted_details"
+																	attrs="{'invisible':[('vehicle_adaptations_fitted','=',False)]}" />
+																<group />
+															</group>
+														</group>
+													</page>
+													<page string="Other Information">
+														<field colspan="3" name="b_available_for_cancellation"
+															select="1" />
+														<field colspan="3" name="days_not_available" />
+														<field colspan="3" name="special_requirments" />
+														<field colspan="3" name="b_assessment_legal_puporse" />
+														<field colspan="3" name="wish_add" />
+														<field colspan="3" name="how_they_heard" />
+													</page>
+													<page string="Payment Details">
+														<field colspan="3" name="total_cost" readonly="1" />
+														<field colspan="3" name="payment_received" />
+														<field colspan="3" name="total_balance" />
+														<group colspan="3"
+															attrs="{'invisible':[('payment_received','=',False)]}">
+															<field colspan="3" name="card_type" />
+															<field colspan="3" name="amount_debit"
+																on_change="onchange_balance(total_cost,amount_debit)" />
+															<field colspan="3" name="payment_date" />
+														</group>
+													</page>
+												</notebook>
+											</group>
+										</page>
+									</notebook>
+								</group>
+								<label string="" />
+								<group colspan="4" col="6">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+
+								<!-- END OF ASSESSMENT DETAILS -->
+							</page>
+							<page string="Appointments">
+								<group colspan="4" col="6">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(wziard_appointment_search_user_equipment_group)d"
+                                        string="Search Calendar" type="action" target="new"/>
+								</group>
+								<field colspan="3" name="appointment_id" />
+							</page>
+							<page string="Templates and Letters">
+							 <group attrs="{'invisible':[('driving_assessment_type','in', 
+                                    ['chair_assessment'])]}">
+								<group colspan="4" string="Send To Client"
+									attrs="{'invisible':[('is_client','=',False)]}">
+									<group colspan="3" col="3">
+										<button name="%(pending_send_information_pack_client)d"
+											string="Print Information Pack" type="action" target="new" />
+										<button name="%(wizard_covering_letter_client)d"
+											string="Print Covering Letter" type="action" />
+										<button name="btn_info_pack_client" string="Send Info Pack by E-mail"
+											type="object" context="{'info_pack_letter':'Covering Letter To Client'}" />
+
+									</group>
+									<group colspan="1" col="4">
+										<group />
+										<group />
+										<group />
+										<group />
+									</group>
+								</group>
+								</group>
+								<group attrs="{'invisible':[('driving_assessment_type','in', 
+                                    ['chair_assessment'])]}">
+								<group colspan="4" string="Send To Referring Agent"
+									attrs="{'invisible':[('is_agent','=',False)]}">
+									<group colspan="3" col="3">
+										<button name="%(pending_send_information_pack_agent)d"
+											string="Print Information Pack" type="action" target="new" />
+										<button name="%(wizard_covering_letter_agent)d" string="Print Covering Letter"
+											type="action" />
+										<button name="btn_info_pack_agent" string="Send Info Pack by E-mail"
+											type="object" context="{'info_pack_letter':'Covering Letter To Agent'}" />
+									</group>
+								</group>
+								</group>
+								<group colspan="4"
+									string="Questionnaire Not Returned Follow Up Letter" attrs="{'invisible':[('driving_assessment_type','in', 
+                                    ['chair_assessment','wheelchair_assessment'])]}">
+									<group colspan="1" col="2"
+										attrs="{'invisible':[('is_client','=',False)]}">
+										<button name="%(wizard_info_chaseup_letter_client)d"
+											string="Print Follow-up Letter" type="action" target="new"></button>
+										<button name="btn_info_pack_chase_up_client" type="object"
+											string="Send follow-up letter by e-mail"
+											context="{'info_chaseup_letter':'Information Pack Chase Up Letter To Client'}"></button>
+									</group>
+									<group />
+									<group colspan="1" col="2"
+										attrs="{'invisible':[('is_agent','=',False)]}">
+										<button name="%(wizard_info_chaseup_letter_agent)d"
+											string="Print Follow-up Letter" type="action" target="new"></button>
+										<button type="object" name="btn_info_pack_chase_up_agent"
+											string="Send Follow-up Letter by E-mail"
+											context="{'info_chaseup_letter':'Information Pack Chase Up Letter To Agent'}"></button>
+									</group>
+								</group>
+								<group colspan="4" string="Admin Checklist" attrs="{'invisible':[('driving_assessment_type','in', 
+                                    ['chair_assessment','wheelchair_assessment'])]}">
+
+									<group colspan="1" col="5">
+										<button name="%(wizard_admin_checklist)d" string="Print Admin Checklist"
+											target="new" type="action" />
+										<!-- <button name="btn_admin_checklist_printed" confirm="Have You 
+											Printed Admin CheckList" -->
+										<!-- string="Admin CheckList Printed" -->
+										<!-- type="object" /> -->
+										<group />
+										<group />
+										<group />
+										<group />
+									</group>
+								</group>
+								<group colspan="4" string="Assessor's Paper Work">
+
+									<group colspan="1" col="6"
+										attrs="{'invisible':[('driving_assessment_type','in',
+                        ['drive_safer_for_longer_assessment'])]}">
+										<group colspan="2">
+											<!-- FULL DRIVING AND DRIVE FROM WHEELCHAIR -->
+											<button name="%(wizard_print_assessment_pack)d"
+												string="Print Assessor's Paperwork" target="new" type="action"
+												context="{'paperwork':driving_assessment_type}" />
+										</group>
+										<group />
+										<group />
+										<group />
+									</group>
+									<group />
+								</group>
+								<!--<group /> <group /> </group> -->
+								<group colspan="4" string="Appointment Letter">
+									<field colspan="1" align="0.0" name="appointment_letters" />
+									<group colspan="1">
+										<group colspan="1" col="8"
+											attrs="{'invisible':[('appointment_letters','in',['New appointment letter to Client email','New appointment letter to Client Agent paying email','New appointment letter to Referring Agent email','Re-booked appointment after a cancellation letter to Client email','Notification to DVLA of new appointment email','Notification to DVLA of re-booked appointment following cancellation email'])]}">
+											<button name="%(wizard_driving_ax_letter)d" string="Go"
+												target="new" type="action"
+												context="{'appointment_letter':appointment_letters}" />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+										</group>
+										<group colspan="1" col="8"
+											attrs="{'invisible':[('appointment_letters','in',['New appointment letter to Client post','New appointment letter to Client Agent paying post','New appointment letter to Referring Agent post','Re-booked appointment after a cancellation letter to Client post'])]}">
+											<button name="btn_email_appointments" string="Go"
+												type="object" context="{'email_appointment_letter':appointment_letters}" />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+										</group>
+									</group>
+								</group>
+
+								<group colspan="4" col="5" string="Invoices" attrs="{'invisible':[('payment_received','=',False)]}">
+									<group colspan="2" col="2"
+										attrs="{'invisible':[('referrer_type','in',
+                        ['dvla'])]}">
+										<group colspan="1" col="1"
+											attrs="{'invisible':[('paying','in',
+                        ['client_paying'])]}">
+											<button name="%(wizard_agent_invoice)d" string="Invoice to Referring Agent"
+												target="new" type="action" />
+										</group>
+										<group colspan="1" col="1"
+											attrs="{'invisible':[('paying','in',
+                        ['agent_paying'])]}">
+											<button name="%(wizard_client_invoice)d" string="Invoice to Client"
+												target="new" type="action" />
+										</group>
+									</group>
+									<group colspan="1" col="1"
+										attrs="{'invisible':[('referrer_type','not in',
+                        ['dvla'])]}">
+										<button name="%(wizard_dvla_invoice)d" string="Invoice to DVLA"
+											target="new" type="action" />
+									</group>
+									<group />
+									<group />
+								</group>
+							</page>
+							<page string="Attachments">
+								<group colspan="4" string="Attachments">
+									<field name="attachments" widget="one2many" nolabel="1">
+										<form string="Document Attachments">
+											<field name="name" string="Document" select="1" />
+											<field name="datas_fname" select="1" />
+											<field name="datas" filename="datas_fname" />
+										</form>
+										<tree string="Attach Documents for record keeping">
+											<field name="name" string="Document" />
+											<field name="datas_fname" />
+										</tree>
+									</field>
+								</group>
+							</page>
+
+
+							<!-- REPORT DETAILS -->
+							<page string="Reports">
+								<group colspan="4">
+									<group colspan="4" string="Generate Report From Template">
+										<group colspan="1" col="1">
+											<!-- <field name="report_template" align="0.0"> -->
+											<!-- </field> -->
+											<field name="report_template_id" align="0.0" widget="selection"></field>
+
+										</group>
+										<group colspan="1" col="5">
+											<button name="%(wizard_driving_ax_report)d" string="Generate Report"
+												target="new" type="action" context="{'report_template':report_template_id}" />
+											<group />
+											<group />
+											<group />
+											<group />
+										</group>
+
+									</group>
+									<group colspan="4" attrs="{'invisible':[('driving_assessment_type','in', 
+                                    ['chair_assessment','wheelchair_assessment','hoist_assessment'])]}">
+
+										<!-- <field name="assessment_outcome" colspan="2" align="0.0" /> -->
+										<field name="assessment_outcome_virtual" colspan="2"
+											align="0.0" widget="selection" />
+
+										<group />
+										<field name="reason_driving" align="0.0" colspan="2"
+											attrs="{'invisible':[('assessment_outcome','not in', 
+                                    ['advised_against_driving'])]}" />
+									</group>
+									<group colspan="4" col="8" attrs="{'invisible':[('driving_assessment_type','in', 
+                                    ['chair_assessment'])]}">
+										<group colspan="1">
+											<label colspan="4" string="Review at a later date"
+												align="0.0"></label>
+										</group>
+										<group colspan="1" col="3">
+											<field colspan="1" name="review_later_date" nolabel="1"
+												align="0.0" on_change="onchange_review_date(review_later_date)" />
+											<label colspan="1" string="Or" align="0.0"></label>
+											<field colspan="1" name="review_date" nolabel="1"
+												align="0.0" />
+										</group>
+										<group />
+										<group />
+										<group />
+										<group />
+									</group>
+									<group colspan="4"
+										attrs="{'invisible':[('uploaded_final_report','!=', 
+                                    False)]}">
+
+										<group colspan="4" string="Upload Completed Report">
+											<group colspan="3">
+												<field colspan="3" name="datas" filename="datas_fname" />
+												<field colspan="1" name="datas_fname" />
+											</group>
+										</group>
+									</group>
+									<group colspan="4" string="Assessement Report"
+										attrs="{'invisible':[('uploaded_final_report','!=', 
+                                    True)]}">
+										<group colspan="4" col="4">
+											<label colspan="2" string="Assessment Report – Final version" />
+											<field colspan="1" nolabel="1" name="datas_uploaded_final"
+												filename="datas_uploaded_fname" />
+											<field colspan="1" nolabel="1" name="datas_uploaded_fname" />
+										</group>
+										<group colspan="4" col="4">
+											<label string="Uploaded by" colspan="2" />
+											<group colspan="2" col="4">
+												<field name="created_by" nolabel="1" colspan="1" />
+												<label string="On" colspan="1" />
+												<field name="created_on" nolabel="1" colspan="1" />
+											</group>
+										</group>
+									</group>
+								</group>
+							</page>
+							<!-- END OF REPORT DETAILS -->
+
+							<page string="Communication">
+								<field colspan="4" readonly="1" name="communication_id" />
+							</page>
+
+						</notebook>
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="view_cmc_assessment_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="CMC Assessment" limit="40" min_rows="10">
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="appointment_completed_date" string="Appointment Date" />
+					<field colspan="3" name="total_cost" string="Total Cost" />
+					<field colspan="3" name="total_balance" string="Balance" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_assessment" model="ir.actions.act_window">
+			<field name="name">CMC Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">tree</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_cmc_assessment_tree"></field>
+		</record>
+
+
+
+		<!--ASSESSMENT HANDLING-PENDING CLIENT RESPONSE -->
+		<record id="view_pending_client_response_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.tree.pending.client.response</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="New Assessments" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_client_response" model="ir.actions.act_window">
+			<field name="name">New Assessment-Pending Form Completion</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_pending_client_response_tree" />
+		</record>
+
+
+		<!--END OF ASSESSMENT HANDLING-PENDING CLIENT RESPONSE -->
+
+		<!-- PENDING ADMIN CHECKLIST -->
+		<record id="view_pending_admin_checklist_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.pending.admin.checklist.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Admin Checklist" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_checklist" model="ir.actions.act_window">
+			<field name="name">Pending Admin Checklist</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_admin_checklist_tree" />
+		</record>
+
+		<!-- END OF PENDING ADMIN CHECKLIST -->
+
+
+
+
+
+		<!-- PENDING APPOINTMENT BOOKING -->
+		<record id="view_pending_appointment_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.pending.booking.appointment.tree
+			</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Apointment Booking" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_appointment_booking" model="ir.actions.act_window">
+			<field name="name">Pending Appointment Booking</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_pending_appointment_tree"></field>
+		</record>
+
+
+		<!-- PENDING APPOINTMENT CONFIRMATION -->
+
+		<record id="view_pending_appointment_confirmation_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.appointment.confirmation.tree
+			</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Apointment Confirmation" limit="30">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_appointment_confirmation_tree"
+			model="ir.actions.act_window">
+			<field name="name">Pending Appointment Confirmation</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_pending_appointment_confirmation_tree" />
+		</record>
+
+		<!-- END OF PENDING APPOINTMENT CONFIRMATION -->
+
+		<!--PAPER ASSESSMENT PAPER WORK -->
+		<record id="view_pending_assessment_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.pending.assessment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Print Assessment Report" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_assessment_pack" model="ir.actions.act_window">
+			<field name="name">Pending Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_assessment_tree" />
+			<field name="domain"
+				eval="[('driving_assessment_type','in',['full_driving_assessment','drive_from_wheelchair_assessment'])]"></field>
+		</record>
+
+		<!-- END OF PENDING ASSESMENT PACK -->
+
+		<!-- PENDING REPORT COMPLETEION -->
+		<record id="view_pending_report_completion_tree" model="ir.ui.view">
+			<field name="name">cmc.pending.report.completion.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="All ILME Assessment Records" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_report_completion_report" model="ir.actions.act_window">
+			<field name="name">All ILME Assessment Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_report_completion_tree" />
+			<field name="domain"
+				eval="[('driving_assessment_type','in',['full_driving_assessment','drive_from_wheelchair_assessment'])]"></field>
+		</record>
+
+		<!-- END OF REPORT COMPLETEION -->
+
+		<!-- ADI PENDING ASSESSOR APPROVAL -->
+		<record id="view_pending_assessor_approval_tree" model="ir.ui.view">
+			<field name="name">cmc.pending.report.completion.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Report Completion" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_assessors_approval_form" model="ir.actions.act_window">
+			<field name="name">Pending Report Completion</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_assessor_approval_tree" />
+			<field name="domain"
+				eval="[('driving_assessment_type','in',['full_driving_assessment','drive_from_wheelchair_assessment'])]"></field>
+		</record>
+		<!-- END OF ADI PENDING ASSESSOR APPROVAL -->
+
+		<!-- APPOINTMENT BOOKING IN RECEPTION -->
+		<record id="view_pending_booking_reception_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.pending.appointment.booking.tree
+			</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Appointment Booking" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_appointment_booking_reception"
+			model="ir.actions.act_window">
+			<field name="name">Pending Appointment Booking</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_booking_reception_tree" />
+		</record>
+		<!-- END OF APPOINTMENT BOOKING IN RECEPTION -->
+
+		<!-- PENDING DRAFT REPORT -->
+		<record id="view_pending_draft_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.draft.approval.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Pending Draft Form" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_draft_report" model="ir.actions.act_window">
+			<field name="name">Pending Draft Report</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_draft_tree" />
+		</record>
+
+		<!-- END OF PENDING DRAFT REPORT -->
+
+		<!--PENDING PRINT AND SEND REPORT -->
+		<record id="view_print_assessment_report_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Print Assessment Report" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_assessment_report" model="ir.actions.act_window">
+			<field name="name">Print Assessment Report</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_print_assessment_report_tree" />
+		</record>
+		<!--END OF PENDING PRINT AND SEND REPORT -->
+
+		<!--ALL ASSESSMENT -->
+		<record id="view_all_assessment_report_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="All Assessment" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="assessment_date" />
+					<field colspan="3" name="owner" />
+					<field colspan="3" name="driving_assessment_type" string="Type" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_all_assessment_report" model="ir.actions.act_window">
+			<field name="name">All Assessment Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_all_assessment_report_tree" />
+			<field domain eval="[('driving_assessment_type','not in',['chair_assessment'])]">
+			</field>
+		</record>
+		<!--END OF ALL ASSESSMENT -->
+
+
+
+
+	</data>
+</openerp>
+   

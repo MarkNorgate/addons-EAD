@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_cmc_assessment_form" model="ir.ui.view">
+			<field name="name">cmc.assessment.form</field>
+			<field name="model">cmc.assessment</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="EAD Assessment">
+					<!-- <page string="Action Details"> -->
+					<group colspan="4" string="Details">
+						<field colspan="1" invisible="1" name="uploaded_final_report" />
+						<field colspan="1" invisible="1" name="is_dvla" />
+						<field colspan="1" invisible="1" name="is_agent" />
+						<field colspan="1" invisible="1" name="is_client" />
+						<field colspan="1" invisible="1" name="appointment_completed_d"
+							select="1" />
+						<field colspan="1" invisible="1" name="dummy_docs" select="1" />
+						<group colspan="4">
+							<field colspan="1" name="ref_id" select="1" readonly="1" />
+							<field colspan="1" name="state" string="State" invisible="0"
+								readonly="0" select="1" widget="selection" />
+							<newline />
+							<field colspan="1" name="driving_assessment_type" select="1"
+								readonly="0" />
+							<newline></newline>
+							<field colspan="1" name="agent_person_id" select="1" />
+							<newline />
+							<field colspan="1" name="dvla_medical_advisor" select="1" />
+							<newline />
+							<field colspan="1" name="agency_reference_id" select="1" />
+							<newline />
+							<field colspan="1" name="client_person_id" select="1"
+								readonly="1" />
+						</group>
+					</group>
+
+
+
+					<!-- </page> -->
+					<group colspan="4">
+						<notebook>
+
+							<page string="Assessment Details">
+								<group colspan="4">
+									<field colspan="4" name="referrer_type"
+										on_change="onchange_referrer_type(referrer_type,driving_assessment_type)" />
+									<field colspan="4" name="paying" readonly="0" />
+									<field colspan="4" name="enquiry_details" readonly="0" />
+								</group>
+							</page>
+							<page string="Application Form Details">
+								<group colspan="4">
+									<notebook>
+
+										<page string="Form">
+											<group colspan="4">
+												<notebook>
+													<page string="Further Details">
+														<field colspan="3" name="where" />
+													</page>
+													<page string="Diagnosis">
+														<field colspan="2" name="diagnosis" />
+														<field colspan="2" name="diagnosis_code" />
+														<field colspan="2" name="onset_date" />
+														<field colspan="2" name="effect" />
+														<field colspan="2" name="allegies" />
+														<field colspan="2" name="had_operations_two_years" />
+
+														<field colspan="2" name="medication" />
+														<field colspan="2" name="last_eyesight" />
+														<field colspan="2" name="height" />
+														<field colspan="2" name="weight" />
+														<field colspan="2" name="component" />
+														<newline />
+														<group colspan="4" col="4">
+															<group />
+															<group colspan="2"
+																string="Have you suffered from any of the following in the past two years?">
+																<field colspan="4" name="Epilepsy Blackouts"
+																	align="1.0" />
+																<field colspan="4" name="Diabetes" align="1.0" />
+																<field colspan="4" name="Heart Disease" align="1.0" />
+																<field colspan="4" name="Psychiatric illness"
+																	align="1.0" />
+																<field colspan="4" name="Speech problems" align="1.0" />
+																<field colspan="4" name="Memory problems" align="1.0" />
+																<field colspan="4" name="Reading Learning difficulties"
+																	align="1.0" />
+															</group>
+														</group>
+													</page>
+													<page string="About You">
+														<group colspan="4">
+															<group colspan="4" col="4">
+																<field colspan="1" name="aids" align="0.0" />
+															</group>
+															<newline />
+															<group colspan="4" col="4"
+																attrs="{'invisible':[('aids','=',False)]}">
+
+																<field colspan="4" name="b_tranfer_wo_help" align="0.0" />
+																<field colspan="4" name="b_stow_wheelchair" align="0.0" />
+																<field colspan="4" name="stow_method"
+																	attrs="{'invisible':[('b_stow_wheelchair','=',True)]}"
+																	align="0.0" />
+																<group colspan="4">
+																	<field colspan="4" name="stow_person"
+																		attrs="{'invisible':[('b_stow_wheelchair','=',False)]}"
+																		align="0.0" />
+																</group>
+																<newline />
+
+																<group colspan="4" string="Moblility Aids Used">
+																	<group colspan="4" col="4">
+																		<group colspan="1">
+																			<label colspan="1" string="Manual Wheelchair"
+																				align="1.0"></label>
+																		</group>
+																		<group colspan="2" col="2">
+																			<field colspan="2" name="manual_wheelchair_indoor"
+																				align="0.0" />
+																			<newline />
+																			<field colspan="2" name="manual_wheelchair_outdoor"
+																				align="0.0" />
+																			<newline />
+																			<group colspan="2"
+																				attrs="{'invisible':[('manual_wheelchair_outdoor','!=',True,)]}">
+																				<field colspan="2" name="manual_wheelchair_make_model"
+																					align="0.0"
+																					attrs="{'invisible':[('manual_wheelchair_indoor','=',False)]}" />
+																			</group>
+
+																		</group>
+																		<group />
+																	</group>
+																	<newline />
+																	<group colspan="4" col="4">
+																		<group colspan="1">
+																			<label colspan="1" string="Power Wheelchair"
+																				align="1.0"></label>
+																		</group>
+																		<group colspan="2" col="2">
+																			<field colspan="2" name="power_wheelchair_indoor"
+																				align="0.0" />
+																			<newline />
+																			<field colspan="12" name="power_wheelchair_outdoor"
+																				align="0.0" />
+																			<newline />
+																			<group colspan="2"
+																				attrs="{'invisible':[('power_wheelchair_outdoor','!=',True,)]}">
+
+																				<field colspan="2" name="power_wheelchair_make_model"
+																					align="0.0"
+																					attrs="{'invisible':[('power_wheelchair_indoor','!=',True,)]}" />
+																			</group>
+
+																		</group>
+																		<group />
+																	</group>
+																	<newline />
+																	<group colspan="4" col="4">
+																		<group colspan="1" col="1">
+																			<label colspan="1" string="Scooter" align="1.0"></label>
+																		</group>
+																		<group colspan="2" col="2">
+																			<field align="0.0" colspan="2" name="scooter_indoor" />
+																			<newline />
+																			<field align="0.0" colspan="2" name="scooter_outdoor" />
+																			<newline />
+																			<group colspan="2" col="2"
+																				attrs="{'invisible':[('scooter_indoor','!=',True,)]}">
+																				<field align="0.0" colspan="2"
+																					name="scooter_make_model"
+																					attrs="{'invisible':[('scooter_outdoor','!=',True,)]}" />
+																				<newline />
+																			</group>
+																			<field align="0.0" colspan="2" name="crutches" />
+																			<newline />
+																			<field align="0.0" colspan="2" name="wheeled_walker" />
+																			<newline />
+																			<field align="0.0" colspan="2" name="walking_stick" />
+																			<newline />
+																			<field align="0.0" colspan="2" name="zimmer_frame" />
+
+																		</group>
+																		<group />
+																	</group>
+																</group>
+															</group>
+														</group>
+													</page>
+													<page string="About Driving">
+														<field colspan="3" name="b_driving_licenese" />
+														<group colspan="3"
+															attrs="{'invisible':[('b_driving_licenese','=',False)]}">
+															<field colspan="3" name="type_lincense" />
+															<field colspan="3" name="driver_number" />
+															<field colspan="3" name="b_issue_uk" />
+														</group>
+														<field colspan="3"
+															attrs="{'invisible':[('b_issue_uk','=',True)]}" name="issue_where" />
+														<field colspan="3" name="b_dlva_informed" />
+														<field colspan="3" name="dlva_date"
+															attrs="{'invisible':[('b_dlva_informed','=',False)]}" />
+														<field colspan="3" name="advised_stop" />
+														<field colspan="3" name="advised_stop_doctor"
+															attrs="{'invisible':[('advised_stop','=',False)]}" />
+														<field colspan="3" name="driving_experience" />
+														<field colspan="3" name="stop_date"
+															attrs="{'invisible':[('driving_experience','!=','currently_driving_past')]}" />
+													</page>
+													<page string="About Vehicles">
+														<group colspan="4">
+															<group />
+															<group />
+															<field colspan="4" name="b_vehicle" />
+
+														</group>
+														<group colspan="4"
+															attrs="{'invisible':[('b_vehicle','=',False)]}">
+															<group colspan="4" col="4">
+																<field colspan="4" name="vehicle_make" />
+																<field colspan="4" name="vehicle_model" />
+																<field colspan="4" name="vehicle_year" />
+																<group></group>
+															</group>
+															<group colspan="4" col="4">
+																<field colspan="4" name="vehicle_tansmission" />
+																<field colspan="4" name="b_vehicle_motability" />
+																<field colspan="4" name="vehicle_motablity_date"
+																	attrs="{'invisible':[('b_vehicle_motability','=',False)]}" />
+															</group>
+															<field colspan="4" name="vehicle_adaptations_fitted" />
+															<field colspan="4" name="vehicle_adaptations_fitted_details"
+																attrs="{'invisible':[('vehicle_adaptations_fitted','=',False)]}" />
+															<group />
+														</group>
+													</page>
+													<page string="Other Information">
+														<field colspan="3" name="b_available_for_cancellation"
+															select="1" />
+														<field colspan="3" name="days_not_available" />
+														<field colspan="3" name="special_requirments" />
+														<field colspan="3" name="wish_add" />
+														<field colspan="3" name="how_they_heard" />
+													</page>
+													<page string="Payment Details">
+														<field colspan="3" name="total_cost" readonly="0" />
+														<field colspan="3" name="payment_received" />
+														<group colspan="3" 
+															attrs="{'invisible':[('payment_received','=',False)]}">
+															<field colspan="3" name="card_type" />
+															<field colspan="3" name="payment_date" string="Last Payment Date" />
+															<field colspan="3" name="amount_debit"
+																on_change="onchange_balance(total_cost,amount_debit)"
+																string="Payment Received(so far)" />
+														</group>
+														<field colspan="3" name="total_balance" string="Total Balance(so far)" />
+														<field colspan="3" name="refund" />
+														<field colspan="3" name="invoice_no" string="Invoice No" />
+													</page>
+												</notebook>
+											</group>
+										</page>
+									</notebook>
+								</group>
+							</page>
+							<page string="Appointments">
+								<group colspan="4" col="6">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(wziard_appointment_search_user_equipment_group)d"
+										string="Search Calendar" type="action" target="new" />
+								</group>
+								<field colspan="4" name="appointment_id" nolabel="1"
+									align="0.0">
+									<form string="Appointment Booking -Edit">
+										<group colspan="4" string="Appointment Tracking"
+											attrs="{'invisible':[('state','in',['none'])]}">
+											<field name="assessment_id" colspan="1" align="1.0"
+												readonly="1" />
+											<newline />
+											<field name="equipment_supply_process_id" colspan="1"
+												align="1.0" />
+											<newline />
+											<field name="workshop_id" colspan="1" align="1.0" />
+											<newline />
+											<field name="reminder_id" colspan="1" align="1.0" />
+										</group>
+										<group colspan="4">
+											<field name="clash" string="Clash" invisible="1" />
+											<field name="from_where" invisible="1" />
+											<field colspan="4" name="parent_id" string="Subject"
+												invisible="1" />
+											<field colspan="4" name="from_appointment" string="Subject"
+												invisible="1" />
+											<field colspan="4" name="apmnt_start_date_time" string="Start Date"
+												invisible="1" select="1" />
+											<field colspan="4" name="apmnt_end_date_time" string="End Date"
+												invisible="1" select="1" />
+										</group>
+										<group colspan="4"
+											attrs="{'readonly':[('state','in',['active'])]}">
+											<group colspan="4">
+												<field colspan="4" name="title" string="Subject"
+													align="0.0" />
+												<field colspan="4" name="event" string="Event (if not assessment)"
+													align="0.0" />
+											</group>
+
+											<group colspan="4" col="8">
+												<group />
+												<group />
+												<field colspan="1" name="apmnt_start_date" string="Start"
+													align="0.0"
+													on_change="onchange_date(apmnt_start_date,parent_id,owner,from_appointment)"
+													attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+												<field colspan="1" name="start_time_hour" invisible="0"
+													string="Time" align="0.0" on_change="onchange_hour(start_time_hour)"
+													attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+												<field colspan="1" name="start_time_minutes"
+													invisible="0" nolabel="1" align="0.0"
+													on_change="onchange_minutes(start_time_minutes)" />
+												<group />
+												<newline />
+												<group />
+												<group />
+												<field colspan="1" name="apmnt_date_end" string="Finish"
+													align="0.0"
+													attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+												<field colspan="1" name="end_time_hour" invisible="0"
+													string="Time"
+													attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+												<field colspan="1" name="end_time_minutes" invisible="0"
+													nolabel="1" />
+												<group />
+											</group>
+											<group colspan="4">
+												<field colspan="4" name="location" string="Location"
+													attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+												<field colspan="4" name="owner" string="Assessor/Technician"
+													on_change="onchange_assessor(owner,title,parent_id,from_appointment)"
+													widget="selection"
+													attrs="{'readonly':[('state','in',['cancelled','completed'])]}">
+
+												</field>
+											</group>
+											<group colspan="4" col="4">
+												<group colspan="4">
+													<field colspan="1" name="save_clash" string="Save With Clash" />
+												</group>
+												<newline />
+												<group colspan="4">
+													<field colspan="4" name="user_ids" string="Attendees"
+														attrs="{'readonly':[('state','in',['cancelled','completed'])]}" />
+													<field colspan="4" name="equipment_ids" string="Equipments">
+														<tree string="Equipment">
+															<field name="make" />
+															<field name="model" />
+															<field name="serial_no" string="Serial No" />
+														</tree>
+													</field>
+												</group>
+											</group>
+											<field colspan="4" name="state" invisible="1" />
+											<group colspan="4"
+												attrs="{'invisible':[('state','not in',['active_clash'])]}">
+												<label
+													string="This Appointment is Clashing With One of the Active Appointments"
+													colspan="4" />
+											</group>
+											<group colspan="4"
+												attrs="{'invisible':[('state','not in',['cancelled','cancelled_within_two_days'])]}">
+												<field colspan="4" name="reason" readonly="1"
+													string="Reason for Canc." />
+											</group>
+										</group>
+										<group attrs="{'invisible':[('type','in',['reminder'])]}">
+											<group
+												attrs="{'invisible':[('state','not in',['active','active_clash'])]}"
+												string="" colspan="4">
+												<!-- <button states="active,confirmed" string="Cancel" -->
+												<!-- name="btn_cancel_appointment" type="object" /> -->
+												<button states="active,active_clash" string="Confirmed"
+													name="btn_cofirm_appointment" type="object"
+													context="{'confirmed':'Appointment'}" />
+											</group>
+										</group>
+										<group>
+											<button string="Complete" states="active,active_clash,confirmed"
+												name="btn_complete_appointment" type="object" />
+										</group>
+									</form>
+								</field>
+							</page>
+							<page string="Templates and Letters">
+								<field colspan="1" align="0.0" name="docs"
+									on_change="onchange_dummy_doc(docs)" />
+								<group colspan="1">
+									<group colspan="1" col="8">
+										<button name="%(wizard_driving_ax_letter)d" string="Go"
+											target="" type="action" context="{'appointment_letter':docs}" />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+									</group>
+									<group colspan="1" col="8"
+										attrs="{'invisible':[('appointment_letters','in',['New appointment letter to Client post','New appointment letter to Client Agent paying post_quest','New appointment letter to Client Agent paying post_not_quest','New appointment letter to Referring Agent post','Re-booked appointment after a cancellation letter to Client post','Notification to DVLA of new appointment post','Notification to DVLA of re-booked appointment following cancellation post'])]}">
+										<!-- <button name="btn_email_appointments" string="Go" target="" -->
+										<!-- type="object" context="{'email_appointment_letter':appointment_letters}" 
+											/> -->
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+									</group>
+								</group>
+
+							</page>
+							<page string="Attachments">
+								<group colspan="4" string="Attachments">
+									<field name="attachments" widget="one2many" nolabel="1">
+										<form string="Document Attachments">
+											<field name="name" string="Document" select="1" />
+											<field name="datas_fname" select="1" />
+											<field name="datas" filename="datas_fname" />
+										</form>
+										<tree string="Attach Documents for record keeping">
+											<field name="name" string="Document" />
+											<field name="datas_fname" />
+											<button groups="forum.group_cmc_administrator" string="Delete"
+												name="btn_delete_attachment" type="object"
+												confirm="Are you sure, you want to delete this attachment?" />
+										</tree>
+									</field>
+								</group>
+							</page>
+
+
+							<!-- REPORT DETAILS -->
+							<page string="Reports">
+								<group colspan="4">
+									<group colspan="4">
+										<field name="assessment_outcome_virtual" colspan="2"
+											align="0.0" widget="selection" />
+
+										<group />
+										<field name="reason_driving" align="0.0" colspan="2" />
+									</group>
+									<group colspan="4" col="8">
+										<group colspan="1">
+											<label colspan="4" string="Review at a later date"
+												align="0.0"></label>
+										</group>
+										<group colspan="1" col="3">
+											<field colspan="1" name="review_later_date" nolabel="1"
+												align="0.0" on_change="onchange_review_date(review_later_date)" />
+											<label colspan="1" string="Or" align="0.0"></label>
+											<field colspan="1" name="review_date" nolabel="1"
+												align="0.0" />
+										</group>
+										<group />
+										<group />
+									</group>
+									<group colspan="4"
+										attrs="{'invisible':[('uploaded_final_report','!=', 
+                                    False)]}">
+
+										<group colspan="4" string="Upload Completed Report">
+											<group colspan="3">
+												<field colspan="3" name="datas" filename="datas_fname" />
+												<field colspan="1" name="datas_fname" />
+											</group>
+										</group>
+										<group colspan="4" string="Upload Completed Extra Report">
+											<field colspan="3" name="extra_report_attachement">
+												<form string="Document Attachments">
+													<field name="name" string="Document" select="1" />
+													<field name="datas_fname" select="1" />
+													<field name="datas" filename="datas_fname" />
+												</form>
+												<tree string="Attach Documents for record keeping">
+													<field name="name" string="Document" />
+													<field name="datas_fname" />
+												</tree>
+											</field>
+										</group>
+									</group>
+									<group colspan="4" string="Assessement Report"
+										attrs="{'invisible':[('uploaded_final_report','!=', 
+                                    True)]}">
+										<group colspan="4" col="4">
+											<label colspan="2" string="Assessment Report – Final version" />
+											<field colspan="1" nolabel="1" name="datas_uploaded_final"
+												filename="datas_uploaded_fname" />
+											<field colspan="1" nolabel="1" name="datas_uploaded_fname" />
+										</group>
+										<group colspan="4" col="4">
+											<label string="Uploaded by" colspan="2" />
+											<group colspan="2" col="4">
+												<field name="created_by" nolabel="1" colspan="1" />
+												<label string="On" colspan="1" />
+												<field name="created_on" nolabel="1" colspan="1" />
+											</group>
+										</group>
+									</group>
+								</group>
+							</page>
+							<!-- END OF REPORT DETAILS -->
+
+							<page string="Communication">
+								<field colspan="4" readonly="1" name="communication_id" />
+							</page>
+
+						</notebook>
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="view_cmc_assessment_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="EAD Assessment" limit="40" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="appointment_completed_date" string="Appointment Date" />
+					<field colspan="3" name="total_cost" string="Total Cost" />
+					<field colspan="3" name="total_balance" string="Balance" />
+					<field colspan="3" name="invoice_status" string="Invoice" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_assessment" model="ir.actions.act_window">
+			<field name="name">EAD Assessment</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">tree</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_cmc_assessment_tree"></field>
+		</record>
+
+
+
+
+		<!-- ADI ALL ASESSMENT RECORDS -->
+		<record id="view_pending_completion_tree" model="ir.ui.view">
+			<field name="name">cmc.pending.report.completion.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="All ILME Assessment Records" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="driving_assessment_type" />
+					<field colspan="3" name="current_owner_id" string="Assessor" />
+					<field colspan="3" name="paying" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_pending_report_completion_report" model="ir.actions.act_window">
+			<field name="name">All ILME Assessment Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_pending_completion_tree" />
+		</record>
+
+		<record id="view_all_assessment_report_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.tree</field>
+			<field name="model">cmc.assessment</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="All Assessment" limit="30" min_rows="10">
+					<field colspan="3" name="ref_id" />
+					<field colspan="3" name="client_person_id" />
+					<field colspan="3" name="agent_person_id" />
+					<field colspan="3" name="current_owner_id" string="Assessor" />
+					<field colspan="3" name="assessment_date" />
+					<field colspan="3" name="owner" />
+					<field colspan="3" name="driving_assessment_type" string="Type" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_all_assessment_report" model="ir.actions.act_window">
+			<field name="name">All Assessment Record</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_all_assessment_report_tree" />
+		</record>
+		<!--END OF ALL ASSESSMENT -->
+
+
+
+
+	</data>
+</openerp>

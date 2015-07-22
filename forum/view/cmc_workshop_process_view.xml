@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!-- EQUIPEMENT VIEW -->
+		<record id="view_cmc_workshop_process_form" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.form</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+
+				<form string="Workshop Task Details">
+					<group colspan="4" col="8">
+						<group />
+						<group />
+						<group />
+						<field colspan="1" name="state" />
+						<group />
+					</group>
+					<group colspan="4" string="">
+						<field colspan="1" name="job_type" readonly="1" />
+						<newline />
+						<field colspan="1" name="job_no" readonly="1" />
+						<field colspan="1" name="equipment_id" string="Equipment"
+							readonly="1" />
+						<field colspan="1" name="make" select="1" />
+						<field colspan="1" name="asset_type" />
+						<field colspan="1" name="model" select="1" />
+						<field colspan="1" name="owner" select="1" />
+						<field colspan="1" name="serial_no" select="1" />
+						<field colspan="1" name="onwer_asset_no" />
+						<field colspan="1" name="size" />
+						<field colspan="1" name="current_user_id" select="1" />
+						<field colspan="1" name="manufacture_date" />
+						<field colspan="1" name="year" />
+						<field colspan="1" name="agent_id" />
+						<field colspan="1" name="delear_id" />
+					</group>
+					<group colspan="4">
+						<notebook>
+
+							<page string="Task Description">
+								<group colspan="4" col="4">
+									<field colspan="2" name="nature_job" align="0.0" select="1" />
+									<group />
+									<newline />
+									<field colspan="2" name="paying_adaptation_repair" align="0.0" />
+									<newline></newline>
+									<field colspan="2" name="other_person_id" align="0.0"
+										attrs="{'invisible':[('paying_adaptation_repair','!=','Other')]}"
+										string="Invoice this adaptation/repair to:">
+										<tree string="Other Person">
+											<field name="display_name" string="Display Name"></field>
+											<field name="is_organisation" string="Is Organisation"></field>
+											<field name="birth_date" string="Date Of Birth"></field>
+										</tree>
+									</field>
+									<newline />
+								</group>
+								<group colspan="4" col="4">
+									<group colspan="4" col="4">
+										<group colspan="4" col="4">
+											<label colspan="2"
+												string="Please describe the requirement in as much detail as possible:"
+												align="0.0" />
+											<newline />
+											<group></group>
+										</group>
+										<group colspan="4" col="4">
+											<field colspan="1" name="requirement" nolabel="1" />
+
+										</group>
+									</group>
+									<newline />
+									<group colspan="4" col="4">
+										<field name="equipment_collect" colspan="2" align="0.0" />
+										<group />
+										<newline></newline>
+									</group>
+									<newline />
+									<group colspan="2" col="4"
+										attrs="{'invisible':[('equipment_collect','=','No')]}">
+										<field name="collect_from" colspan="1" align="0.0" />
+										<field name="collect_option" colspan="1" align="0.0"
+											nolabel="1" on_change="onchange_address(collect_option,'collect_from')" />
+									</group>
+									<group colspan="4" col="4">
+										<field name="work_off_site" colspan="2" align="0.0" />
+										<group />
+										<newline></newline>
+									</group>
+									<newline />
+									<group colspan="2" col="4"
+										attrs="{'invisible':[('work_off_site','=',False)]}">
+										<field name="work_where" colspan="1" align="0.0" />
+										<field name="work_option" colspan="1" align="0.0"
+											nolabel="1" on_change="onchange_address(work_option,'work_where')" />
+									</group>
+									<group colspan="4" col="4">
+										<field name="equipment_return" colspan="2" align="0.0" />
+										<group />
+										<newline></newline>
+									</group>
+									<newline />
+									<group colspan="2" col="4"
+										attrs="{'invisible':[('equipment_return','=','No')]}">
+										<field name="item_returned" colspan="1" align="0.0" />
+										<field name="item_option" colspan="1" align="0.0"
+											nolabel="1" on_change="onchange_address(item_option,'item_returned')" />
+									</group>
+								</group>
+							</page>
+							<page string="Parts Required / Used">
+								<field colspan="4" name="part_ordered" nolabel="1" align="0.0">
+									<tree string="Parts" limit="30" min_rows="1"
+										colors="green:state=='active';grey:state=='active_clash';darkred:state=='cancelled';orange:state=='confirmed';blue:state == 'completed'">
+										<field colspan="3" name="date_order" />
+										<field colspan="3" name="ordered_from" />
+										<field colspan="3" name="part_no" />
+										<field colspan="3" name="quantity" />
+										<field colspan="3" name="price" />
+									</tree>
+									<form string="Parts">
+										<group colspan="4">
+											<field colspan="1" name="date_order" />
+											<field colspan="1" name="part_no" />
+											<field colspan="1" name="quantity" />
+											<field colspan="1" name="price" />
+											<field colspan="1" name="ordered_from" />
+											<newline />
+											<field colspan="4" name="description" />
+										</group>
+									</form>
+								</field>
+							</page>
+							<page string="Appointments">
+								<group colspan="4" col="6">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(wziard_appointment_search_user_equipment_group)d"
+										string="Search Calendar" type="action" target="new" />
+								</group>
+								<group colspan="4" col="7">
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<button name="%(booked_client_visit_appointment)d"
+										string="Book Appointment" type="action" context="{'type':'Workshop'}" />
+								</group>
+								<field name="appointment_id" colspan="4" readonly="1">
+									<tree string="Appointments" limit="30" min_rows="1"
+										colors="green:apmnt_status=='Active';grey:apmnt_status=='Active Clash';darkred:apmnt_status=='Cancelled';red:apmnt_status=='Cancellation - Within 48 Hours';orange:apmnt_status=='Confirmed';blue:apmnt_status == 'Completed'">
+										<field colspan="3" name="apmnt_start_date_time" string="Start" />
+										<field colspan="3" name="apmnt_end_date_time" string="End" />
+										<field colspan="3" name="owner" />
+										<field colspan="3" name="location" />
+										<!-- <field colspan="3" name="state" invisible="0" string="Status" 
+											/> -->
+										<field colspan="3" name="apmnt_status" string="Status" />
+										<button states="active,active_clash,confirmed" string="Cancel"
+											name="%(cancel_appointment)d" type="action" />
+									</tree>
+								</field>
+							</page>
+							<page string="Letters / Templates"
+								attrs="{'invisible':[('job_type','=','Adaptations')]}">
+								<group colspan="4" col="7" string="PCT Refurb">
+
+									<button name="%(wizard_workshop_pct_refurb)d" string="Print PCT Refurb Form"
+										type="action" />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+								<group colspan="4" col="7" string="PDI">
+
+									<button name="%(wizard_workshop_pdi_manual)d" string="Print PDI Manual"
+										type="action" />
+									<button name="%(wizard_workshop_pdi_power)d" string="Print PDI Power"
+										type="action" />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+								<group colspan="4" col="7" string="Workshop Serive/Repair">
+
+									<button name="%(wizard_workshop_service_repair_jobsheet)d"
+										string="Print Jobsheet" type="action" />
+									<button name="%(wizard_workshop_service_collection_delivery)d"
+										string="Print Delivery Form" type="action" />
+									<button name="%(wizard_workshop_service_repair_loan)d"
+										string="Print Loan Form" type="action" />
+									<button name="%(wizard_workshop_service_repair_order)d"
+										string="Print Order Form" type="action" />
+									<button name="%(wizard_workshop_service_repair_quote)d"
+										string="Print Quote" type="action" />
+									<button name="%(wizard_workshop_service_repair_return)d"
+										string="Print Return Form" type="action" />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+							</page>
+							<page string="Letters / Templates" attrs="{'invisible':[('job_type','=','Workshop')]}">
+								<group colspan="4" col="7" string="Adaptation Enquiry Form">
+
+									<button name="%(workshop_wizard_enquiry_form)d" string="Print Enquiry Form"
+										type="action" />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+								<group string="Adaptation Quote" colspan="4" col="6">
+									<field colspan="3" name="apadatation_quote"></field>
+									<group colspan="1" col="3">
+										<button name="%(wizard_workshop_adaptation_client_agent_paying)d"
+											string="Go" type="action" context="{'Quote':apadatation_quote}" />
+										<group />
+										<group />
+									</group>
+									<group />
+									<group />
+								</group>
+								<group colspan="4" col="6" string="Chaseup Letter">
+									<group colspan="1" col="1">
+										<button name="%(wizard_workshop_chaseup_letter_client)d"
+											string="Chaseup Letter To Client" type="action"></button>
+									</group>
+									<group />
+									<group />
+									<group />
+									<group />
+									<group colspan="1" col="1">
+										<button name="%(wizard_workshop_chaseup_letter_agent)d"
+											string="Chaseup Letter To Agent" type="action"></button>
+									</group>
+								</group>
+								<group colspan="4" string="Appointment Letter">
+									<field colspan="1" align="0.0" name="appointment_letters" />
+									<group colspan="1">
+										<group colspan="1" col="8"
+											attrs="{'invisible':[('appointment_letters','not in',['Appointment letter to Current User print','Appointment letter to Current Owner print','Appointment letter to Agent Dealership print'])]}">
+											<button name="%(wizard_workshop_apmt_letter_client)d"
+												string="Go" target="new" type="action"
+												context="{'appointment_letter':appointment_letters}" />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+											<group />
+										</group>
+									</group>
+									<group colspan="1" col="8"
+										attrs="{'invisible':[('appointment_letters','in',['Appointment letter to Current User print','Appointment letter to Current Owner print','Appointment letter to Agent Dealership print'])]}">
+										<button name="btn_email_appointments" string="Go" type="object"
+											context="{'email_appointment_letter':appointment_letters}" />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+										<group />
+									</group>
+								</group>
+								<group colspan="4" col="6" string="Delivery Checklist">
+									<group colspan="1" col="1">
+										<button name="%(wizard_workshop_delivery_checklist)d"
+											string="Print Delivery Checklist" type="action"></button>
+									</group>
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+								<group colspan="4" col="6" string="Adaptation Jobsheet">
+									<group colspan="1" col="1">
+										<button name="%(wizard_workshop_jobsheet)d" string="Print Jobsheet"
+											type="action"></button>
+									</group>
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+								<group colspan="4" col="6" string="Workshop Repair Estimate">
+									<group colspan="1" col="1">
+										<button name="%(wizard_workshop_repair_estimate)d"
+											string="Print Repair Estimate Sheet" type="action"></button>
+									</group>
+									<group />
+									<group />
+									<group />
+									<group />
+									<group />
+								</group>
+							</page>
+							<page string="Attachments">
+								<field name="attachments_id" nolabel="1" colspan="4"
+									align="0.0" />
+							</page>
+							<page string="Outcome/Report">
+								<field name="outcome" string="Outcome" align="0.0"
+									colspan="4" />
+								<newline />
+								<group colspan="4">
+									<group colspan="1">
+										<label colspan="4" string="Review at a later date"
+											align="0.0"></label>
+									</group>
+									<group colspan="1" col="3">
+										<field colspan="1" name="review_later_date" nolabel="1"
+											align="0.0" on_change="onchange_review_date(review_later_date)" />
+										<label colspan="1" string="Or" align="0.0"></label>
+										<field colspan="1" name="review_date" nolabel="1" align="0.0" />
+									</group>
+									<group />
+									<group />
+								</group>
+							</page>
+							<page string="Task History">
+								<field colspan="4" name="task_id" align="0.0" />
+							</page>
+
+						</notebook>
+					</group>
+				</form>
+
+			</field>
+		</record>
+		<record id="view_cmc_workshop_process_tree" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipments">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+
+		<record id="action_cmc_workshop_process_form" model="ir.actions.act_window">
+			<field name="name">Workshop Process</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_tree" />
+			<field name="domain" eval="[('state','in',['New Proposal'])]"></field>
+		</record>
+		<!-- QUOTE SENT -->
+		<record id="view_cmc_workshop_process_qoute_tree" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipments">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_qoute_form" model="ir.actions.act_window">
+			<field name="name">Quote Sent Workshop Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_qoute_tree" />
+			<field name="domain" eval="[('state','in',['Quote Sent'])]"></field>
+		</record>
+
+		<!-- -->
+		<!-- QUOTE Approved -->
+		<record id="view_cmc_workshop_process_all_open_jobs_tree"
+			model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipments">
+					<field colspan="3" name="job_no" string="Job No" />
+					<field colspan="3" name="owner" string="Owner" />
+					<field colspan="3" name="current_user_id" string="Current User" />
+					<field colspan="3" name="nature_job" string="Type" />
+					<field colspan="3" name="make" string="Make" />
+					<field colspan="3" name="model" string="Model" />
+					<field colspan="3" name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_all_open_jobs" model="ir.actions.act_window">
+			<field name="name">All Open Jobs</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_all_open_jobs_tree" />
+			<field name="domain"
+				eval="[('state','not in',['Ready For Invoicing','Complete','Cancel']),('job_type','in',['Workshop'])]"></field>
+		</record>
+		<!-- -->
+		<!-- Awaiting Parts -->
+		<record id="view_cmc_workshop_process_awaiting_parts_tree"
+			model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipments">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_awaiting_parts_form"
+			model="ir.actions.act_window">
+			<field name="name">Awaiting Parts Workshop Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_awaiting_parts_tree" />
+			<field name="domain" eval="[('state','in',['Awaiting Parts'])]"></field>
+		</record>
+		<!-- -->
+		<!-- -->
+		<!-- Appointment Booked -->
+		<!-- -->
+		<record id="view_cmc_workshop_process_appointment_booked_tree"
+			model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Equipments">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_appointment_booked_form"
+			model="ir.actions.act_window">
+			<field name="name">Appointment Booked Workshop Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_appointment_booked_tree" />
+			<field name="domain" eval="[('state','in',['Appointment Booked'])]"></field>
+		</record>
+		<!-- -->
+		<!-- -->
+		<!-- -->
+		<!-- ADAPTATION REPAIR -->
+<!---->
+<!---->
+<!---->
+		<record id="view_cmc_workshop_process_adaptation_repair_tree"
+			model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Adaptation Repair Records">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_adaptation_repair_form"
+			model="ir.actions.act_window">
+			<field name="name">ADAPTATION REPAIR Workshop Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_adaptation_repair_tree" />
+			<field name="domain" eval="[('state','in',['Adaptation Repair in process'])]"></field>
+		</record>
+
+
+		<!-- Awaiting Delivery Collection -->
+<!---->
+<!---->
+		<record id="view_cmc_workshop_process_awaiting_delivery_tree"
+			model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Adaptation Repair Records">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_awaiting_delivery_form"
+			model="ir.actions.act_window">
+			<field name="name">ADAPTATION REPAIR Workshop Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_awaiting_delivery_tree" />
+			<field name="domain" eval="[('state','in',['Awaiting Delivery Collection'])]"></field>
+		</record>
+
+
+		<!-- READY FOR INVOICING THIS MENU IS UNDER ACCOUNT USERS -->
+		<record id="view_cmc_workshop_process_invoicing_tree" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Invoicing Records">
+					<field colspan="3" name="job_no" string="Job No" />
+					<field colspan="3" name="owner" string="Owner" />
+					<field colspan="3" name="current_user_id" string="Current User" />
+					<field colspan="3" name="nature_job" string="Type" />
+					<field colspan="3" name="make" string="Make" />
+					<field colspan="3" name="model" string="Model" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_invoicing_form" model="ir.actions.act_window">
+			<field name="name">Invoicing Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_invoicing_tree" />
+			<field name="domain" eval="[('state','in',['Ready For Invoicing'])]"></field>
+		</record>
+
+
+		<!-- COMPLETE RECORDS -->
+		<record id="view_cmc_workshop_process_complete_tree" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="complete Records">
+					<field colspan="3" name="job_no" />
+					<field colspan="3" name="make" />
+					<field colspan="3" name="model" />
+					<field colspan="3" name="serial_no" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_complete_form" model="ir.actions.act_window">
+			<field name="name">complete Records</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_complete_tree" />
+			<field name="domain" eval="[('state','in',['Complete'])]"></field>
+		</record>
+
+
+
+
+		<!-- ALL workshop/Adaptations RECORDS -->
+		<record id="view_cmc_workshop_process_all_tree" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="All Workshop Jobs">
+					<field colspan="3" name="job_no" string="Job No" />
+					<field colspan="3" name="owner" string="Owner" />
+					<field colspan="3" name="current_user_id" string="Current User" />
+					<field colspan="3" name="nature_job" string="Type" />
+					<field colspan="3" name="make" string="Make" />
+					<field colspan="3" name="model" string="Model" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_all_form" model="ir.actions.act_window">
+			<field name="name">All Workshop Jobs</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_all_tree" />
+		</record>
+		<!-- ALL workshop Adaptation RECORDS -->
+		<record id="view_cmc_adaptation_process_all_tree" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="complete Records">
+					<field colspan="3" name="job_no" string="Job No" />
+					<field colspan="3" name="owner" string="Owner" />
+					<field colspan="3" name="current_user_id" string="Current User" />
+					<field colspan="3" name="nature_job" string="Type" />
+					<field colspan="3" name="make" string="Make" />
+					<field colspan="3" name="model" string="Model" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_adaptation_process_awaiting_all_enquiry"
+			model="ir.actions.act_window">
+			<field name="name">All Adaptation Jobs</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_adaptation_process_all_tree" />
+			<field name="domain" eval="[('job_type','in',['Adaptations'])]"></field>
+		</record>
+
+
+
+
+
+
+
+		<record id="view_cmc_workshop_process_all_tree_only" model="ir.ui.view">
+			<field name="name">cmc.workshop.process.tree</field>
+			<field name="model">cmc.workshop.process</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="All Workshop Jobs">
+					<field colspan="3" name="job_no" string="Job No" />
+					<field colspan="3" name="owner" string="Owner" />
+					<field colspan="3" name="current_user_id" string="Current User" />
+					<field colspan="3" name="nature_job" string="Type" />
+					<field colspan="3" name="make" string="Make" />
+					<field colspan="3" name="model" string="Model" />
+				</tree>
+			</field>
+		</record>
+		<!-- define a action for the CMC Workshop Task Details -->
+		<record id="action_cmc_workshop_process_all_form_only" model="ir.actions.act_window">
+			<field name="name">All Workshop Jobs</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.workshop.process</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_workshop_process_all_tree_only" />
+			<field name="domain" eval="[('job_type','in',['Workshop'])]"></field>
+		</record>
+
+	</data>
+</openerp>

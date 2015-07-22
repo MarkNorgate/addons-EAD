@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       <record id="view_cmc_user_activity_form" model="ir.ui.view">
+            <field name="name">cmc.user.activity.form</field>
+            <field name="model">cmc.user.activity</field>
+            <field name="priority" eval="2" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="User Actions">
+	                <group string="User Activity" colspan="4">
+	                    <field name="date" />
+	                    <field name="user_id" />
+	                    <field name="activity" select="2" />
+	                </group>
+	                <group string="Related with" colspan="4" >
+	                    <field name="person_id" select="2" string="Client/Agent"/>
+	                    <field name="call_id" select="2" string="Call"/>
+	                    <field name="assessment_id" select="2" />
+	                    <field name="enquiry_id" select="2" />
+	                </group>
+                </form> 
+            </field>
+        </record>
+     <record id="view_cmc_user_activity_tree" model="ir.ui.view">
+            <field name="name">cmc.user.activity.tree</field>
+            <field name="model">cmc.user.activity</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml" >
+                <tree string="User Actions" limit="30" min_rows="10">
+                    <field name="date" />
+                    <field name="user_id" />
+                    <field name="activity" />
+                    <field name="person_id" />
+                    <field name="call_id" />
+                    <field name="assessment_id" />
+                    <field name="enquiry_id" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_cmc_user_activity" model="ir.actions.act_window">
+            <field name="name">EAD Communication</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.user.activity</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_cmc_user_activity_tree" />
+        </record>
+       
+  </data>
+  </openerp>
+   

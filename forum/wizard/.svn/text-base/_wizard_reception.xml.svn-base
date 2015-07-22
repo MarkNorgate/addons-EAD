@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<wizard id="menu_wizard_assessment_statistics_report" menu="False" model="cmc.assessment" string="Assessment Statistics Report" name="wizard_assessment_statistics_report" />
+		<wizard id="wizard_call_history_statistics_report" menu="False"
+			model="cmc.call.history" name="wizard_call_history_statistics_report"
+			string="Contacts Statistics Report" />
+		<!--        Merger Client Record -->
+        <wizard id="wizard_merge_client_record" name="wizard_merge_client_record" string="Merge Client Record" menu="False" model="cmc.person" />
+		<wizard id="wizard_call_assessment" menu="False" model="cmc.call.person"
+			string="Create New Assessment" name="create_assessment" />
+		<wizard id="wizard_call_assessment_agent" menu="False"
+			model="cmc.call.person" string="Create New Assessment As Agent" name="create_assessment_agent" />
+		<wizard id="wizard_call_inbound_client_history" menu="False"
+			model="cmc.person" string="New Inbound Client Contact" name="call_inbound_client_history" />
+		<wizard id="wizard_call_outbound_client_history" menu="False"
+			model="cmc.call.history" string="New Outbound Client Contact" name="call_outbound_client_history" />
+		<wizard id="wizard_call_outbound_agent_history" menu="False"
+			model="cmc.call.history" string="New Outbound Agent Contact" name="call_outbound_agent_history" />
+		<wizard id="wizard_call_inbound_agent_history" menu="False"
+			model="cmc.call.history" string="New Inbound Agent Contact" name="call_inbound_agent_history" />
+
+		<wizard id="wizard_create_action" menu="False" model="cmc.person"
+			string="New Action" name="wizard_create_action" />
+		<wizard id="wizard_create_equipment" menu="False" model="cmc.person"
+			string="New Action" name="wizard_create_equipment" />
+
+		<!-- NEXT STATE WIZARD -->
+		<wizard id="next_state_assessment" menu="False" model="cmc.person"
+			string="Next State" name="next_state_assessment" />
+		<!-- ACTION NEXT STATE -->
+		<wizard id="action_next_state_assessment" menu="False" model="cmc.enquiry"
+			string="Next State" name="action_next_state_assessment" />
+
+		<wizard id="wizard_book_appointment" menu="False" model="cmc.person"
+			string="New Action" name="wizard_book_appointment" />
+		<wizard id="booked_client_visit_appointment" menu="False"
+			model="cmc.person" string="New Appointment" name="booked_client_visit_appointment" />
+		<!-- <wizard id="wizard_create_action_old" menu="False" -->
+		<!-- model="cmc.call.history" string="New Action" name="wizard_create_action" 
+			/> -->
+		<!-- CMC Assessment -->
+		<wizard id="wizard_pending_send_information_pack" menu="False"
+			model="cmc.enquiry" string="Generate Report" name="pending.send.information.pack" />
+
+		<wizard id="pending_send_information_pack_client" menu="False"
+			model="cmc.assessment" string="Generate Report" name="pending.send.information.pack.client" />
+
+		<wizard id="pending_send_information_pack_agent" menu="False"
+			model="cmc.assessment" string="Generate Report" name="pending.send.information.pack.agent" />
+
+		<wizard id="wizard_info_pack_letter" menu="False" model="cmc.enquiry"
+			string="Generate Report" name="info.pack.letter.wizard" />
+
+		<wizard id="wizard_covering_letter_client" menu="False"
+			model="cmc.assessment" string="Generate Report" name="covering.letter.client.wizard" />
+
+		<wizard id="wizard_covering_letter_agent" menu="False" model="cmc.assessment"
+			string="Generate Report" name="covering.letter.agent.wizard" />
+
+		<wizard id="wizard_cmc_main_brochure" menu="False" model="cmc.enquiry"
+			string="Generate Report" name="cmc.main.brochure.wizard" />
+
+
+		<wizard id="wizard_admin_checklist" menu="False" model="cmc.assessment"
+			string="Generate Report" name="admin.checklist.wizard" />
+
+		<wizard id="wizard_driving_ax_report" menu="False" model="cmc.assessment"
+			string="Generate Report" name="driving.ax.wizard" />
+
+		<wizard id="wizard_driving_ax_letter" menu="False" model="cmc.assessment"
+			string="Generate Report" name="driving.ax.type.letter.wizard" />
+
+		<wizard id="wizard_print_assessment_pack" menu="False" model="cmc.assessment"
+			string="Generate Report" name="print.assessment.paperwork.wizard" />
+		<!-- PAYMENT AND REFUND LETTERS -->
+
+		<wizard id="wizard_payment_chase_letter" menu="False" model="cmc.assessment"
+			string="Payment Chase Up Letter" name="wizard.payment.chaseup.letter.client" />
+
+		<wizard id="wizard_payment_refund_letter" menu="False" model="cmc.assessment"
+			string="Payment Refund Letter" name="wizard.payment.refund.letter.client" />
+
+		<!-- ILME ASSESSMENT PAPERWORK -->
+		<wizard id="wizard_ilme_forms" menu="False" model="cmc.assessment"
+			string="Assessment Form" name="wizard_ilme_forms" />
+		<wizard id="wizard_ilme_enviromental_forms" menu="False" model="cmc.assessment"
+			string="Assessment Form" name="wizard_ilme_enviromental_forms" />
+		<wizard id="wizard_ilme_mobility_enviromental_forms" menu="False" model="cmc.assessment"
+			string="Assessment Form" name="wizard_ilme_mobility_enviromental_forms" />
+
+		<!-- END OF PAYMENT AND REFUND LETTERS -->
+		<wizard id="wizard_car_assessment" menu="False" model="cmc.assessment"
+			string="Generate Report" name="car.assessment.wizard" />
+
+		<wizard id="wizard_wheelchair_assessment" menu="False" model="cmc.assessment"
+			string="Generate Report" name="wheelchair.buggy.assessment.wizard" />
+
+		<wizard id="wizard_passenger_assessment" menu="False" model="cmc.assessment"
+			string="Generate Report" name="passenger.assessment.wizard" />
+
+		<wizard id="wizard_wheelchair_buggy_assessment" menu="False"
+			model="cmc.assessment" string="Generate Report" name="wheelchair.buggy.assessment.wizard" />
+
+		<wizard id="cancel_appointment" menu="False" model="cmc.assessment"
+			string="Generate Report" name="cancel.appointment.wizard" />
+
+		<wizard id="wizard_info_chaseup_letter_client" menu="False"
+			model="cmc.assessment" string="Info Pack Chase Up Letter" name="wizard.info.chaseup.letter.client" />
+
+		<wizard id="wizard_info_chaseup_letter_agent" menu="False"
+			model="cmc.assessment" string="Info Pack Chase Up Letter" name="wizard.info.chaseup.letter.agent" />
+
+		<wizard id="wizard_final_report_covering_letter" menu="False"
+			model="cmc.assessment" string="Assessment Report Covering Letter To Client"
+			name="wizard_final_report_covering_letter" />
+
+		<wizard id="wizard_final_report_covering_letter_agent" menu="False"
+			model="cmc.assessment" string="Assessment Report Covering Letter To Agent"
+			name="wizard_final_report_covering_letter_agent" />
+
+		<wizard id="wizard_dvla_invoice" menu="False" model="cmc.assessment"
+			string="DVLA Invoice" name="wizard.dvla.invoice" />
+
+		<wizard id="wizard_agent_invoice" menu="False" model="cmc.assessment"
+			string="Agent Invoice" name="wizard.agent.invoice" />
+
+		<wizard id="wizard_client_invoice" menu="False" model="cmc.assessment"
+			string="Client Invoice" name="wizard.client.invoice" />
+
+		<wizard id="wizard_order_new_equipment" menu="False" model="cmc.equipment"
+			string="Order New Equipment" name="wizard_order_new_equipment" />
+		<wizard id="wizard_recieved_equipment" menu="False"
+			model="cmc.ordered.equipment.master" string="Recieved"
+			name="wizard_recieved_equipment" />
+		<wizard id="wziard_appointment_search_user_equipment_group"
+			model="cmc.appointments" string="Search Calendar"
+			name="wziard_appointment_search_user_equipment_group" />
+
+
+
+		<!-- Adaptations FORMS -->
+
+		<wizard id="workshop_wizard_enquiry_form" menu="False"
+			model="cmc.workshop.process" string="Adaptation Enquiry Form" name="wizard_workshop_enquiry_form" />
+		<wizard id="wizard_workshop_adaptation_client_agent_paying"
+			menu="False" model="cmc.workshop.process" string="Adaptation Quote"
+			name="wizard_workshop_adaptation_client_agent_paying" />
+		<wizard id="wizard_workshop_chaseup_letter_client" name="wizard_workshop_chaseup_letter_client"
+			menu="False" string="Adaptation Chase Up Letter To Client" model="cmc.workshop.process" />
+		<wizard id="wizard_workshop_chaseup_letter_agent" name="wizard_workshop_chaseup_letter_agent"
+			menu="False" string="Adaptation Chase Up Letter To Agent" model="cmc.workshop.process" />
+		<wizard id="wizard_workshop_apmt_letter_client" name="wizard_workshop_apmt_letter_client"
+			menu="False" string="Adaptation Chase Up Letter To Client" model="cmc.workshop.process" />
+		<wizard id="wizard_workshop_apmt_letter_agent" name="wizard_workshop_apmt_letter_agent"
+			menu="False" string="Adaptation Chase Up Letter To Agent" model="cmc.workshop.process" />
+		<wizard id="wizard_workshop_delivery_checklist" name="wizard_workshop_delivery_checklist"
+			menu="False" string="Adaptation Delivery Checklist" model="cmc.workshop.process" />
+		<wizard id="wizard_workshop_jobsheet" name="wizard_workshop_jobsheet"
+			menu="False" string="Adaptation Jobsheet" model="cmc.workshop.process" />
+		<wizard id="wizard_workshop_repair_estimate" name="wizard_workshop_repair_estimate"
+			menu="False" string="Workshop Repair Estimate" model="cmc.workshop.process" />
+			
+			
+<!--		WORKSHOP REPORTS-->
+        
+        <wizard id="wizard_workshop_pct_refurb" name="wizard_workshop_pct_refurb" menu="False" string="PCT Refurb"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_pdi_manual" name="wizard_workshop_pdi_manual" menu="False" string="PDI manual"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_pdi_power" name="wizard_workshop_pdi_power" menu="False" string="PDI manual"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_service_repair_jobsheet" name="wizard_workshop_service_repair_jobsheet" menu="False" string="Job Sheet"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_service_collection_delivery" name="wizard_workshop_service_collection_delivery" menu="False" string="Collection Delivery"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_service_repair_loan" name="wizard_workshop_service_repair_loan" menu="False" string="loan form"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_service_repair_order" name="wizard_workshop_service_repair_order" menu="False" string="Repair Form"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_order_supplier" name="wizard_workshop_order_supplier" menu="False" string="Repair Form"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_service_repair_quote" name="wizard_workshop_service_repair_quote" menu="False" string="Quote Form"
+        model="cmc.workshop.process" />
+        <wizard id="wizard_workshop_service_repair_return" name="wizard_workshop_service_repair_return" menu="False" string="Return Form"
+        model="cmc.workshop.process" />
+        
+        
+<!--        BOOK WORKSHOP AND ADAPTATION JOB FROM PERSON-->
+        <wizard id="wizard_book_workshop_adaptations_task" name="wizard_book_workshop_adaptations_task" menu="False" string="Book Job"
+        model="cmc.workshop.process" />
+        
+<!--        HANDOVER NOTE-->
+       <wizard id="wizard_equipment_supply_handover_note" name="wizard_equipment_supply_handover_note" menu="False" string="Handover Form"
+       model="cmc.equipement.supply.process" />
+        
+        
+	</data>
+</openerp>

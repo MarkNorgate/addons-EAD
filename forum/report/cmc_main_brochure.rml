@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="498" height="678"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="18.0" leading="22" alignment="CENTER" textColor="#000080"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="18.0" leading="22" alignment="LEFT" textColor="#000080"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="26.0" leading="32" alignment="CENTER" textColor="#000080"/>
+    <paraStyle name="P4" fontName="Times-Roman" fontSize="16.0" leading="20" alignment="LEFT" textColor="#000080"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="16.0" leading="20" alignment="LEFT" textColor="#000080"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="20.0" leading="25" alignment="LEFT" textColor="#000080"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="LEFT" textColor="#000000"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="LEFT" textColor="#000000"/>
+    <paraStyle name="P9" fontName="Times-Roman" fontSize="14.0" leading="17" alignment="LEFT" textColor="#000000"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P3">CORNWALL MOBILITY CENTRE</para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">WELCOME TO CORNWALL MOBILITY CENTRE</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P9">The largest most dynamic Mobility Centre with the biggest range of services within the UK Forum of Mobility Centres, to which the Centre is fully Accredited. We believe it was the first purpose built mobility centre of it's type in Europe. The services offered encompass assessments, information and advice for Paediatric mobility and transportation, daily living equipment, driving and wheelchairs, all of </para>
+    <para style="P8">which are carried out by Professional staff. Our Engineering services fit adaptations to vehicles in line with recommendations from assessments, and repair all types of mobility/rehab equipment. </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">HOW TO CONTACT US</para>
+    <para style="P4">Telephone: </para>
+    <para style="P5">01872 254920 </para>
+    <para style="P4">Fax: </para>
+    <para style="P5">01872 254921 </para>
+    <para style="P4">Email: </para>
+    <para style="P5">mobility@rcht.cornwall.nhs.uk </para>
+    <para style="P4">Website: </para>
+    <para style="P5">www.cornwallmobilitycentre.co.uk</para>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <para style="P5">
+      <font face="Times-Roman" size="20.0">Or write to us at:</font>
+    </para>
+    <para style="P5"/>
+    <para style="P4">Cornwall Mobility Centre </para>
+    <para style="P4">Tehidy House </para>
+    <para style="P4">Royal Cornwall Hospital </para>
+    <para style="P4">Truro </para>
+    <para style="P4">TR1 3LJ </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Welcome to the Driving Department </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">The Driving Department provides a range of services to assist clients to either learn to </para>
+    <para style="P7">drive, resume driving or continue driving. Whether you require lessons, need an assess-</para>
+    <para style="P7">ment, would like to test the latest adaptations or require advice /information our Assessment Team can provide assistance.<font face="Times-Roman" size="20.0"/></para>
+    <para style="P7">
+      <font face="Times-Roman" size="20.0"/>
+    </para>
+    <para style="P7">
+      <font face="Times-Roman" size="20.0">Welcome to access assessments </font>
+    </para>
+    <para style="P7">
+      <font face="Times-Roman" size="20.0"/>
+    </para>
+    <para style="P7">An access assessment is a way of finding out which transfer method, type of vehicle or equipment is required to enable a person to access and travel safely in a vehicle.The Cornwall Mobility Centre has a demonstration wheelchair accessible vehicle. We are </para>
+    <para style="P7">happy to demonstrate our vehicle, a Ford Tourneo "Connect". We can also provide a full </para>
+    <para style="P7">risk assessment and report for you, which will detail your own individual circumstances and requirements. We also have access to a "drive from wheelchair" vehicle. Please contact the Driving Department for further information.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Welcome to the Paediatric Department </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Our Paediatric Department specialises in wheelchairs, buggies, car seats and harnesses for children with special needs. We also have a range of other equipment from cutlery to bath lifts to assist you and your child. Our Assessment Team will help you with advice and information about the products available and look at your individual requirements. </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Welcome to the Independent Living Centre</para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">The Independent Living Centre (ILC) has a range of equipment and products for you </para>
+    <para style="P7">and your home for anyone who needs a little help to stay active and care for them-</para>
+    <para style="P7">selves. Our ILC Team are uniquely qualified (some have extensive experience of work-</para>
+    <para style="P7">ing in Occupational Therapy Departments) to help you become as independent as pos-</para>
+    <para style="P7">sible. They will assess your needs / difficulties and recommend equipment most suit-</para>
+    <para style="P7">able for your requirements. You will receive a demonstration of equipment and be able </para>
+    <para style="P7">to try it out for yourself.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font face="Times-Roman" size="20.0">Welcome to Vehicle Adaptations</font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">We encourage clients who require their vehicle to be adapted to have an assessment. There is a wide range of adaptations available from various manufacturers and we prefer to assess the most suitable type for clients' individual requirements. If you have previously had an assessment with the Centre and simply wish to transfer any existing adaptations to an alternative vehicle, there is usually no requirement to have an adaptations assessment, provided your personal circumstances have not changed. The </para>
+    <para style="P7">Centre has a range of vehicles available, fitted with various adaptations for demonstration and instruction purposes, and has a team of Adaptations Technicians available who will be able to fit the equipment you require.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Welcome to the Wheelchairs &amp; Scooters department</para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">The Wheelchairs &amp; Scooters Sales Department provides a range of mobility equipment to assist with independent mobility both indoors and outdoors. We are able to assess the type of equipment most suitable for a client's requirements, including whether any customising or specialist adaptations are necessary in order to provide comfort, support, safety and independence.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Welcome to the Service / Repair workshop </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">The Wheelchair Workshop Team are able to service or repair any item of mobility </para>
+    <para style="P7">equipment: </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">• Manual, Power Wheelchairs and Scooters </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">• Riser Recliner Chairs </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">• Bath lifts </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">• Wheeled Walkers </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">• Hoists </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Home servicing, repairs and breakdown assistance is also available. </para>
+  </story>
+</document>
+

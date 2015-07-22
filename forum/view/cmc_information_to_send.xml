@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+       
+        <record id="view_cmc_information_tosend_tree" model="ir.ui.view">
+            <field name="name">cmc.information.tosend.tree</field>
+            <field name="model">cmc.call.history</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Information to Send ">
+                    <field colspan="3" name="call_time" />
+                    <field colspan="3" name="call_channel" />
+                    <field colspan="3" name="call_originator_type" />
+                    <field colspan="3" name="call_type" />
+                    <field colspan="3" name="call_summary" />
+                    <field colspan="3" name="state" string="Status" />
+                    <button name="pending_button" string="Pending" type="object" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="action_cmc_information_tosend" model="ir.actions.act_window">
+            <field name="name">Information To Send</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.call.history</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_cmc_information_tosend_tree" />
+            <field name="domain">[('state','in', ['pending'])]</field>
+        </record>
+        
+ </data>
+ </openerp>
+            
+            
+            

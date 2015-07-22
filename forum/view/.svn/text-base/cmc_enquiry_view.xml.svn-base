@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_cmc_enquiry_form" model="ir.ui.view">
+			<field name="name">cmc.enquiry.form</field>
+			<field name="model">cmc.enquiry</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Action Entry">
+					<newline />
+					<field name="state" invisible="0" select="1" readonly="1"
+						attrs="{'invisible':[('state','in',['none'])]}" />
+					<group colspan="4" string="Tracking">
+						<group colspan="2" col="2">
+							<field name="enquiry_id" readonly="1" />
+							<field name="enquiry_date" readonly="1" />
+							<field name="complete_date" readonly="1" />
+							<field name="dummy" invisible="1" />
+							<field name="email_check" invisible="1" />
+						</group>
+						<group colspan="2" col="2">
+							<field name="call_id" readonly="1" />
+							<field name="user_id" string="Raised By" readonly="1" />
+							<field name="client_id" invisible="0"
+								attrs="{'readonly':[('type','not in',['agent']),('state','not in',['none']),('paying','not in',['client_paying'])]}" />
+							<field name="agent_id" invisible="0"
+								attrs="{'readonly':[('type','not in',['client']),('state','not in',['none']),('paying','not in',['agent_paying'])]}" />
+							<field name="person_id" readonly="1" invisible="1" />
+						</group>
+					</group>
+					<field colspan="4" name="type"
+						attrs="{'readonly':[('state','in',['pending', 'awaiting', 'closed','Cancelled'])]}"></field>
+					<newline />
+					<field colspan="4" name="due_date"
+						attrs="{'readonly':[('state','in',['pending', 'awaiting', 'closed','Cancelled'])]}" />
+					<field colspan="4" name="enquiry_type" string="Action / Request Type"
+						attrs="{'readonly':[('state','in',['pending', 'awaiting', 'closed','Cancelled'])]}" />
+					<group colspan="4"
+						attrs="{'invisible':[('enquiry_type','in',['general','Equipment Supply Process','Adaptation Process','Workshop Process',
+                'Accounting Process'])]}">
+						<group />
+					</group>
+					<newline />
+					<field colspan="4" name="enquiry_details" string="Action / Request Details"
+						attrs="{'readonly':[('state','in',['Cancelled','closed','pending','awaiting'])]}" />
+					<field colspan="4" name="comments" string="Add Comments"
+						attrs="{'invisible':[('state','not in',['pending','awaiting'])]}" />
+					<newline />
+
+					<group string="Action/Request Allocation Control" colspan="4"
+						col="3" attrs="{'invisible':[('state','in',['Cancelled','closed','awaiting'])]}">
+						<group colspan="1" col="1">
+							<label
+								string="This action can be transferred to an individual or a group of users. You can allocate to specific user or group of users"
+								align="0.0" />
+						</group>
+						<group colspan="2" col="2">
+							<group colspan="1" col="1">
+								<label string="Please select other User to Allocate to:"
+									align="0.0" />
+								<field name="allocated_user_id" widget="selection"
+									nolabel="1" on_change="onchange_allocated_user_id(allocated_user_id)" />
+								<group colspan="1" col="1"
+									attrs="{'invisible':[('dummy','!=','allocated_user_id_changed')]}">
+									<label
+										string="You must provide additional details for the user allocation change before saving this action record."
+										align="0.0" />
+
+								</group>
+							</group>
+							<group colspan="1" col="1">
+								<label string="Please select a User Group to Allocate to:"
+									align="0.0" />
+								<field name="allocated_user_group_id" widget="selection"
+									nolabel="1"
+									on_change="onchange_allocated_user_group_id(allocated_user_group_id)" />
+								<group colspan="1" col="1"
+									attrs="{'invisible':[('dummy','!=','allocated_user_group_id_changed')]}">
+									<label
+										string="You must provide additional details for the group allocation change before saving this action record."
+										align="0.0" />
+								</group>
+							</group>
+							<group colspan="2" col="1"
+								attrs="{'invisible':[('dummy','!=','allocated_open')]}" color="red">
+								<label string="This action will now be available to all users."
+									align="0.0" />
+							</group>
+						</group>
+					</group>
+					<label colspan="4" string="" />
+					<group colspan="4" col="1"
+						attrs="{'invisible':[('state','in',['none','closed','Cancelled'])]}">
+						<group col="6" string="">
+							<group colspan="2">
+								<button string="Action Completed" name="btn_enquiry_completed"
+									type="object" confirm="This action will be closed.\n\nPress OK to continue" />
+							</group>
+							<group />
+							<group />
+							<group />
+							<group />
+						</group>
+						<group col="4" string="" attrs="{'invisible':[('enquiry_type','in',['general','Equipment Supply Process','Adaptation Process','Workshop Process',
+                'Accounting Process'])]}">
+<!--							<group colspan="3">-->
+<!--								<button states="pending,awaiting" string="Print Assessment Form"-->
+<!--									name="%(wizard_pending_send_information_pack)d" type="action"-->
+<!--									target="new" context="{'print_type':'Assessment Form Printed'}" />-->
+<!--								<button states="pending,awaiting" string="Print Covering Letter"-->
+<!--									name="%(wizard_info_pack_letter)d" type="action" target="new"-->
+<!--									context="{'print_type':'Covering Letter Printed'}" />-->
+<!--							</group>-->
+							<!--<group colspan="3" attrs="{'invisible':[('enquiry_type','=','general')]}">
+								<button colspan="1" string="Create Assessment Record"
+									name="%(action_next_state_assessment)d" states="pending,awaiting"
+									confirm="Do You Want To Create New Assessment Record\n\n Press OK to confirm"
+									icon="gtk-ok" type="action"
+									context="{'print_type':'New Assessment Recored Created','assessment_type':enquiry_type}" />
+							</group>
+							--><group />
+							<group />
+							<group />
+						</group>
+						<group colspan="4"
+							attrs="{'invisible':[('state','in',['none','closed','Cancelled'])]}">
+							<group />
+							<group />
+							<group />
+							<group colspan="1">
+								<button string="Cancel Action" name="btn_enquiry_cancelled"
+									type="object" confirm="This action will be cancelled.\n\nPress OK to confirm"
+									context="{'cancelled':'Action Cancelled'}" />
+							</group>
+						</group>
+						<group />
+						<group />
+						<group />
+						<group />
+						<group />
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="view_cmc_enquiry_tree" model="ir.ui.view">
+			<field name="name">cmc.enquiry.tree</field>
+			<field name="model">cmc.enquiry</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Action List" limit="30" min_rows="10"
+					colors="darkred:(state=='Cancelled');red:(state=='closed');green:(state=='pending');orange:(state=='awaiting')">
+					<field name="enquiry_date" />
+					<field name="person_id" />
+					<field name="enquiry_type" />
+					<field name="allocated_user_id" />
+					<field name="allocated_user_group_id" />
+					<field name="user_id" />
+					<field name="due_date" />
+					<field name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_cmc_my_enquiry_tree" model="ir.ui.view">
+			<field name="name">cmc.enquiry.tree</field>
+			<field name="model">cmc.enquiry</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Action List" limit="30" min_rows="10"
+					colors="red:(state=='closed');green:(state=='pending');orange:(state=='awaiting')">
+					<field name="enquiry_date" />
+					<field name="person_id" />
+					<field name="enquiry_type" />
+					<field name="allocated_user_id" />
+					<field name="allocated_user_group_id" />
+					<field name="user_id" />
+					<field name="due_date" />
+					<field name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_cmc_my_pending_client_enquiry_tree" model="ir.ui.view">
+			<field name="name">cmc.enquiry.tree</field>
+			<field name="model">cmc.enquiry</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Action List" limit="30" min_rows="10"
+					colors="red:(state=='closed');green:(state=='pending');orange:(state=='awaiting')">
+					<field name="enquiry_date" />
+					<field name="person_id" />
+					<field name="enquiry_type" />
+					<field name="allocated_user_id" />
+					<field name="allocated_user_group_id" />
+					<field name="user_id" />
+					<field name="due_date" />
+					<field name="state" string="Status" />
+				</tree>
+			</field>
+		</record>
+		<record id="menu_wheel_cmc_pending_client_response" model="ir.actions.act_window">
+			<field name="name">Pending Confirm Details With Client</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.enquiry</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_my_pending_client_enquiry_tree" />
+			<field name="domain"
+				eval="[('enquiry_type','in',['wheelchair_assessment']),('state','=','awaiting')]"></field>
+		</record>
+	</data>
+</openerp>
+   

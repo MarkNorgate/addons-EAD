@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+     <record id="view_cmc_assessment_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="CMC Assessment">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+<!--                    <field colspan="3" name="state" string="Status" />-->
+                </tree>
+            </field>
+        </record>
+        <record id="action_cmc_assessment" model="ir.actions.act_window">
+           <field name="name">Assessment List</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_cmc_assessment_tree" />
+            
+          </record>
+            
+            
+
+            
+            
+            
+            
+     
+
+
+
+<!--       PENDING DRAFT APPROVAL -->
+            
+     <record id="view_pending_draft_approval_tree" model="ir.ui.view">
+            <field name="name">cmc.assessment.tree</field>
+            <field name="model">cmc.assessment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Pending Draft Approval">
+                    <field colspan="3" name="ref_id" />
+                    <field colspan="3" name="client_person_id" />
+                    <field colspan="3" name="agent_person_id" />
+                    <field colspan="3" name="driving_assessment_type" />
+                    <field colspan="3" name="paying" />
+<!--                    <field colspan="3" name="state" string="Status" />-->
+                </tree>
+            </field>
+        </record>
+        <record id="action_pending_draft_approval" model="ir.actions.act_window">
+           <field name="name">Assessment - Pending Draft Report Approval</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cmc.assessment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="view_pending_draft_approval_tree" />
+<!--            <field name="domain">[('state','=','pending_draft_approval')]</field>-->
+          </record>
+            
+            
+         
+        <!--       END OF PENDING DRAFT APPROVAL -->
+   </data>
+</openerp>

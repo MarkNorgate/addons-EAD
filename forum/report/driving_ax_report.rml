@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="498" height="678"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0" textColor="#b3b3b3"/>
+    <paraStyle name="P2" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P3" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Heading 1" fontName="Times-Bold" fontSize="24.0" leading="29" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="Frame contents" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Header" fontName="Times-Roman"/>
+    <paraStyle name="MP1" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0" textColor="#b3b3b3"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">Our Ref: [[ data['form']['id'] ]]</para>
+    <para style="Text body">[[ time ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Heading 1">DRIVING ABILITY ASSESSMENT REPORT</para>
+    <para style="Text body">[[ data['form']['type'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">ASSESSMENT CENTRE</font>: [[ data['form']['location'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">DRIVER NAME</font>: [[ data['form']['display_name'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">DATE OF BIRTH</font>: [[ data['form']['birth_date'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">DATE OF ASSESSMENT</font>: [[ data['form']['start_date'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">ASSESSOR(S) NAME(S)</font>: [[ data['form']['owner'] ]], Driving Consultant, DSA ADI</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">LICENSE STATES</font>: [[ data['form']['license_status'] ]] </para>
+    <para style="Text body"><font face="Times-Roman">Driver Number</font>: [[ data['form']['number'] ]] </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">VEHICLE(S) USED: <font face="Times-Roman">[[ data['form']['vehicle_used'] ]]</font></para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">METHOD OF CONTROL</font>: </para>
+    <para style="Text body">[[ data['form']['method_control'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">ASSESSMENT GIVEN</font>: Off Road On Road</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">NUMBER PLATE TEST</font>: [[ data['form']['plate_test'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">WERE CORRECTIVE LENSES</font>/</para>
+    <para style="Text body"><font face="Times-Roman">GLASSES REQUIRED?</font>[[ data['form']['glass_required'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">MEDICAL NOTIFICATION TO</para>
+    <para style="Text body"><font face="Times-Roman">DVLA</font>: [[ data['form']['dlva_notification'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">COGNITIVE &amp; PERCEPTUAL ASSESSMENT (IF TESTED)</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Speech and Language</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Memory</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Reasoning Ability</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Concentration/Attention</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Visual/Spatial Skills</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Behaviour</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">Diagnosis</font>: [[ data['form']['diagnosis'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">STATIC RIG (IF APPLICABLE)</font>: </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"><font face="Times-Roman">DRIVING ASSESSMENT</font>: </para>
+    <para style="Text body">[[ data['form']['type'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"/>
+    <para style="Text body"><font face="Times-Roman">CONCLUSION</font>:</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">1. <font face="Times-Roman">Able to drive safely</font></para>
+    <para style="Text body">[[ data['form']['currently_driving'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">2. <font face="Times-Roman">Able to drive safely with adaptations Yes (D497 to DVLA) </font></para>
+    <para style="Text body">[[ data['form']['currently_driving_past'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">3. <font face="Times-Roman">May be able to drive safely with tuition Yes</font></para>
+    <para style="Text body">[[ data['form']['driving_lessons_current'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">4.<font face="Times-Roman"> Unsafe to drive </font></para>
+    <para style="Text body">[[ data['form']['never_driven'] ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">5. <font face="Times-Roman">Medical Notification Form to Client</font></para>
+    <para style="Text body">Please note that if adaptations are fitted we strongly advise that you arrange for tuition in the correct operation and safe usage of the adaptation(s) prior to using your vehicle. Please contact the Cornwall Mobility Centre to arrange this.</para>
+    <para style="Text body">All clients should be aware that in the event of a road traffic accident adaptations fitted to a vehicle could possibly affect the secondary safety of certain components of the vehicle.</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body"/>
+    <para style="Text body">[[ data['form']['owner'] ]]</para>
+    <para style="Text body">DRIVING CONSULTANT, DSA ADI SENIOR OCCUPATIONAL THERAPIST</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">DATE: [[ date ]]</para>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <para style="Text body">CC:Client, File</para>
+    <para style="Text body">Enc:</para>
+    <para style="Standard">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

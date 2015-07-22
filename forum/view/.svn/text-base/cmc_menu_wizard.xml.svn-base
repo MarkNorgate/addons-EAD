@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<menuitem icon="terp-partner" id="menu_cmc_administration"
+			name="MC Administration" sequence="9" groups="group_cmc_administrator"/>
+		<menuitem id="menu_manage_users_templates" name="Manage Users"
+			parent="menu_cmc_administration" sequence="0" action="action_res_users_email" groups="group_cmc_administrator"/>
+		<menuitem id="menu_manage_equipment" name="Manage Equipment"
+			parent="menu_cmc_administration" sequence="1" action="action_cmc_equipment_form" groups="group_cmc_administrator"/>
+<!-- 		<menuitem id="menu_manage_emobility_information_documents" -->
+<!-- 			name="Manage Information Documents" parent="menu_cmc_administration" -->
+<!-- 			sequence="2" action="action_emobility_information_documents_manage" groups="group_cmc_administrator"/> -->
+<!-- 		<menuitem id="menu_manage_cmc_email_templates" name="Manage Email Templates" -->
+<!-- 			parent="menu_cmc_administration" sequence="3" -->
+<!-- 			action="action_email_cmc_templates_manage" groups="group_cmc_administrator"/> -->
+
+<!-- 		<menuitem id="menu_email_cmc_attachment_manage" name="Manage Docs" -->
+<!-- 			parent="menu_cmc_administration" sequence="3" -->
+<!-- 			action="action_email_cmc_attachment_manage" groups="group_cmc_administrator"/> -->
+<!-- 		<menuitem action="action_sxw_cmc_templates_manage" id="menu_sxw_reception" -->
+<!-- 			parent="menu_cmc_administration" sequence="4" -->
+<!-- 			name="Manage Assessment Paperwork Templates" groups="group_cmc_administrator"/> -->
+		<menuitem action="action_cmc_assessment_state_form" id="menu_action_cmc_assessment_state_form"
+			parent="menu_cmc_administration" sequence="5" name="Manage Assessment States" groups="group_cmc_administrator"/>
+		<menuitem action="action_cmc_assessment_outcome_form" id="menu_action_cmc_assessment_outcome_form"
+			parent="menu_cmc_administration" sequence="6"
+			name="Manage Assessment Outcomes" groups="group_cmc_administrator"/>
+		<menuitem action="action_cmc_assessment_price_form" id="menu_cmc_assessment_price_form"
+			parent="menu_cmc_administration" sequence="7"
+			name="Manage Assessment Price" groups="group_cmc_administrator"/>
+
+<!-- 		<menuitem action="action_cmc_assessment_report_form" id="menu_action_cmc_assessment_report_form" -->
+<!-- 			parent="menu_cmc_administration" sequence="7" name="Manage Assessment Reports" groups="group_cmc_administrator"/> -->
+		<!-- RECEPTION -->
+
+
+		<menuitem icon="terp-partner" id="menu_reception" name="Reception "
+			sequence="-8" groups="group_cmc_administrator,group_reception_user"/>
+
+
+
+
+		<menuitem id="menu_cmc_person_form" name="Find a Person or Organisation"
+			parent="menu_reception" sequence="0" action="action_cmc_person"  groups="group_cmc_administrator,group_reception_user"/>
+		<menuitem id="menu_cmc_reception_diary" name="Diary" parent="menu_reception"
+			sequence="2" groups="group_cmc_administrator,group_reception_user" />
+
+		<wizard id="wizard_cmc_my_appointment_tree" menu="False"
+			model="cmc.appointment" name="wizard_cmc_my_appointment_tree" string="My Appointments Diary" />
+		<menuitem action="wizard_cmc_my_appointment_tree"
+			id="menu_wizard_cmc_reception_my_appointment_tree" parent="menu_cmc_reception_diary"
+			sequence="2" type="wizard" groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wziard_appointment_search_user_equipment_group"
+			menu="False" model="cmc.appointment" name="wziard_appointment_search_user_equipment_group"
+			string="User / Equipment Diary Search" />
+		<menuitem action="wziard_appointment_search_user_equipment_group"
+			id="menu_wziard_appointment_search_user_equipment_group" parent="menu_cmc_reception_diary"
+			sequence="3" type="wizard" groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_cmc_user_reminder_tree" menu="False"
+			model="cmc.appointment" name="wizard_cmc_my_appointment_reminder_tree"
+			string="Reminder Calendar" />
+		<menuitem action="wizard_cmc_user_reminder_tree"
+			id="menu_wziard_reminder_user_equipment_group" parent="menu_cmc_reception_diary"
+			sequence="4" type="wizard" groups="group_cmc_administrator,group_reception_user" />
+	
+		<menuitem id="menu_reception_call_handling" name="My Contact Handling"
+			parent="menu_reception" sequence="3"
+			groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_cmc_my_call_tree" menu="False" model="cmc.call.history"
+			name="wizard_cmc_my_call_tree" string="My Open Calls" />
+		<menuitem action="wizard_cmc_my_call_tree" id="menu_wizard_cmc_reception_my_call_tree"
+			parent="menu_reception_call_handling" sequence="1" type="wizard"
+			groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_cmc_reception_group_call_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_my_group_call_tree" string="My Group Open Calls" />
+		<menuitem action="wizard_cmc_reception_group_call_tree"
+			id="menu_wizard_cmc_reception_my_group_call_tree" parent="menu_reception_call_handling"
+			sequence="2" type="wizard" groups="group_cmc_administrator,group_reception_user" />
+		<menuitem id="menu_search_view_call" name=" Search And View Calls"
+			parent="menu_reception_call_handling" sequence="3"
+			action="action_search_view_call_form" groups="group_cmc_administrator,group_reception_user" />
+
+		<menuitem id="menu_reception_enquiry_handling" name="Action Handling"
+			parent="menu_reception" sequence="4"
+			groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_cmc_reception_enquiry_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_reception_enquiry_tree"
+			string="Actions - All Pending" />
+		<menuitem action="wizard_cmc_reception_enquiry_tree" id="menu_wizard_cmc_reception_enquiry_tree"
+			parent="menu_reception_enquiry_handling" sequence="1" type="wizard"
+			groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_cmc_my_enquiry_tree" menu="False" model="cmc.call.history"
+			name="wizard_cmc_my_enquiry_tree" string="Actions - Allocated to Me" />
+		<menuitem action="wizard_cmc_my_enquiry_tree" id="menu_wizard_cmc_reception_my_enquiry_tree"
+			parent="menu_reception_enquiry_handling" sequence="2" type="wizard"
+			groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_cmc_reception_group_enquiry_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_my_group_enquiry_tree"
+			string="Reception Actions" />
+		<menuitem action="wizard_cmc_reception_group_enquiry_tree"
+			id="menu_wizard_cmc_reception_my_group_enquiry_tree" parent="menu_reception_enquiry_handling"
+			sequence="3" type="wizard" groups="group_cmc_administrator,group_reception_user" />
+		<!-- <wizard id="wizard_cmc_print_information_pack_tree" menu="False" -->
+		<!-- model="cmc.enquiry" name="wizard_cmc_print_information_pack_tree" -->
+		<!-- string="Actions - Print and Send Information Pack" /> -->
+		<!-- <menuitem action="wizard_cmc_print_information_pack_tree" -->
+		<!-- id="menu_wizard_cmc_print_information_pack_tree" parent="menu_reception_enquiry_handling" -->
+		<!-- sequence="4" type="wizard" groups="group_cmc_administrator,group_reception_user"/> -->
+		<!--<menuitem action="menu_wheel_cmc_pending_client_response" id="menu_wheel_cmc_pending_client_response_tree" 
+			parent="menu_reception_enquiry_handling" sequence="5" name="Actions - Pending 
+			Confirm Details with Client" /> -->
+		<!-- <wizard id="wizard_cmc_pending_client_response_tree" menu="False" -->
+		<!-- model="cmc.call.history" name="wizard_cmc_pending_client_response_tree" -->
+		<!-- string="Actions - Pending Client Response" /> -->
+		<!-- <menuitem action="wizard_cmc_pending_client_response_tree" -->
+		<!-- id="menu_wizard_cmc_pending_client_resposne_tree" parent="menu_reception_enquiry_handling" -->
+		<!-- sequence="6" type="wizard" groups="group_cmc_administrator,group_reception_user"/> -->
+		<wizard id="wizard_cmc_action" menu="False" model="cmc.enquiry"
+			name="wizard_cmc_action" string="All Actions" />
+		<menuitem action="wizard_cmc_action" id="menu_wizard_cmc_action"
+			parent="menu_reception_enquiry_handling" sequence="7" type="wizard"
+			groups="group_cmc_administrator,group_reception_user" />
+
+		<!--ASSESSMENT TASKS -->
+		<menuitem id="menu_reception_assessment" name="Assessment Tasks"
+			sequence="5" parent="menu_reception" groups="group_cmc_administrator,group_reception_user" />
+		<!--<menuitem id="menu_pending_client_response" parent="menu_reception_assessment" 
+			name="New Assessment - Pending Form Completion" sequence="1" action="action_pending_client_response" 
+			/> <menuitem id="menu_pending_admin_checklist" parent="menu_reception_assessment" 
+			name="Pending Admin Checklist" sequence="2" action="action_pending_checklist" 
+			/> <menuitem id="menu_pend_appoint ment_reception" name="Pending Appointment 
+			Booking" parent="menu_reception_assessment" sequence="3" action="action_pending_appointment_booking_reception" 
+			/> <menuitem id="menu_assessment_report" parent="menu_reception_assessment" 
+			name="Pending Draft Report Approval" sequence="8" action="action_pending_draft_report" 
+			/> <menuitem id="menu_print_send_report" parent="menu_reception_assessment" 
+			name="Pending, Print and Send Report" sequence="9" action="action_assessment_report" 
+			/> --><!-- <wizard id="wizard_cmc_action_filter_tree" menu="False" -->
+		<!-- model="cmc.assessment" name="wizard_cmc_action_filter_tree" string="All 
+			Assessment" /> -->
+		<wizard id="wizard_adi_reception_filter_assessment" menu="False"
+			model="cmc.call.history" name="wizard_adi_reception_filter_assessment"
+			string="All Assessments Reception Records" />
+		<menuitem action="wizard_adi_reception_filter_assessment" id="menu_all_assessment_report"
+			parent="menu_reception_assessment" sequence="10" name="All Assessment Records"
+			type="wizard" groups="group_cmc_administrator,group_reception_user" />
+
+
+		<!-- <wizard id="wizard_dvla_pending_assessment" menu="False"
+			model="cmc.assessment" name="wizard_dvla_pending_assessment" string="DVLA Pending Assessment (30 days)" />
+		<menuitem action="wizard_dvla_pending_assessment" id="menu_dvla_pending_assessment"
+			parent="menu_reception_assessment" sequence="10"
+			name="DVLA Pending Assessment (30 days)" type="wizard" />
+		<wizard id="wizard_dvla_pending_report_10_days" menu="False"
+			model="cmc.assessment" name="wizard_dvla_pending_report_10_days"
+			string="DVLA Pending Reports (10 days)" />
+		<menuitem action="wizard_dvla_pending_report_10_days" id="menu_dvla_pending_report_10_days"
+			parent="menu_reception_assessment" sequence="11"
+			name="DVLA Pending Reports (10 days)" type="wizard" /> -->
+		<!--<menuitem action="action_dvla_not_done_assessment" id="menu_dvla_not_done_assessment" -->
+		<!-- parent="menu_reception_assessment" sequence="10" name="DVLA Assessments 
+			Not Done within 30 Days" /> -->
+		<wizard id="wizard_assessment_statistics_report" menu="False"
+			model="cmc.assesment" name="wizard_assessment_statistics_report"
+			string="Assessment Statistics Report" />
+		<menuitem action="wizard_assessment_statistics_report" id="menu_assessment_statistics_report"
+			parent="menu_reception" sequence="11" name="Assessment Statistics Report"
+			type="wizard" groups="group_cmc_administrator,group_reception_user" />
+		<wizard id="wizard_call_history_statistics_report" menu="False"
+			model="cmc.call.history" name="wizard_call_history_statistics_report"
+			string="Contacts Statistics Report" />
+		<menuitem action="wizard_call_history_statistics_report" id="menu_contact_statistics_report"
+			parent="menu_reception" sequence="12" name="Contacts Statistics Report"
+			type="wizard" groups="group_cmc_administrator,group_reception_user" />
+
+		<!-- END OF RECEPTION -->
+
+		<!-- ADI USER GROUP -->
+		<menuitem icon="terp-partner" id="menu_adi" name="ADI Users"
+			sequence="-7" groups="group_cmc_administrator,group_adi_user" />
+		<wizard id="wizard_adi_reception_filter_assessment" menu="False"
+            model="cmc.call.history" name="wizard_adi_reception_filter_assessment"
+            string="All Assessments ADI Records" />
+        <menuitem id="menu_pending_report_pack" parent="menu_adi"
+            name="All Assessment Records" sequence="-1"
+            action="wizard_adi_reception_filter_assessment" type="wizard"
+            groups="group_cmc_administrator,group_adi_user" />
+		<menuitem id="menu_cmc_person_adi_form" name="Find a Person or Organisation"
+			parent="menu_adi" sequence="0" action="action_cmc_person"
+			groups="group_cmc_administrator,group_adi_user" />
+		<menuitem id="menu_cmc_adi_diary" name="Diary" parent="menu_adi"
+			sequence="1" groups="group_cmc_administrator,group_adi_user" />
+		<menuitem action="wizard_cmc_my_appointment_tree" id="menu_wizard_cmc_adi_my_appointment_tree"
+			parent="menu_cmc_adi_diary" sequence="1" type="wizard"
+			groups="group_cmc_administrator,group_adi_user" />
+		
+		<menuitem id="menu_adi_call_handling" name="My Contact Handling"
+			parent="menu_adi" sequence="2" groups="group_cmc_administrator,group_adi_user" />
+		<menuitem action="wizard_cmc_my_call_tree" id="menu_wizard_cmc_adi_my_call_tree"
+			parent="menu_adi_call_handling" sequence="1" type="wizard" string="My Open Calls"
+			groups="group_cmc_administrator,group_adi_user" />
+		<wizard id="wizard_cmc_adi_group_call_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_my_group_call_tree" string="My Group Open Calls" />
+		<menuitem action="wizard_cmc_adi_group_call_tree" id="menu_wizard_cmc_adi_my_group_call_tree"
+			parent="menu_adi_call_handling" sequence="2" type="wizard"
+			groups="group_cmc_administrator,group_adi_user" />
+		<menuitem action="wziard_appointment_search_user_equipment_group"
+			id="menu_wizard_adi_user_equipment_appointment_tree" parent="menu_cmc_adi_diary"
+			sequence="3" type="wizard" groups="group_cmc_administrator,group_adi_user" />
+
+		<menuitem id="menu_adi_enquiry_handling" name="Action Handling"
+			parent="menu_adi" sequence="3" groups="group_cmc_administrator,group_adi_user" />
+		<menuitem action="wizard_cmc_my_enquiry_tree" id="menu_wizard_cmc_adi_my_enquiry_tree"
+			parent="menu_adi_enquiry_handling" sequence="1" type="wizard"
+			groups="group_cmc_administrator,group_adi_user" />
+		<wizard id="wizard_cmc_adi_group_enquiry_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_my_group_enquiry_tree"
+			string="ADI Actions" />
+		<menuitem action="wizard_cmc_adi_group_enquiry_tree" id="menu_wizard_cmc_adi_my_group_enquiry_tree"
+			parent="menu_adi_enquiry_handling" sequence="2" type="wizard"
+			groups="group_cmc_administrator,group_adi_user" />
+		<!--ASSESSMENT TASKS -->
+<!--		<menuitem id="menu_adi_assessment" name="Assessment Tasks"-->
+<!--			sequence="6" parent="menu_adi" groups="group_cmc_administrator,group_adi_user" />-->
+		<!--<menuitem id="menu_pend_appointment" name="Pending Appointment Booking" 
+			parent="menu_adi_assessment" sequence="1" action="action_pending_appointment_booking" 
+			/> <wizard id="wizard_cmc_print_assessment_tree" menu="False" model="cmc.assessment" 
+			name="wizard_cmc_print_assessment_tree" string="Print Assessment PaperWork" 
+			/> <menuitem icon="STOCK_JUSTIFY_FILL" action="wizard_cmc_print_assessment_tree" 
+			id="menu_wizard_cmc_print_assessment_tree" parent="menu_adi_assessment" sequence="3" 
+			type="wizard" /> <wizard id="wizard_cmc_send_appointment_letter_tree" menu="False" 
+			model="cmc.assessment" name="wizard_cmc_send_appointment_letter_tree" string="Send 
+			Appointment Letter" /> <menuitem icon="STOCK_JUSTIFY_FILL" action="wizard_cmc_send_appointment_letter_tree" 
+			id="menu_wizard_cmc_send_appointment_letter_tree" parent="menu_adi_assessment" 
+			sequence="4" type="wizard" /> <menuitem id="menu_pending_confirmation" name=" 
+			Pending Appointment Confirmation" parent="menu_adi_assessment" sequence="5" 
+			action="action_pending_appointment_confirmation_tree" /> <menuitem id="menu_pending_assessment_pack" 
+			parent="menu_adi_assessment" name="Pending Assessment Completion" sequence="6" 
+			action="action_pending_assessment_pack" /> -->
+		
+
+		<!-- <menuitem id="menu_assessors_approval_form" name="Pending Assessors 
+			Approval" -->
+		<!-- parent="menu_adi_assessment" sequence="8" action="action_assessors_approval_form" 
+			/> -->
+		<!-- /> END OF ADI USER GROUP -->
+
+		<!--WORKSHOP USERGROUP -->
+
+		
+		
+<!--		<menuitem id="menu_ordered_equipment_menu" name="Equipment Ordered Awaiting Delivery From Supplier"-->
+<!--			sequence="4" parent="menu_workshop" action="action_ordered_equipment_menu" groups="group_cmc_administrator,group_workshop_user"/>-->
+		<!--<wizard id="wizard_book_workshop_task" menu="False"
+            model="cmc.workshop.process" name="wizard_book_workshop_task"
+            string="Open New Job" />
+        <menuitem action="wizard_book_workshop_task"
+            id="menu_wizard_book_workshop_task" parent="menu_workshop_process"
+            sequence="2" type="wizard" groups="group_cmc_administrator,group_workshop_user"/>
+		<menuitem id="menu_workshop_assessment" name="Assessment Tasks"-->
+<!--			sequence="4" parent="menu_workshop" />-->
+
+		<!--END OF WORKSHOP -->
+		<!--ADAPTATIONS -->
+		<!--<menuitem icon="terp-partner" id="menu_adaptations" name="Adaptations Users"
+			sequence="-4" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem id="menu_cmc_person_adaptations_form" name="Find a Person or Organisation"
+			parent="menu_adaptations" sequence="0" action="action_cmc_person" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem id="menu_cmc_workshop_process_all_adaptations_form" name="All Workshop/Adaptations Jobs" parent="menu_adaptations" action="action_cmc_workshop_process_all_form"
+		groups="group_cmc_administrator,group_reception_user" />
+		
+		<menuitem id="menu_cmc_adaptations_diary" name="Diary"
+			parent="menu_adaptations" sequence="1" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem action="wizard_cmc_my_appointment_tree"
+			id="menu_wizard_cmc_adaptations_my_appointment_tree" parent="menu_cmc_adaptations_diary"
+			sequence="1" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem action="wziard_appointment_search_user_equipment_group"
+			id="menu_wizard_adaptations_user_equipment_appointment_tree" parent="menu_cmc_adaptations_diary"
+			sequence="2" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem id="menu_adaptations_call_handling" name="My Contact Handling"
+			parent="menu_adaptations" sequence="2" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem action="wizard_cmc_my_call_tree" id="menu_wizard_cmc_adaptations_my_call_tree"
+			parent="menu_adaptations_call_handling" sequence="1" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<wizard id="wizard_cmc_adaptations_group_call_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_my_group_call_tree" string="Adaptations Group Calls" />
+		<menuitem action="wizard_cmc_adaptations_group_call_tree"
+			id="menu_wizard_cmc_adaptations_my_group_call_tree" parent="menu_adaptations_call_handling"
+			sequence="2" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem id="menu_adaptations_enquiry_handling" name="Action Handling"
+			parent="menu_adaptations" sequence="3" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem action="wizard_cmc_my_enquiry_tree" id="menu_wizard_cmc_workshop_my_enquiry_tree"
+			parent="menu_adaptations_enquiry_handling" sequence="1" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<wizard id="wizard_cmc_adaptations_group_enquiry_tree" menu="False"
+			model="cmc.call.history" name="wizard_cmc_my_group_enquiry_tree"
+			string="Adaptations Actions" />
+			
+		<menuitem action="wizard_cmc_adaptations_group_enquiry_tree"
+			id="menu_wizard_cmc_adaptations_my_group_enquiry_tree" parent="menu_adaptations_enquiry_handling"
+			sequence="2" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem id="adaptations_process" parent="menu_adaptations" sequence="10" name="Adaptations Job"/>
+		<wizard id="wizard_book_adataptions_task" menu="False"
+            model="cmc.workshop.process" name="wizard_book_adaptations_task"
+            string="Open New Job" />
+        <menuitem action="wizard_book_adataptions_task"
+            id="menu_wizard_book_adataptions_task" parent="adaptations_process"
+            sequence="1" type="wizard" groups="group_cmc_administrator,group_adaptations_user"/>
+		<menuitem id="menu_adaptation_process_awaiting_all_enquiry"
+            name="All Adaptations Jobs" sequence="10" parent="adaptations_process"
+            action="action_adaptation_process_awaiting_all_enquiry" groups="group_cmc_administrator,group_adaptations_user"/>-->
+
+		<!-- END OF ADAPTATIONS -->
+
+		<!--ILME USER -->
+
+		
+		<!--ACCOUNT USERS -->
+		<menuitem icon="terp-partner" id="menu_cmc_account" name="Account Department"
+			sequence="-10" groups="group_cmc_administrator,group_accounts_user"/>
+		<wizard id="wizard_cmc_my_completed_assessment" menu="False"
+			model="cmc.assessment" name="wizard_cmc_my_completed_assessment"
+			string="Completed Assessments" />
+		<menuitem id="menu_cmc_account_completed" name="All Completed Assessments"
+			parent="menu_cmc_account" sequence="0"
+			action="wizard_cmc_my_completed_assessment" type="wizard" groups="group_cmc_administrator,group_accounts_user"/>
+
+		<wizard id="wizard_cmc_pending_payment_assessment" menu="False"
+			model="cmc.assessment" name="wizard_cmc_pending_payment_assessment"
+			string="Pending Payment Assessments" />
+		<menuitem id="menu_cmc_account_pending" name="All Assessments Pending Payment"
+			parent="menu_cmc_account" sequence="1"
+			action="wizard_cmc_pending_payment_assessment" type="wizard" groups="group_cmc_administrator,group_accounts_user"/>
+
+<!--        <menuitem id="menu_cmc_workshop_process_invoicing_form" action="action_cmc_workshop_process_invoicing_form"-->
+<!--            name="Workshop Jobs-Ready For Invoicing" parent="menu_cmc_account" sequence="2" groups="group_cmc_administrator,group_accounts_user"/>-->
+
+
+
+	</data>
+</openerp>

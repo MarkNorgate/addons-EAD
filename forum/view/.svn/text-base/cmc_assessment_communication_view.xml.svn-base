@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_cmc_assessment_communication_form" model="ir.ui.view">
+			<field name="name">cmc.assessment.communication.form</field>
+			<field name="model">cmc.assessment.communication</field>
+			<field name="priority" eval="2" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Communication Entry">
+					<field name="comm_date" select="1" string="Communication Date" />
+					<field colspan="1" name="assessment_id" string="Assessment" />
+					<field colspan="1" name="appointment_id" string="Appointment" />
+					<field colspan="1" name="type" string="Tpye" />
+					<field colspan="1" name="user_id" string="User" />
+					<field colspan="1" name="client_name" string="Client Name" />
+					<field colspan="1" name="subject" string="Subject" />
+					<field colspan="1" name="message" string="Message" />
+				</form>
+			</field>
+		</record>
+		<record id="view_cmc_assessment_communication_tree" model="ir.ui.view">
+			<field name="name">cmc.assessment.communication.tree</field>
+			<field name="model">cmc.assessment.communication</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Communication Log" limit="30" min_rows="10">
+					<field name="comm_date" />
+					<field name="type" />
+					<field name="user_id" />
+					<field name="subject" />
+					<field name="message" />
+					
+				</tree>
+			</field>
+		</record>
+		<record id="action_cmc_assessment_communication" model="ir.actions.act_window">
+			<field name="name">CMC Assessment Communication</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">cmc.assessment.communication</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="view_id" ref="view_cmc_assessment_communication_tree" />
+		</record>
+
+	</data>
+</openerp>
+   
